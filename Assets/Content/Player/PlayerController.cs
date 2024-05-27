@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     private bool _attacking = false;
 
-    public Dictionary<AttackType, float> _attacks;
+    public Dictionary<PlayerAttackType, float> _attacks;
 
     private void Awake()
     {
@@ -40,13 +40,13 @@ public class PlayerController : MonoBehaviour
 
         _attackStartUpTimer = new ActionTimer();
 
-        _attacks = new Dictionary<AttackType, float>
+        _attacks = new Dictionary<PlayerAttackType, float>
         {
-            { AttackType.Swipe, 30f },
-            { AttackType.Bite, 75f },
-            { AttackType.WingFlap, 50f },
-            { AttackType.Breath, 30f },
-            { AttackType.Roar, 20f }
+            { PlayerAttackType.Swipe, 30f },
+            { PlayerAttackType.Bite, 75f },
+            { PlayerAttackType.WingFlap, 50f },
+            { PlayerAttackType.Breath, 30f },
+            { PlayerAttackType.Roar, 20f }
         };
 
         _stats.RestoreStats();
@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
         _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;
     }
 
-    private void Attack(AttackType attackType)
+    private void Attack(PlayerAttackType attackType)
     {
         Debug.Log("Player Used: " +  attackType + ", cost: " + _attacks[attackType]);
         Debug.Log("Player has: " + _stats.Stamina + " stamina");
@@ -110,37 +110,37 @@ public class PlayerController : MonoBehaviour
         {
             _attacking = true;
             _attackTimer.Start(_biteAttackSpeed);
-            Attack(AttackType.Bite);
+            Attack(PlayerAttackType.Bite);
         }
         else if (_input.PrimaryAttack)
         {
             _attacking = true;
             _attackTimer.Start(_SwipeAttackSpeed);
-            Attack(AttackType.Swipe);
+            Attack(PlayerAttackType.Swipe);
         }
         else if (_input.SecondaryAttack)
         {
             _attacking = true;
             _attackTimer.Start(_SwipeAttackSpeed);
-            Attack(AttackType.Swipe);
+            Attack(PlayerAttackType.Swipe);
         }
         else if (_input.WingAttack)
         {
             _attacking = true;
             _attackTimer.Start(_wingAttackSpeed);
-            Attack(AttackType.WingFlap);
+            Attack(PlayerAttackType.WingFlap);
         }
         else if (_input.BreathAttack)
         {
             _attacking = true;
             _attackTimer.Start(_breathAttackSpeed);
-            Attack(AttackType.Breath);
+            Attack(PlayerAttackType.Breath);
         }
         else if (_input.Roar)
         {
             _attacking = true;
             _attackTimer.Start(_roarAttackSpeed);
-            Attack(AttackType.Roar);
+            Attack(PlayerAttackType.Roar);
         }
     }
 
