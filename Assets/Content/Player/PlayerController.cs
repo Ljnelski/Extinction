@@ -1,11 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using TimerUtility;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Locomotion")]
     [SerializeField] private Transform _playerPivot;
     [SerializeField] private float _rotationSpeed = 0.1f;
+
+    [Header("Stats")]
+    [SerializeField] private PlayerStats _stats;
+
+    [Header("Attacks")]
+    [SerializeField] private float _SwipeAttackSpeed;
+    [SerializeField] private float _biteAttackSpeed;
+    [SerializeField] private float _wingAttackSpeed;
+    [SerializeField] private float _breathAttackSpeed;
+    [SerializeField] private float _roarAttackSpeed;
 
     [Header("Camera")]
     [SerializeField] private Transform _cameraLookTarget;
@@ -13,17 +26,54 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _cameraRotationSpeed;
 
     private PlayerInput _input;
-    // Start is called before the first frame update
+    private ActionTimer _attackTimer;
+    private ActionTimer _attackStartUpTimer;
+
+    private bool _attacking = false;
+
+    public Dictionary<AttackType, float> _attacks;
+
+    private void Awake()
+    {
+        _attackTimer = new ActionTimer();
+        _attackTimer.AddCompleteCallback(() => _attacking = false);
+
+        _attackStartUpTimer = new ActionTimer();
+
+        _attacks = new Dictionary<AttackType, float>
+        {
+            { AttackType.Swipe, 30f },
+            { AttackType.Bite, 75f },
+            { AttackType.WingFlap, 50f },
+            { AttackType.Breath, 30f },
+            { AttackType.Roar, 20f }
+        };
+
+        _stats.RestoreStats();
+    }
+
     private void OnEnable()
     {
         _input = GetComponent<PlayerInput>();
+
+        _input.TestInputPressed += TestFunction;
+    }
+
+    private void TestFunction()
+    {
+        _stats.Health -= 10f;
+    }
+
+    private void OnDisable()
+    {
+        _input.TestInputPressed -= TestFunction;
     }
 
     // Update is called once per frame
     void Update()
-    {      
+    {
         // Rotate The Camera Look Target as the player moves there mouse
-        _cameraLookPivot.Rotate(new Vector3(0f, _input.LookDirection.x *_cameraRotationSpeed, 0f));
+        _cameraLookPivot.Rotate(new Vector3(0f, _input.LookDirection.x * _cameraRotationSpeed, 0f));
 
         // Rotate the player body to the direction the camera target is facing
 
@@ -33,30 +83,64 @@ public class PlayerController : MonoBehaviour
 
         _playerPivot.rotation = quaternion;
 
-        // Resolve Attack
+        if (!_attacking)
+        {
+            PollAttackInput();
+        }
+        else
+        {
+            _attackTimer.Tick(Time.deltaTime);
+        }
+
+        _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;
+    }
+
+    private void Attack(AttackType attackType)
+    {
+        Debug.Log("Player Used: " +  attackType + ", cost: " + _attacks[attackType]);
+        Debug.Log("Player has: " + _stats.Stamina + " stamina");
+        _stats.Stamina -= _attacks[attackType];
+        Debug.Log("Player has: " + _stats.Stamina + " stamina after attacking");
+
+    }
+
+    private void PollAttackInput()
+    {
         if (_input.PrimaryAttack && _input.SecondaryAttack)
         {
-            DoBiteAttack();
+            _attacking = true;
+            _attackTimer.Start(_biteAttackSpeed);
+            Attack(AttackType.Bite);
         }
         else if (_input.PrimaryAttack)
         {
-            DoLeftSwipe();
+            _attacking = true;
+            _attackTimer.Start(_SwipeAttackSpeed);
+            Attack(AttackType.Swipe);
         }
         else if (_input.SecondaryAttack)
         {
-            DoRightSwipe();
+            _attacking = true;
+            _attackTimer.Start(_SwipeAttackSpeed);
+            Attack(AttackType.Swipe);
         }
         else if (_input.WingAttack)
         {
-            DoWingFlap();
+            _attacking = true;
+            _attackTimer.Start(_wingAttackSpeed);
+            Attack(AttackType.WingFlap);
         }
         else if (_input.BreathAttack)
         {
-            DoBreathAttack();
+            _attacking = true;
+            _attackTimer.Start(_breathAttackSpeed);
+            Attack(AttackType.Breath);
         }
         else if (_input.Roar)
         {
-            DoTheRoar();
+            _attacking = true;
+            _attackTimer.Start(_roarAttackSpeed);
+            Attack(AttackType.Roar);
         }
     }
 
@@ -90,3 +174,5 @@ public class PlayerController : MonoBehaviour
         Debug.Log("RRRAAAAAAAWWWWWWWRRRRR!!!!");
     }
 }
+
+

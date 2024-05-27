@@ -80,6 +80,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""TestInput"",
+                    ""type"": ""Button"",
+                    ""id"": ""d4a6294c-946f-40d4-8bf1-88296ac8108c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -146,6 +155,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""WingAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c5de3778-51ff-4612-9744-ee3c27df4a51"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TestInput"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -678,6 +698,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_WingAttack = m_Player.FindAction("WingAttack", throwIfNotFound: true);
         m_Player_BreathAttack = m_Player.FindAction("BreathAttack", throwIfNotFound: true);
         m_Player_Roar = m_Player.FindAction("Roar", throwIfNotFound: true);
+        m_Player_TestInput = m_Player.FindAction("TestInput", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -757,6 +778,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_WingAttack;
     private readonly InputAction m_Player_BreathAttack;
     private readonly InputAction m_Player_Roar;
+    private readonly InputAction m_Player_TestInput;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -767,6 +789,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @WingAttack => m_Wrapper.m_Player_WingAttack;
         public InputAction @BreathAttack => m_Wrapper.m_Player_BreathAttack;
         public InputAction @Roar => m_Wrapper.m_Player_Roar;
+        public InputAction @TestInput => m_Wrapper.m_Player_TestInput;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -794,6 +817,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Roar.started += instance.OnRoar;
             @Roar.performed += instance.OnRoar;
             @Roar.canceled += instance.OnRoar;
+            @TestInput.started += instance.OnTestInput;
+            @TestInput.performed += instance.OnTestInput;
+            @TestInput.canceled += instance.OnTestInput;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -816,6 +842,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Roar.started -= instance.OnRoar;
             @Roar.performed -= instance.OnRoar;
             @Roar.canceled -= instance.OnRoar;
+            @TestInput.started -= instance.OnTestInput;
+            @TestInput.performed -= instance.OnTestInput;
+            @TestInput.canceled -= instance.OnTestInput;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -959,6 +988,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnWingAttack(InputAction.CallbackContext context);
         void OnBreathAttack(InputAction.CallbackContext context);
         void OnRoar(InputAction.CallbackContext context);
+        void OnTestInput(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

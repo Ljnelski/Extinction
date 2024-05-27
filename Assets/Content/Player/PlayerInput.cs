@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,8 @@ public class PlayerInput : MonoBehaviour
     public bool BreathAttack => _breathAttack;
     public bool Roar => _roar;
 
+    public Action TestInputPressed;
+
     private void Awake()
     {
         _inputActions = new PlayerInputActions();
@@ -41,6 +44,8 @@ public class PlayerInput : MonoBehaviour
 
         _inputActions.Player.BreathAttack.performed += OnBreathAttack;
         _inputActions.Player.BreathAttack.canceled += OnBreathAttack;
+
+        _inputActions.Player.TestInput.performed += OnTestInput;
 
         _inputActions.Player.Roar.performed += OnRoar;
         _inputActions.Player.Roar.canceled += OnRoar;
@@ -72,6 +77,8 @@ public class PlayerInput : MonoBehaviour
 
         _inputActions.Player.BreathAttack.performed -= OnBreathAttack;
         _inputActions.Player.BreathAttack.canceled -= OnBreathAttack;
+
+        _inputActions.Player.TestInput.performed -= OnTestInput;
 
         _inputActions.Player.Roar.performed -= OnRoar;
         _inputActions.Player.Roar.canceled -= OnRoar;
@@ -105,5 +112,10 @@ public class PlayerInput : MonoBehaviour
     private void OnRoar(InputAction.CallbackContext context)
     {
         _roar = context.ReadValue<float>() > 0;
+    }
+
+    private void OnTestInput(InputAction.CallbackContext context)
+    {
+        TestInputPressed?.Invoke();
     }
 }

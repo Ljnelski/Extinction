@@ -1,5 +1,5 @@
 {
-    "name": "Player",
+    "name": "PlayerInputActions",
     "maps": [
         {
             "name": "Player",
@@ -54,6 +54,15 @@
                     "name": "Roar",
                     "type": "Button",
                     "id": "25ea488d-4009-49ce-bbbe-6118fef7c9a8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TestInput",
+                    "type": "Button",
+                    "id": "d4a6294c-946f-40d4-8bf1-88296ac8108c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -124,6 +133,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "WingAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c5de3778-51ff-4612-9744-ee3c27df4a51",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TestInput",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
