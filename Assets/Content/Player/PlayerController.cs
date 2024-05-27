@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform _cameraLookPivot;
     [SerializeField] private float _cameraRotationSpeed;
 
-    private PlayerInput _input;
+    private PlayerInputRecorder _input;
     private ActionTimer _attackTimer;
     private ActionTimer _attackStartUpTimer;
 
@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        _input = GetComponent<PlayerInput>();
+        _input = GetComponent<PlayerInputRecorder>();
 
         _input.TestInputPressed += TestFunction;
     }

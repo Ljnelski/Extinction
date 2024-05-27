@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 // This Class Record Input from the PlayerInputActions
-public class PlayerInput : MonoBehaviour
+public class PlayerInputRecorder : MonoBehaviour
 {
-    private PlayerInputActions _inputActions;
+    private ExtinctionInputActions _inputActions;
 
     private Vector2 _lookDirection;
 
@@ -28,7 +28,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Awake()
     {
-        _inputActions = new PlayerInputActions();
+        _inputActions = new ExtinctionInputActions();
 
         _inputActions.Player.Turn.performed += OnTurn;
         _inputActions.Player.Turn.canceled += OnTurn;
