@@ -20,6 +20,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _breathAttackSpeed;
     [SerializeField] private float _roarAttackSpeed;
 
+    [Header("Body Parts")]
+    [SerializeField] private BodyPart _head;
+    [SerializeField] private BodyPart _armLeft;
+    [SerializeField] private BodyPart _armRight;
+    [SerializeField] private BodyPart _wingLeft;
+    [SerializeField] private BodyPart _wingRight;
+
     [Header("Camera")]
     [SerializeField] private Transform _cameraLookTarget;
     [SerializeField] private Transform _cameraLookPivot;
@@ -32,6 +39,15 @@ public class PlayerController : MonoBehaviour
     private bool _attacking = false;
 
     public Dictionary<PlayerAttackType, float> _attacks;
+
+    private PlayerAttack[] _playerAttacks;
+
+    private ClawAttack _clawAttack;
+    private BiteAttack _biteAttack;
+    private BreathAttack _breathAttack;
+    private WingFlapAttack _wingFlapAttack;
+    private RoarAttack _roarAttack;
+
 
     private void Awake()
     {
@@ -49,13 +65,18 @@ public class PlayerController : MonoBehaviour
             { PlayerAttackType.Roar, 20f }
         };
 
+        _clawAttack = GetComponentInChildren<ClawAttack>();
+        _biteAttack = GetComponentInChildren<BiteAttack>();
+        _breathAttack = GetComponentInChildren<BreathAttack>();
+        _wingFlapAttack = GetComponentInChildren<WingFlapAttack>();
+        _roarAttack = GetComponentInChildren<RoarAttack>();
+
         _stats.RestoreStats();
     }
 
     private void OnEnable()
     {
         _input = GetComponent<PlayerInputRecorder>();
-
         _input.TestInputPressed += TestFunction;
     }
 
@@ -95,13 +116,10 @@ public class PlayerController : MonoBehaviour
         _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;
     }
 
-    private void Attack(PlayerAttackType attackType)
+    private void Attack(PlayerAttack attack)
     {
-        Debug.Log("Player Used: " +  attackType + ", cost: " + _attacks[attackType]);
-        Debug.Log("Player has: " + _stats.Stamina + " stamina");
-        _stats.Stamina -= _attacks[attackType];
-        Debug.Log("Player has: " + _stats.Stamina + " stamina after attacking");
-
+        attack.ExecuteAttack(_stats);
+        _attackTimer.Start(attack.AttackDuration);
     }
 
     private void PollAttackInput()
@@ -109,69 +127,33 @@ public class PlayerController : MonoBehaviour
         if (_input.PrimaryAttack && _input.SecondaryAttack)
         {
             _attacking = true;
-            _attackTimer.Start(_biteAttackSpeed);
-            Attack(PlayerAttackType.Bite);
+            Attack(_biteAttack);
         }
         else if (_input.PrimaryAttack)
         {
             _attacking = true;
-            _attackTimer.Start(_SwipeAttackSpeed);
-            Attack(PlayerAttackType.Swipe);
+            Attack(_clawAttack);
         }
         else if (_input.SecondaryAttack)
         {
             _attacking = true;
-            _attackTimer.Start(_SwipeAttackSpeed);
-            Attack(PlayerAttackType.Swipe);
+            Attack(_clawAttack);
         }
         else if (_input.WingAttack)
         {
             _attacking = true;
-            _attackTimer.Start(_wingAttackSpeed);
-            Attack(PlayerAttackType.WingFlap);
+            Attack(_wingFlapAttack);
         }
         else if (_input.BreathAttack)
         {
             _attacking = true;
-            _attackTimer.Start(_breathAttackSpeed);
-            Attack(PlayerAttackType.Breath);
+            Attack(_breathAttack);
         }
         else if (_input.Roar)
         {
             _attacking = true;
-            _attackTimer.Start(_roarAttackSpeed);
-            Attack(PlayerAttackType.Roar);
+            Attack(_roarAttack);
         }
-    }
-
-    private void DoLeftSwipe()
-    {
-        Debug.Log("Left Swipe");
-    }
-
-    private void DoRightSwipe()
-    {
-        Debug.Log("Right Swipe");
-    }
-
-    private void DoBiteAttack()
-    {
-        Debug.Log("Bite Attack");
-    }
-
-    private void DoWingFlap()
-    {
-        Debug.Log("Flap");
-    }
-
-    private void DoBreathAttack()
-    {
-        Debug.Log("Breath Attack");
-    }
-
-    private void DoTheRoar()
-    {
-        Debug.Log("RRRAAAAAAAWWWWWWWRRRRR!!!!");
     }
 }
 
