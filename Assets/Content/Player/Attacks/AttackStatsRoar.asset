@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045fcdaaef15ac1469fa996a3a15be8d, type: 3}
   m_Name: AttackStatsRoar
   m_EditorClassIdentifier: 
-  Damage: 0
-  DamageBroken: 0
+  Damage: 50
+  DamageBroken: 25
   StaminaCost: 50
   StaminaCostBroken: 50
   AttackDuration: 2

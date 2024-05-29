@@ -177,11 +177,11 @@ public class PlayerController : MonoBehaviour
 
         _playerPivot.rotation = quaternion;
 
-        _currentAttack.RunAttack(_input);
+        _currentAttack.Run(_input);
 
         if (_currentAttack.ForceExit())
         {
-            _currentAttack.ExitAttack();
+            _currentAttack.Exit();
         }
 
 
@@ -190,32 +190,18 @@ public class PlayerController : MonoBehaviour
 
     public void ExitAttack()
     {
-        Debug.Log("Changing to IdleState");
         _currentAttack = _idleAttack;
     }
 
-    public void AnimationActivateAttack()
-    {
-        _currentAttack.Activate();
-        Debug.Log("Activating Attack");
-    }
-
-    public void AnimationDeactiveAttack()
-    {
-        _currentAttack.Deactivate();
-        Debug.Log("Deactivating Attack");
-    }
-
-    public void AnimationExitAttack()
-    {
-        Debug.Log("Exiting Attack");
-        _currentAttack.ExitAttack();
+    public void AdvanceAttackPhase()
+    {       
+        _currentAttack.AdvanceAttackPhase();
     }
 
     public void SetAttack(PlayerAttackState attackState)
     {
         _currentAttack = attackState;
-        _currentAttack.StartAttack();
+        _currentAttack.Enter();
     }
 }
 

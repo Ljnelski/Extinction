@@ -3,15 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
-public class BreathAttack : PlayerAttackState
+public class BreathAttack : HitBoxAttack
 {
     [SerializeField] private VisualEffect _fire;
-
-    public override void StartAttack()
-    {
-        base.StartAttack();
-        Debug.Log("BreathAttack");
-    }
 
     public override void Activate()
     {
@@ -19,7 +13,7 @@ public class BreathAttack : PlayerAttackState
         _fire.SendEvent("StartBreath");
     }
 
-    public override void RunAttack(PlayerInputRecorder playerInput)
+    public override void Run(PlayerInputRecorder playerInput)
     {
         if (!playerInput.BreathAttack)
         {
@@ -30,13 +24,12 @@ public class BreathAttack : PlayerAttackState
     public override void Deactivate()
     {
         base.Deactivate();
-        Debug.Log("DeactivatingFire");
         _fire.SendEvent("StopBreath");
     }
 
-    public override void ExitAttack()
+    public override void Exit()
     {
-        base.ExitAttack();
+        base.Exit();
     }
 
     public override bool ForceExit()
@@ -48,4 +41,11 @@ public class BreathAttack : PlayerAttackState
 
         return false;
     }
+
+    protected override void HitBoxStayed(ITarget target)
+    {
+        target.DebugIndicateHit(Color.red);
+        target.ApplyDamage(Damage * Time.deltaTime);
+    }
+
 }

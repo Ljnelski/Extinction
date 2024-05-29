@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045fcdaaef15ac1469fa996a3a15be8d, type: 3}
   m_Name: AttackStatsClaw
   m_EditorClassIdentifier: 
-  Damage: 0
-  DamageBroken: 0
+  Damage: 150
+  DamageBroken: 100
   StaminaCost: 30
-  StaminaCostBroken: 60
+  StaminaCostBroken: 35
   AttackDuration: 2

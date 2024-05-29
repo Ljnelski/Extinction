@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class RoarAttack : PlayerAttackState
 {
-    public override void StartAttack()
+    public override void Enter()
     {
-        base.StartAttack();
+        base.Enter();
         Debug.Log("RoarAttack");
     }
 
-    public override void RunAttack(PlayerInputRecorder playerInput)
+    public override void Run(PlayerInputRecorder playerInput)
     {
         ;
     }

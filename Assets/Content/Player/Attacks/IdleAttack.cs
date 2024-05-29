@@ -5,32 +5,44 @@ using UnityEngine.Windows;
 
 public class IdleAttack : PlayerAttackState
 {
-    public override void StartAttack()
+    public override void Enter()
     {
     }
 
-    public override void RunAttack(PlayerInputRecorder playerInput)
+    public override void Run(PlayerInputRecorder playerInput)
     {
-        if (playerInput.PrimaryAttack && playerInput.SecondaryAttack && _player.BiteAttack.CanStart())
+        if (playerInput.PrimaryAttack && playerInput.SecondaryAttack)
         {
-            _player.SetAttack(_player.BiteAttack);
-            Animator.SetTrigger(_player.BiteTriggerID);
+            if (_player.BiteAttack.CanStart())
+            {
+                _player.SetAttack(_player.BiteAttack);
+                Animator.SetTrigger(_player.BiteTriggerID);
+            }
         }
-        else if (playerInput.PrimaryAttack && _player.ClawSwipeLeftAttack.CanStart())
+        else if (playerInput.PrimaryAttack)
         {
-            _player.SetAttack(_player.ClawSwipeLeftAttack);
-            Animator.SetTrigger(_player.LeftSwipeTriggerID);
+            if (_player.ClawSwipeLeftAttack.CanStart())
+            {
+                _player.SetAttack(_player.ClawSwipeLeftAttack);
+                Animator.SetTrigger(_player.LeftSwipeTriggerID);
+            }
         }
-        else if (playerInput.SecondaryAttack && _player.ClawSwipeRightAttack.CanStart())
+        else if (playerInput.SecondaryAttack)
         {
-            _player.SetAttack(_player.ClawSwipeLeftAttack);
-            Animator.SetTrigger(_player.RightSwipeTriggerID);
+            if(_player.ClawSwipeRightAttack.CanStart())
+            {
+                _player.SetAttack(_player.ClawSwipeLeftAttack);
+                Animator.SetTrigger(_player.RightSwipeTriggerID);
+            }
         }
-        else if (playerInput.WingAttack && _player.WingFlapleftAttack.CanStart() && _player.WingFlapRightAttack.CanStart())
+        else if (playerInput.WingAttack )
         {
-            _player.SetAttack(_player.WingFlapleftAttack);
-            _player.SetAttack(_player.WingFlapRightAttack);
-            Animator.SetTrigger(_player.WingFlapTriggerID);
+            if (_player.WingFlapleftAttack.CanStart() && _player.WingFlapRightAttack.CanStart())
+            {
+                _player.SetAttack(_player.WingFlapleftAttack);
+                _player.SetAttack(_player.WingFlapRightAttack);
+                Animator.SetTrigger(_player.WingFlapTriggerID);
+            }
         }
         else if (playerInput.BreathAttack && _player.BreathAttack.CanStart())
         {

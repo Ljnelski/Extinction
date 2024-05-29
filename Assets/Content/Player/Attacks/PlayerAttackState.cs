@@ -1,10 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-public abstract class PlayerAttackState : MonoBehaviour 
+public abstract class PlayerAttackState : MonoBehaviour
 {
     [SerializeField] private PlayerAttackStats _stats;
 
@@ -35,10 +31,8 @@ public abstract class PlayerAttackState : MonoBehaviour
         return Stats.Stamina > StaminaCost;
     }
 
-    public virtual void StartAttack()
+    public virtual void Enter()
     {
-        Debug.Log("AttackPhase at StartAttack(): " + _attackPhase);
-
         Stats.Stamina = Stats.Stamina - StaminaCost;
 
         if (_attackPhase == AttackPhase.InActive)
@@ -49,40 +43,55 @@ public abstract class PlayerAttackState : MonoBehaviour
 
     public virtual void Activate()
     {
-        Debug.Log("AttackPhase at Activate(): " + _attackPhase);
-
         if (_attackPhase == AttackPhase.WaitingForActivation)
         {
             _attackPhase = AttackPhase.Activated;
         }
     }
 
-    public abstract void RunAttack(PlayerInputRecorder input);
+    public abstract void Run(PlayerInputRecorder input);
 
     public virtual void Deactivate()
     {
-        Debug.Log("AttackPhase at Deactivate(): " + _attackPhase);
-
         if (_attackPhase == AttackPhase.Activated)
         {
-            _attackPhase= AttackPhase.Deactivated;
+            _attackPhase = AttackPhase.Deactivated;
         }
     }
 
-    public virtual void ExitAttack()
+    public virtual void Exit()
     {
-        Debug.Log("AttackPhase at ExitAttack(): " +  _attackPhase);
-        if(_attackPhase == AttackPhase.Deactivated)
+        _player.ExitAttack();
+    }
+
+    public void AdvanceAttackPhase()
+    {
+        switch (_attackPhase)
         {
-            _attackPhase = AttackPhase.InActive;
-            _player.ExitAttack();
+            case AttackPhase.InActive:
+                _attackPhase = AttackPhase.WaitingForActivation;
+                break;
+            case AttackPhase.WaitingForActivation:
+                _attackPhase = AttackPhase.Activated;
+                Activate();
+                break;
+            case AttackPhase.Activated:
+                _attackPhase = AttackPhase.Deactivated;
+                Deactivate();
+                break;
+            case AttackPhase.Deactivated:
+                _attackPhase = AttackPhase.InActive;
+                Exit();
+                break;
+            default:
+                break;
         }
     }
 
     public abstract bool ForceExit();
 }
 
-public enum AttackPhase 
+public enum AttackPhase
 {
     InActive,
     WaitingForActivation, // Animation Running, waiting for animation event to active damage

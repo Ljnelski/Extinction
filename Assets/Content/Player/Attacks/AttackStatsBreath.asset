@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045fcdaaef15ac1469fa996a3a15be8d, type: 3}
   m_Name: AttackStatsBreath
   m_EditorClassIdentifier: 
-  Damage: 0
-  DamageBroken: 0
-  StaminaCost: 10
-  StaminaCostBroken: 0
+  Damage: 100
+  DamageBroken: 90
+  StaminaCost: 30
+  StaminaCostBroken: 45
   AttackDuration: 2

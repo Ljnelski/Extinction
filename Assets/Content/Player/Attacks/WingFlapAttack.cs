@@ -8,13 +8,13 @@ public class WingFlapAttack : PlayerAttackState
     [SerializeField] private Transform _sphereCastSource;
     [SerializeField] private WingHemisphere _wingAttackDirection;
 
-    public override void StartAttack()
+    public override void Enter()
     {
-        base.StartAttack();
+        base.Enter();
         Debug.Log("WING FLAP ATTACK");
     }
 
-    public override void RunAttack(PlayerInputRecorder playerInput)
+    public override void Run(PlayerInputRecorder playerInput)
     {
 
         float staminaCost = (_bodyPart.IsBroken) ? StaminaCost : StaminaCostBroken;

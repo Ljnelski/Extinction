@@ -4,7 +4,7 @@ using TimerUtility;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class DebugIndicatePlayerAttackHit : MonoBehaviour, ITarget
+public class DebugTarget : MonoBehaviour, ITarget
 {
     private MeshRenderer _meshRender;
     private ActionTimer _colorResetTimer;
@@ -36,29 +36,13 @@ public class DebugIndicatePlayerAttackHit : MonoBehaviour, ITarget
         _meshRender.SetPropertyBlock(props);
     }
 
-    public void HitBySwipeAttack()
+    public void ApplyDamage(float amount)
     {
-        Debug.Log("Hit By Swipe Attack");
+        Debug.Log("Damage taken: " + amount);
     }
 
-    public float HitByBiteAttack()
+    public void ApplyEffect()
     {
-        Debug.Log("Hit By Bite Attack");
-        return 1f;
-    }
-
-    public void HitByWingAttack()
-    {
-        Debug.Log("Hit By Wing Attack");
-    }
-
-    public void HitByBreathAttack()
-    {
-        Debug.Log("Hit By Breath Attack");
-    }
-
-    public void HitByRoar()
-    {
-        Debug.Log("Hit By Roar Attack");
+        Debug.Log("Applying Effect");
     }
 }

@@ -138,17 +138,6 @@ public partial class @ExtinctionInputActions: IInputActionCollection2, IDisposab
                 },
                 {
                     ""name"": """",
-                    ""id"": ""b7d1e301-e2e5-4552-96f8-3c21133d5a08"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Roar"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""78b9fe19-3e30-4e62-a9f1-af79713b7550"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
@@ -166,6 +155,17 @@ public partial class @ExtinctionInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""TestInput"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b7d1e301-e2e5-4552-96f8-3c21133d5a08"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Roar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
