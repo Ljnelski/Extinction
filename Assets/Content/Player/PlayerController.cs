@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -14,18 +15,23 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerStats _stats;
 
     [Header("Attacks")]
-    [SerializeField] private float _SwipeAttackSpeed;
-    [SerializeField] private float _biteAttackSpeed;
-    [SerializeField] private float _wingAttackSpeed;
-    [SerializeField] private float _breathAttackSpeed;
-    [SerializeField] private float _roarAttackSpeed;
+    [SerializeField] private ClawAttack _clawSwipeLeftAttack;
+    [SerializeField] private ClawAttack _clawSwipeRightAttack;
+    [SerializeField] private BiteAttack _biteAttack;
+    [SerializeField] private BreathAttack _breathAttack;
+    [SerializeField] private WingFlapAttack _wingFlapleftAttack;
+    [SerializeField] private WingFlapAttack _wingFlapRightAttack;
+    [SerializeField] private RoarAttack _roarAttack;
 
-    [Header("Body Parts")]
+    [Header("BodyParts")]
     [SerializeField] private BodyPart _head;
     [SerializeField] private BodyPart _armLeft;
     [SerializeField] private BodyPart _armRight;
     [SerializeField] private BodyPart _wingLeft;
     [SerializeField] private BodyPart _wingRight;
+
+    [Header("animation")]
+    [SerializeField] private Animator _animator;
 
     [Header("Camera")]
     [SerializeField] private Transform _cameraLookTarget;
@@ -34,28 +40,32 @@ public class PlayerController : MonoBehaviour
 
     private PlayerInputRecorder _input;
     private ActionTimer _attackTimer;
-    private ActionTimer _attackStartUpTimer;
-
-    private bool _attacking = false;
 
     public Dictionary<PlayerAttackType, float> _attacks;
 
-    private PlayerAttack[] _playerAttacks;
+    private IdleAttack _idleAttack;
+    private PlayerAttackState _currentAttack;
 
-    private ClawAttack _clawAttack;
-    private BiteAttack _biteAttack;
-    private BreathAttack _breathAttack;
-    private WingFlapAttack _wingFlapAttack;
-    private RoarAttack _roarAttack;
+    public int BiteTriggerID { get; private set; }
+    public int LeftSwipeTriggerID { get; private set; }
+    public int RightSwipeTriggerID { get; private set; }
+    public int BreathBoolID { get; private set; }
+    public int WingFlapTriggerID { get; private set; }
+    public int RoarAttackAnimationTransition { get; private set; }
 
+    public PlayerStats Stats => _stats;
+    public Animator Animator => _animator;
+
+    public ClawAttack ClawSwipeLeftAttack { get => _clawSwipeLeftAttack; }
+    public ClawAttack ClawSwipeRightAttack { get => _clawSwipeRightAttack; }
+    public BiteAttack BiteAttack { get => _biteAttack; }
+    public BreathAttack BreathAttack { get => _breathAttack; }
+    public WingFlapAttack WingFlapleftAttack { get => _wingFlapleftAttack; }
+    public WingFlapAttack WingFlapRightAttack { get => _wingFlapRightAttack; }
+    public RoarAttack RoarAttack { get => _roarAttack; }
 
     private void Awake()
     {
-        _attackTimer = new ActionTimer();
-        _attackTimer.AddCompleteCallback(() => _attacking = false);
-
-        _attackStartUpTimer = new ActionTimer();
-
         _attacks = new Dictionary<PlayerAttackType, float>
         {
             { PlayerAttackType.Swipe, 30f },
@@ -65,11 +75,15 @@ public class PlayerController : MonoBehaviour
             { PlayerAttackType.Roar, 20f }
         };
 
-        _clawAttack = GetComponentInChildren<ClawAttack>();
-        _biteAttack = GetComponentInChildren<BiteAttack>();
-        _breathAttack = GetComponentInChildren<BreathAttack>();
-        _wingFlapAttack = GetComponentInChildren<WingFlapAttack>();
-        _roarAttack = GetComponentInChildren<RoarAttack>();
+        SetUpAttacks();
+
+        _currentAttack = _idleAttack;
+
+        LeftSwipeTriggerID = Animator.StringToHash("ClawSwipeLeft");
+        RightSwipeTriggerID = Animator.StringToHash("ClawSwipeRight");
+        BiteTriggerID = Animator.StringToHash("Bite");
+        BreathBoolID = Animator.StringToHash("Breath");
+        WingFlapTriggerID = Animator.StringToHash("WingFlap");
 
         _stats.RestoreStats();
     }
@@ -80,14 +94,73 @@ public class PlayerController : MonoBehaviour
         _input.TestInputPressed += TestFunction;
     }
 
-    private void TestFunction()
-    {
-        _stats.Health -= 10f;
-    }
-
     private void OnDisable()
     {
         _input.TestInputPressed -= TestFunction;
+    }
+
+    private void SetUpAttacks()
+    {
+        _idleAttack = GetComponent<IdleAttack>();
+
+        if (_idleAttack == null)
+        {
+            gameObject.AddComponent<IdleAttack>();
+            _idleAttack = GetComponent<IdleAttack>();
+        }
+
+        _idleAttack.Init(this, null);
+
+        string errorMsg = "";
+
+        if (_clawSwipeLeftAttack == null)
+        {
+            errorMsg += "Left Claw Swipe, ";
+        }
+        if (_clawSwipeRightAttack == null)
+        {
+            errorMsg += "Right Claw Swipe , ";
+        }
+        if (_biteAttack == null)
+        {
+            errorMsg += "Bite, ";
+        }
+        if (_breathAttack == null)
+        {
+            errorMsg += "Breath, ";
+        }
+        if (_wingFlapleftAttack == null)
+        {
+            errorMsg += "Wing Flap Left, ";
+        }
+        if (_wingFlapRightAttack == null)
+        {
+            errorMsg += "Wing Flap Right, ";
+        }
+        if (_roarAttack == null)
+        {
+            errorMsg += "Roar";
+        }
+
+        if (!String.IsNullOrEmpty(errorMsg))
+        {
+            errorMsg += " Attack(s) Are not Assigned";
+            Debug.Log(errorMsg);
+            return;
+        }
+
+        _clawSwipeLeftAttack.Init(this, _armLeft);
+        _clawSwipeRightAttack.Init(this, _armRight);
+        _biteAttack.Init(this, _head);
+        _breathAttack.Init(this, _head);
+        _wingFlapleftAttack.Init(this, _wingLeft);
+        _wingFlapRightAttack.Init(this, _wingRight);
+        _roarAttack.Init(this, _head);
+    }
+
+    private void TestFunction()
+    {
+        _stats.Health -= 10f;
     }
 
     // Update is called once per frame
@@ -104,56 +177,45 @@ public class PlayerController : MonoBehaviour
 
         _playerPivot.rotation = quaternion;
 
-        if (!_attacking)
+        _currentAttack.RunAttack(_input);
+
+        if (_currentAttack.ForceExit())
         {
-            PollAttackInput();
+            _currentAttack.ExitAttack();
         }
-        else
-        {
-            _attackTimer.Tick(Time.deltaTime);
-        }
+
 
         _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;
     }
 
-    private void Attack(PlayerAttack attack)
+    public void ExitAttack()
     {
-        attack.ExecuteAttack(_stats);
-        _attackTimer.Start(attack.AttackDuration);
+        Debug.Log("Changing to IdleState");
+        _currentAttack = _idleAttack;
     }
 
-    private void PollAttackInput()
+    public void AnimationActivateAttack()
     {
-        if (_input.PrimaryAttack && _input.SecondaryAttack)
-        {
-            _attacking = true;
-            Attack(_biteAttack);
-        }
-        else if (_input.PrimaryAttack)
-        {
-            _attacking = true;
-            Attack(_clawAttack);
-        }
-        else if (_input.SecondaryAttack)
-        {
-            _attacking = true;
-            Attack(_clawAttack);
-        }
-        else if (_input.WingAttack)
-        {
-            _attacking = true;
-            Attack(_wingFlapAttack);
-        }
-        else if (_input.BreathAttack)
-        {
-            _attacking = true;
-            Attack(_breathAttack);
-        }
-        else if (_input.Roar)
-        {
-            _attacking = true;
-            Attack(_roarAttack);
-        }
+        _currentAttack.Activate();
+        Debug.Log("Activating Attack");
+    }
+
+    public void AnimationDeactiveAttack()
+    {
+        _currentAttack.Deactivate();
+        Debug.Log("Deactivating Attack");
+    }
+
+    public void AnimationExitAttack()
+    {
+        Debug.Log("Exiting Attack");
+        _currentAttack.ExitAttack();
+    }
+
+    public void SetAttack(PlayerAttackState attackState)
+    {
+        _currentAttack = attackState;
+        _currentAttack.StartAttack();
     }
 }
 

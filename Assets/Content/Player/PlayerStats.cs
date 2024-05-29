@@ -11,7 +11,7 @@ public class PlayerStats : ScriptableObject
     [SerializeField] private float _staminaRegenerationRate;
 
     [SerializeField] private PlayerStatChanges _playerStatChanges;
-    
+
     public float MaxHealth => _maxHealth;
     public float MaxStamina => _maxStamina;
     public float StaminaRegenerationRate => _staminaRegenerationRate;
@@ -20,7 +20,7 @@ public class PlayerStats : ScriptableObject
     {
         get => _health;
         set
-        {           
+        {
             _health = Mathf.Max(0f, Mathf.Min(value, MaxHealth));
             _playerStatChanges.HealthChanged?.Invoke(_health / _maxHealth);
         }
@@ -33,11 +33,12 @@ public class PlayerStats : ScriptableObject
         {
             _stamina = Mathf.Max(0f, Mathf.Min(value, MaxStamina));
             _playerStatChanges.StaminaChanged?.Invoke(_stamina / _maxStamina);
-        }        
+        }
     }
 
+
     private float _health;
-    private float _stamina;     
+    private float _stamina;
 
     public void RestoreStats()
     {
@@ -46,7 +47,7 @@ public class PlayerStats : ScriptableObject
     }
 }
 
-[CreateAssetMenu(fileName="PlayerStatChanges", menuName = "Extinction/PlayerStatChanges")]
+[CreateAssetMenu(fileName = "PlayerStatChanges", menuName = "Extinction/PlayerStatChanges")]
 public class PlayerStatChanges : ScriptableObject
 {
     public Action<float> HealthChanged;

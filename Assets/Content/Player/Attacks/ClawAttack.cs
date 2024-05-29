@@ -2,10 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClawAttack : PlayerAttack
+public class ClawAttack : PlayerAttackState
 {
-    public override void ExecuteAttack(PlayerStats stats)
+    public override void StartAttack()
     {
-        Debug.Log("ClawAttack");
+        base.StartAttack();
+    }    
+
+    public override void RunAttack(PlayerInputRecorder playerInput)
+    {
+        ;
+    }
+
+    public override bool ForceExit()
+    {
+        return false;
     }
 }

@@ -2,10 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BiteAttack : PlayerAttack
+public class BiteAttack : PlayerAttackState
 {
-    public override void ExecuteAttack(PlayerStats stats)
+    public override void StartAttack()
     {
+        base.StartAttack();
         Debug.Log("Bite Attack");
+    }
+    public override void RunAttack(PlayerInputRecorder playerInput)
+    {
+        ;
+    }    
+
+    public override bool ForceExit()
+    {
+        return false;
     }
 }
