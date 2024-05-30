@@ -14,9 +14,4 @@ public class RoarAttack : PlayerAttackState
     {
         ;
     }
-
-    public override bool ForceExit()
-    {
-        return false;
-    }
 }

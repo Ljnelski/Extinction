@@ -10,7 +10,7 @@ public abstract class HitBoxAttack : PlayerAttackState
 {
     protected HitBox _hitBox;
 
-    private void Start()
+    protected virtual void Start()
     {
         _hitBox = GetComponentInChildren<HitBox>();
 

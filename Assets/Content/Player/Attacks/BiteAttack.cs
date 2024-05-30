@@ -9,11 +9,6 @@ public class BiteAttack : HitBoxAttack
         ;
     }    
 
-    public override bool ForceExit()
-    {
-        return false;
-    }
-
     protected override void HitBoxEntered(ITarget target)
     {
         base.HitBoxEntered(target);

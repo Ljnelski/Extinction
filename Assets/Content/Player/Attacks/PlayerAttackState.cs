@@ -11,7 +11,7 @@ public abstract class PlayerAttackState : MonoBehaviour
 
     public float Damage => _stats.Damage;
     public float DamageBroken => _stats.DamageBroken;
-    public float StaminaCost => _stats.StaminaCost;
+    public float StaminaCost => _bodyPart.IsBroken ? _stats.StaminaCostBroken : _stats.StaminaCost;        
     public float StaminaCostBroken => _stats.StaminaCostBroken;
     public float AttackDuration => _stats.AttackDuration;
 
@@ -34,29 +34,19 @@ public abstract class PlayerAttackState : MonoBehaviour
     public virtual void Enter()
     {
         Stats.Stamina = Stats.Stamina - StaminaCost;
-
-        if (_attackPhase == AttackPhase.InActive)
-        {
-            _attackPhase = AttackPhase.WaitingForActivation;
-        }
+        AdvanceAttackPhase();       
     }
 
     public virtual void Activate()
     {
-        if (_attackPhase == AttackPhase.WaitingForActivation)
-        {
-            _attackPhase = AttackPhase.Activated;
-        }
+        ;
     }
 
     public abstract void Run(PlayerInputRecorder input);
 
     public virtual void Deactivate()
     {
-        if (_attackPhase == AttackPhase.Activated)
-        {
-            _attackPhase = AttackPhase.Deactivated;
-        }
+        ;
     }
 
     public virtual void Exit()
@@ -86,9 +76,9 @@ public abstract class PlayerAttackState : MonoBehaviour
             default:
                 break;
         }
-    }
 
-    public abstract bool ForceExit();
+        //Debug.Log("Attack Phase Changed: " + _attackPhase);
+    }
 }
 
 public enum AttackPhase

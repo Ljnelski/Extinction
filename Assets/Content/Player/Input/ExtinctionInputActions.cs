@@ -42,7 +42,7 @@ public partial class @ExtinctionInputActions: IInputActionCollection2, IDisposab
                     ""id"": ""af6033c0-ae6c-426c-8e38-220fdd791bd5"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold(duration=0.1,pressPoint=0.01)"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -51,7 +51,7 @@ public partial class @ExtinctionInputActions: IInputActionCollection2, IDisposab
                     ""id"": ""70d06407-e575-4b15-8b5c-86925005f81d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold(duration=0.1,pressPoint=0.01)"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -84,7 +84,7 @@ public partial class @ExtinctionInputActions: IInputActionCollection2, IDisposab
                 {
                     ""name"": ""TestInput"",
                     ""type"": ""Button"",
-                    ""id"": ""d4a6294c-946f-40d4-8bf1-88296ac8108c"",
+                    ""id"": ""d54dec34-bec2-416c-a97b-0fda7a393732"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -149,23 +149,23 @@ public partial class @ExtinctionInputActions: IInputActionCollection2, IDisposab
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c5de3778-51ff-4612-9744-ee3c27df4a51"",
-                    ""path"": ""<Keyboard>/t"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""TestInput"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""b7d1e301-e2e5-4552-96f8-3c21133d5a08"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Roar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""653e4b02-2fad-4e05-ae84-cf67be741438"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TestInput"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }

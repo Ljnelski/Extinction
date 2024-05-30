@@ -13,12 +13,7 @@ public class ClawAttack : HitBoxAttack
     {
         base.Deactivate();
         _hitBox.Deactivate();
-    }
-
-    public override bool ForceExit()
-    {
-        return false;
-    }
+    } 
 
     protected override void HitBoxEntered(ITarget target)
     {

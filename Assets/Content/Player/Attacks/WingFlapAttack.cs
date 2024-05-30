@@ -11,19 +11,11 @@ public class WingFlapAttack : PlayerAttackState
     public override void Enter()
     {
         base.Enter();
-        Debug.Log("WING FLAP ATTACK");
     }
 
     public override void Run(PlayerInputRecorder playerInput)
     {
-
-        float staminaCost = (_bodyPart.IsBroken) ? StaminaCost : StaminaCostBroken;
-
-        Stats.Stamina -= staminaCost;
-
         Collider[] hitEnemies = Physics.OverlapSphere(_sphereCastSource.position, _attackRadius);
-
-        List<Transform> enemies = new List<Transform>();
 
         Vector2 dirHemisphere = GetHemiSphereDirection();
 
@@ -47,11 +39,6 @@ public class WingFlapAttack : PlayerAttackState
                 indicator.DebugIndicateHit(GetHemisphereColor());
             }
         }
-    }
-
-    public override bool ForceExit()
-    {
-        return false;
     }
 
     private Vector2 GetHemiSphereDirection()

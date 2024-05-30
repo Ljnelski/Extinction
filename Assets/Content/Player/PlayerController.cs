@@ -39,12 +39,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _cameraRotationSpeed;
 
     private PlayerInputRecorder _input;
-    private ActionTimer _attackTimer;
+    private IdleAttack _idleAttack;
+    private PlayerAttackState _currentAttack;
+
+    private float _rotateSpeed;
 
     public Dictionary<PlayerAttackType, float> _attacks;
 
-    private IdleAttack _idleAttack;
-    private PlayerAttackState _currentAttack;
+    
 
     public int BiteTriggerID { get; private set; }
     public int LeftSwipeTriggerID { get; private set; }
@@ -178,14 +180,8 @@ public class PlayerController : MonoBehaviour
         _playerPivot.rotation = quaternion;
 
         _currentAttack.Run(_input);
-
-        if (_currentAttack.ForceExit())
-        {
-            _currentAttack.Exit();
-        }
-
-
-        _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;
+        
+        _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;      
     }
 
     public void ExitAttack()
@@ -194,7 +190,8 @@ public class PlayerController : MonoBehaviour
     }
 
     public void AdvanceAttackPhase()
-    {       
+    {
+        Debug.Log("AdvanceAttackState");
         _currentAttack.AdvanceAttackPhase();
     }
 
