@@ -1,28 +1,27 @@
 using UnityEngine;
 
-public abstract class PlayerAttackState : MonoBehaviour
+public abstract class PlayerAttackState : PlayerState
 {
     [SerializeField] private PlayerAttackStats _stats;
 
-    protected PlayerController _player;
     protected BodyPart _bodyPart;
+    protected PlayerStats Stats => _player.Stats;
+    protected Animator Animator => _player.Animator;
 
     protected AttackPhase _attackPhase = AttackPhase.InActive;
+    protected bool _advanceAttackPhase;
 
+    public AttackPhase Phase => _attackPhase;
     public float Damage => _stats.Damage;
     public float DamageBroken => _stats.DamageBroken;
     public float StaminaCost => _bodyPart.IsBroken ? _stats.StaminaCostBroken : _stats.StaminaCost;        
     public float StaminaCostBroken => _stats.StaminaCostBroken;
     public float AttackDuration => _stats.AttackDuration;
-
-    protected PlayerStats Stats => _player.Stats;
-    protected Animator Animator => _player.Animator;
-
-    public AttackPhase Phase => _attackPhase;
-
+    
+    
     public void Init(PlayerController player, BodyPart bodyPart)
     {
-        _player = player;
+        base.Init(player);
         _bodyPart = bodyPart;
     }
 
@@ -31,31 +30,37 @@ public abstract class PlayerAttackState : MonoBehaviour
         return Stats.Stamina > StaminaCost;
     }
 
-    public virtual void Enter()
+    public override void Enter()
     {
         Stats.Stamina = Stats.Stamina - StaminaCost;
-        AdvanceAttackPhase();       
+        QueuePhaseAdvance();       
     }
 
-    public virtual void Activate()
+    public abstract void Activate();
+
+    public override void Run(PlayerInputRecorder input)
     {
-        ;
+        if(_advanceAttackPhase)
+        {
+            AdvanceAttackPhase();
+        }
     }
 
-    public abstract void Run(PlayerInputRecorder input);
+    public abstract void Deactivate();
 
-    public virtual void Deactivate()
-    {
-        ;
-    }
-
-    public virtual void Exit()
+    public override void Exit()
     {
         _player.ExitAttack();
     }
 
-    public void AdvanceAttackPhase()
+    public void QueuePhaseAdvance()
     {
+        _advanceAttackPhase = true;
+    }
+    protected void AdvanceAttackPhase()
+    {
+        _advanceAttackPhase = false;
+
         switch (_attackPhase)
         {
             case AttackPhase.InActive:
@@ -76,8 +81,6 @@ public abstract class PlayerAttackState : MonoBehaviour
             default:
                 break;
         }
-
-        //Debug.Log("Attack Phase Changed: " + _attackPhase);
     }
 }
 

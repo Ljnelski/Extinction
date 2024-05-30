@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows;
 
-public class IdleAttack : PlayerAttackState
+public class Idle : PlayerState
 {
+    public override void Enter()
+    {
+        Debug.Log("Idle State Entered");
+    }
+
     public override void Run(PlayerInputRecorder playerInput)
     {
         if (playerInput.PrimaryAttack && playerInput.SecondaryAttack)
@@ -12,7 +17,6 @@ public class IdleAttack : PlayerAttackState
             if (_player.BiteAttack.CanStart())
             {
                 _player.SetAttack(_player.BiteAttack);
-                Animator.SetTrigger(_player.BiteTriggerID);
             }
         }
         else if (playerInput.PrimaryAttack)
@@ -20,7 +24,6 @@ public class IdleAttack : PlayerAttackState
             if (_player.ClawSwipeLeftAttack.CanStart())
             {
                 _player.SetAttack(_player.ClawSwipeLeftAttack);
-                Animator.SetTrigger(_player.LeftSwipeTriggerID);
             }
         }
         else if (playerInput.SecondaryAttack)
@@ -28,7 +31,6 @@ public class IdleAttack : PlayerAttackState
             if (_player.ClawSwipeRightAttack.CanStart())
             {
                 _player.SetAttack(_player.ClawSwipeLeftAttack);
-                Animator.SetTrigger(_player.RightSwipeTriggerID);
             }
         }
         else if (playerInput.WingAttack)
@@ -37,7 +39,6 @@ public class IdleAttack : PlayerAttackState
             {
                 _player.SetAttack(_player.WingFlapleftAttack);
                 _player.SetAttack(_player.WingFlapRightAttack);
-                Animator.SetTrigger(_player.WingFlapTriggerID);
             }
         }
         else if (playerInput.BreathAttack)
@@ -46,8 +47,12 @@ public class IdleAttack : PlayerAttackState
             {
                 Debug.Log("BreathingAttackInputConditionsMet");
                 _player.SetAttack(_player.BreathAttack);
-                Animator.SetBool(_player.BreathBoolID, true);
             }
         }
+    }
+
+    public override void Exit()
+    {
+        ;
     }
 }

@@ -21,13 +21,11 @@ public abstract class HitBoxAttack : PlayerAttackState
 
     public override void Activate()
     {
-        base.Activate();
         _hitBox.Activate();
     }
 
     public override void Deactivate()
     {
-        base.Deactivate();
         _hitBox.Deactivate();
     }
 

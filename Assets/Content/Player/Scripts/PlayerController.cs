@@ -1,8 +1,5 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using TimerUtility;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -39,15 +36,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _cameraRotationSpeed;
 
     private PlayerInputRecorder _input;
-    private IdleAttack _idleAttack;
-    private PlayerAttackState _currentAttack;
+    private Idle _idleAttack;
+    private PlayerState _currentAttack;
 
     private float _rotateSpeed;
-
-    public Dictionary<PlayerAttackType, float> _attacks;
-
     
-
     public int BiteTriggerID { get; private set; }
     public int LeftSwipeTriggerID { get; private set; }
     public int RightSwipeTriggerID { get; private set; }
@@ -67,15 +60,7 @@ public class PlayerController : MonoBehaviour
     public RoarAttack RoarAttack { get => _roarAttack; }
 
     private void Awake()
-    {
-        _attacks = new Dictionary<PlayerAttackType, float>
-        {
-            { PlayerAttackType.Swipe, 30f },
-            { PlayerAttackType.Bite, 75f },
-            { PlayerAttackType.WingFlap, 50f },
-            { PlayerAttackType.Breath, 30f },
-            { PlayerAttackType.Roar, 20f }
-        };
+    {     
 
         SetUpAttacks();
 
@@ -103,15 +88,15 @@ public class PlayerController : MonoBehaviour
 
     private void SetUpAttacks()
     {
-        _idleAttack = GetComponent<IdleAttack>();
+        _idleAttack = GetComponent<Idle>();
 
         if (_idleAttack == null)
         {
-            gameObject.AddComponent<IdleAttack>();
-            _idleAttack = GetComponent<IdleAttack>();
+            gameObject.AddComponent<Idle>();
+            _idleAttack = GetComponent<Idle>();
         }
 
-        _idleAttack.Init(this, null);
+        _idleAttack.Init(this);
 
         string errorMsg = "";
 
@@ -192,7 +177,10 @@ public class PlayerController : MonoBehaviour
     public void AdvanceAttackPhase()
     {
         Debug.Log("AdvanceAttackState");
-        _currentAttack.AdvanceAttackPhase();
+        if(_currentAttack as PlayerAttackState)
+        {
+            ((PlayerAttackState)_currentAttack).QueuePhaseAdvance();
+        }
     }
 
     public void SetAttack(PlayerAttackState attackState)

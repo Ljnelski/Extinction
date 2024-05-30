@@ -11,10 +11,13 @@ public class WingFlapAttack : PlayerAttackState
     public override void Enter()
     {
         base.Enter();
+        Animator.SetTrigger(_player.WingFlapTriggerID);
     }
 
     public override void Run(PlayerInputRecorder playerInput)
     {
+        base.Run(playerInput);
+
         Collider[] hitEnemies = Physics.OverlapSphere(_sphereCastSource.position, _attackRadius);
 
         Vector2 dirHemisphere = GetHemiSphereDirection();
@@ -70,6 +73,16 @@ public class WingFlapAttack : PlayerAttackState
     {
         Vector2 vector = GetHemiSphereDirection();
         Gizmos.DrawLine(_sphereCastSource.position, _sphereCastSource.position + new Vector3(vector.x, 0, vector.y));
+    }
+
+    public override void Activate()
+    {
+        ;
+    }
+
+    public override void Deactivate()
+    {
+        ;
     }
 
     private enum WingHemisphere
