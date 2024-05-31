@@ -14,9 +14,9 @@ public abstract class HitBoxAttack : PlayerAttackState
     {
         _hitBox = GetComponentInChildren<HitBox>();
 
-        _hitBox.TargetEntered += HitBoxEntered;
-        _hitBox.TargetStayed += HitBoxStayed;
-        _hitBox.TargetExited += HitBoxExited;
+        _hitBox.HurtBoxEntered += HitBoxEntered;
+        _hitBox.HurtBoxStayed += HitBoxStayed;
+        _hitBox.HurtBoxExited += HitBoxExited;
     }
 
     public override void Activate()
@@ -31,22 +31,22 @@ public abstract class HitBoxAttack : PlayerAttackState
 
     private void OnDestroy()
     {
-        _hitBox.TargetEntered -= HitBoxEntered;
-        _hitBox.TargetStayed -= HitBoxStayed;
-        _hitBox.TargetExited -= HitBoxExited;
+        _hitBox.HurtBoxEntered -= HitBoxEntered;
+        _hitBox.HurtBoxStayed -= HitBoxStayed;
+        _hitBox.HurtBoxExited -= HitBoxExited;
     }
 
-    protected virtual void HitBoxEntered(ITarget target)
+    protected virtual void HitBoxEntered(HitBox.HurtBoxHitData target)
     {
-        target.DebugIndicateHit(Color.red);
+        target.Damagable?.DebugIndicateHit(Color.red);
     }
 
-    protected virtual void HitBoxExited(ITarget target)
+    protected virtual void HitBoxExited(HitBox.HurtBoxHitData target)
     {
         ;
     }
 
-    protected virtual void HitBoxStayed(ITarget target)
+    protected virtual void HitBoxStayed(HitBox.HurtBoxHitData target)
     {
 
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestEnemy : MonoBehaviour, IDamagable
+public class TestEnemy : MonoBehaviour, IDamageable
 {
     [SerializeField] int hp = 10;
 

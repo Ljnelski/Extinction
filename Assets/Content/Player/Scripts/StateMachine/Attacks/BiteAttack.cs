@@ -14,10 +14,10 @@ public class BiteAttack : HitBoxAttack
         base.Run(playerInput);
     }
 
-    protected override void HitBoxEntered(ITarget target)
+    protected override void HitBoxEntered(HitBox.HurtBoxHitData target)
     {
         base.HitBoxEntered(target);
-        target.ApplyDamage(Damage);
+        target.Damagable.ApplyDamage(Damage);
     }
 
 }

@@ -26,7 +26,7 @@ public class WingFlapAttack : PlayerAttackState
 
         foreach (Collider collider in hitEnemies)
         {
-            ITarget indicator = collider.GetComponent<ITarget>();
+            IDamageAble indicator = collider.GetComponent<IDamageAble>();
 
             if (indicator == null) continue;
 

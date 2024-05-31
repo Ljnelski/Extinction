@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TestPlayer : MonoBehaviour, IDamagable
+public class TestPlayer : MonoBehaviour, IDamageable
 {
     [SerializeField] TextMeshProUGUI txtHealth;
     [SerializeField] int startingHealth = 100;

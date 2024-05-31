@@ -28,8 +28,8 @@ public class ClawAttack : HitBoxAttack
         _hitBox.Deactivate();
     } 
 
-    protected override void HitBoxEntered(ITarget target)
+    protected override void HitBoxEntered(HitBox.HurtBoxHitData target)
     {
-        target.ApplyDamage(Damage);
+        target.Damagable.ApplyDamage(Damage);
     }
 }

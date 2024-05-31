@@ -52,10 +52,10 @@ public class BreathAttack : HitBoxAttack
         base.Exit();
     }
 
-    protected override void HitBoxStayed(ITarget target)
+    protected override void HitBoxStayed(HitBox.HurtBoxHitData target)
     {
-        target.DebugIndicateHit(Color.red);
-        target.ApplyDamage(Damage * Time.deltaTime);
+        target.Damagable.DebugIndicateHit(Color.red);
+        target.Damagable.ApplyDamage(Damage * Time.deltaTime);
     }
 
 }

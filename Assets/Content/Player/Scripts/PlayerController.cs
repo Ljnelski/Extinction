@@ -60,8 +60,7 @@ public class PlayerController : MonoBehaviour
     public RoarAttack RoarAttack { get => _roarAttack; }
 
     private void Awake()
-    {     
-
+    {
         SetUpAttacks();
 
         _currentAttack = _idleAttack;
@@ -73,6 +72,12 @@ public class PlayerController : MonoBehaviour
         WingFlapTriggerID = Animator.StringToHash("WingFlap");
 
         _stats.RestoreStats();
+
+        _head.PlayerStats = _stats;
+        _armLeft.PlayerStats = _stats;
+        _armRight.PlayerStats = _stats;
+        _wingLeft.PlayerStats = _stats;
+        _wingRight.PlayerStats = _stats;
     }
 
     private void OnEnable()
@@ -176,7 +181,6 @@ public class PlayerController : MonoBehaviour
 
     public void AdvanceAttackPhase()
     {
-        Debug.Log("AdvanceAttackState");
         if(_currentAttack as PlayerAttackState)
         {
             ((PlayerAttackState)_currentAttack).QueuePhaseAdvance();

@@ -15,4 +15,4 @@ MonoBehaviour:
   _maxHealth: 100
   _maxStamina: 100
   _staminaRegenerationRate: 20
-  _playerStatChanges: {fileID: 11400000, guid: a7e1ded52e3084446b4fc6184b455d82, type: 2}
+  _playerStatChanges: {fileID: 11400000, guid: e38256e93d0126b46a501f6b6d1b5b90, type: 2}

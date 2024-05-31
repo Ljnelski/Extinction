@@ -10,7 +10,7 @@ public class DamageAttackArea : AttackArea
 
     public override void Attack(GameObject obj)
     {
-        if (obj.TryGetComponent<IDamagable>(out var damagable))
+        if (obj.TryGetComponent<IDamageable>(out var damagable))
         {
             damagable.RemoveHp(damage);
             if (particlePrefab)

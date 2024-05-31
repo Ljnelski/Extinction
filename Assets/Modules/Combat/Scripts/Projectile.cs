@@ -27,7 +27,7 @@ public class Projectile : MonoBehaviour
 
         if (transform.position == target.position)
         {
-            if (target.TryGetComponent<IDamagable>(out var damagable))
+            if (target.TryGetComponent<IDamageable>(out var damagable))
             {
                 damagable.RemoveHp(damage);
             }

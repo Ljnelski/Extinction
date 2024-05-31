@@ -4,7 +4,7 @@ using TimerUtility;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class DebugTarget : MonoBehaviour, ITarget
+public class DebugTarget : MonoBehaviour, IDamageAble
 {
     private MeshRenderer _meshRender;
     private ActionTimer _colorResetTimer;
