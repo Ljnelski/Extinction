@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
-public class AttackPlayer : EnemyState<MeleeEnemyController>
+public class AttackPlayer : EnemyState<EnemyController>
 {
     private float _attackCoolDownTimer;
     private float _attackDurationTimer;
@@ -14,9 +14,9 @@ public class AttackPlayer : EnemyState<MeleeEnemyController>
 
     private List<HitBox.HurtBoxHitData> _lastHits;
   
-
-    public AttackPlayer(MeleeEnemyController controller) : base(controller)
+    public override void Init(EnemyController enemy)
     {
+        base.Init(enemy);
         _lastHits = new List<HitBox.HurtBoxHitData>();
     }
 
@@ -24,14 +24,9 @@ public class AttackPlayer : EnemyState<MeleeEnemyController>
     {
         _controller.HitBox.HurtBoxEntered += AddHitObject;
     }
+
     public override void Run()
     {
-        if(_controller.ZeroHealth)
-        {
-            _controller.ChangeState(_controller.DieState);
-            return;
-        }
-
         if (_isAttacking)
         {
             if (_attackDurationTimer >= _tempAttackDuration)
@@ -64,7 +59,7 @@ public class AttackPlayer : EnemyState<MeleeEnemyController>
 
             if (_controller.DistanceToPlayer > _controller.AttackRadius)
             {
-                _controller.ChangeState(_controller.MoveToPlayerState);
+                _controller.SetDefaultState();
             }
         }        
     }

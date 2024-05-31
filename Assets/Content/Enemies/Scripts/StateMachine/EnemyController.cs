@@ -11,13 +11,6 @@ public abstract class StateMachineController : MonoBehaviour
 {
     protected State _currentState;
 
-    protected void SetFirstState(State firstState)
-    {
-        _currentState = firstState;
-        _currentState.Enter();
-        OnStateChanged();
-    }
-
     private void Update()
     {
         _currentState.Run();
@@ -25,11 +18,17 @@ public abstract class StateMachineController : MonoBehaviour
 
     public virtual void ChangeState(State newState)
     {
-        _currentState.Exit();
+        _currentState?.Exit();
         _currentState = newState;
+        OnStateInit();
         _currentState.Enter();
 
         OnStateChanged();
+    }
+
+    protected virtual void OnStateInit()
+    {
+        ;
     }
 
     protected virtual void OnStateChanged()
@@ -38,10 +37,15 @@ public abstract class StateMachineController : MonoBehaviour
     }
 }
 
-public abstract class EnemyController : StateMachineController
+public abstract class EnemyController : StateMachineController, IDamageAble
 {
     [SerializeField] protected EnemyStats _stats;
     [SerializeField] protected float _attackRadius;
+
+    [SerializeField] private EnemyAttackStats _attackStats;
+    [SerializeField] public DebugColorChanger _colorChanger;
+
+    [SerializeField] public ProjectileSpawner projectileSpawner;
 
     [Header("Debug")]
     [SerializeField] private DebugInWorldUI _debugUI;
@@ -74,12 +78,21 @@ public abstract class EnemyController : StateMachineController
     public float AttackRadius => _attackRadius * 0.95f + _navAgent.radius;
     public bool ZeroHealth => _zeroHealth;
 
+    
+
+    protected HitBox _hitBox;
+    public HitBox HitBox => _hitBox;
+
+    public EnemyAttackStats AttackStats => _attackStats;
+    public float DistanceToPlayer => Vector3.Distance(Player.transform.position, transform.position);
+
     protected virtual void Awake()
     {
         _animator = GetComponent<Animator>();
         _navAgent = GetComponent<NavMeshAgent>();
         _hurtBox = GetComponentInChildren<HurtBox>();
-
+        _hitBox = GetComponentInChildren<HitBox>();
+        SetDefaultState();
     }
 
     private void OnEnable()
@@ -94,10 +107,38 @@ public abstract class EnemyController : StateMachineController
         _hurtBox.DamageDealt -= TakeDamage;
     }
 
+    protected override void OnStateInit()
+    {
+        base.OnStateInit();
+        if (_currentState is EnemyState<EnemyController> enemyState)
+        {
+            enemyState.Init(this);
+        }
+    }
+
     protected override void OnStateChanged()
     {
         base.OnStateChanged();
-        _debugUI.DrawMessage("State: " + _currentState.GetType().Name);
+        if (_debugUI) _debugUI.DrawMessage("State: " + _currentState.GetType().Name);
+    }
+
+    public virtual void SetDefaultState()
+    {
+
+    }
+
+    public void ApplyDamage(float amount)
+    {
+        TakeDamage(amount);
+        _colorChanger.TriggerColorChange(Color.red, 0.5f);
+    }
+
+    public void ApplyEffect()
+    {
+    }
+
+    public void DebugIndicateHit(Color color)
+    {
     }
 
     public void Restore()
@@ -109,12 +150,16 @@ public abstract class EnemyController : StateMachineController
 
     public void TakeDamage(float damage)
     {
-        _health = Mathf.Max(0f, _health - damage);
+        _hitBox = GetComponentInChildren<HitBox>();
 
-        if(_health < 0f)
+        _health = Mathf.Max(0f, _health - damage);
+        Debug.Log($"TakeDamage {damage}; current {_health}");
+
+        if(_health < float.Epsilon)
         {
-            Debug.Log("Enemy Took Damage");
+            //Debug.Log("Enemy Took Damage");
             _zeroHealth = true;
+            ChangeState(new Die());
         }
     }
 }

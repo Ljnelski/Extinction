@@ -27,7 +27,7 @@ public class HitBox : MonoBehaviour
 
     public void Activate()
     {
-        Debug.Log("Activating Hitbox");
+        //Debug.Log("Activating Hitbox");
         _hurtBoxCollider.enabled = true;
     }
 

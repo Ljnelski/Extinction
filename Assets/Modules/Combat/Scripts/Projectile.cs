@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] int damage;
+    [SerializeField] float damage = 1f;
+    [SerializeField] float breakAmount = 2f;
+
     [SerializeField] ParticleSystem collideParticle;
     [SerializeField] float speed = 10f; // Speed of the projectile
 
     Transform target;
 
-    public void Init(Transform target)
+    System.Action<Transform> action; 
+
+    public void Init(Transform target, System.Action<Transform> action = null)
     {
         this.target = target;
+        this.action = action;
     }
 
     void FixedUpdate()
@@ -27,10 +32,17 @@ public class Projectile : MonoBehaviour
 
         if (transform.position == target.position)
         {
-            if (target.TryGetComponent<IDamageable>(out var damagable))
+            if (target.TryGetComponent<IDamageAble>(out var damagable))
             {
-                damagable.RemoveHp(damage);
+                damagable.ApplyDamage(damage);
             }
+
+            if (target.TryGetComponent<IBreakAble>(out var breakable))
+            {
+                breakable.DoBreakDamage(breakAmount);
+            }
+
+            action?.Invoke(target);
 
             if (collideParticle)
             {
