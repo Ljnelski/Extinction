@@ -37,9 +37,9 @@ public class MeleeEnemyController : EnemyController, IDamageAble
     {
     }
 
-    protected override void Start()
+    protected override void Awake()
     {
-        base.Start();
+        base.Awake();
 
         _moveToPlayerState = new MoveToPlayer(this);
         _attackPlayerState = new AttackPlayer(this);

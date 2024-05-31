@@ -74,7 +74,7 @@ public abstract class EnemyController : StateMachineController
     public float AttackRadius => _attackRadius * 0.95f + _navAgent.radius;
     public bool ZeroHealth => _zeroHealth;
 
-    protected virtual void Start()
+    protected virtual void Awake()
     {
         _animator = GetComponent<Animator>();
         _navAgent = GetComponent<NavMeshAgent>();
