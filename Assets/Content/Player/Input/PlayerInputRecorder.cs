@@ -92,11 +92,19 @@ public class PlayerInputRecorder : MonoBehaviour
     private void OnPrimaryAttack(InputAction.CallbackContext context)
     {
         _primaryAttack = context.ReadValue<float>() > 0;
+        if (_inputActions.Player.SecondaryAttack.IsPressed())
+        {
+            _secondaryAttack = true;
+        }
     }
 
     private void OnSecondaryAttack(InputAction.CallbackContext context)
     {
         _secondaryAttack = context.ReadValue<float>() > 0;
+        if (_inputActions.Player.PrimaryAttack.IsPressed())
+        {
+            _primaryAttack = true;
+        }
     }
 
     private void OnWingAttack(InputAction.CallbackContext context)
