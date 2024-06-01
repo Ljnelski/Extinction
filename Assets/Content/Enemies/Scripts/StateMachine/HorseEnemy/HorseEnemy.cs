@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HorseEnemy : EnemyController
+public class HorseEnemy : EnemyStateInit
 {
-
-    public override void SetDefaultState()
+    public override void SetDefaultState(EnemyController ctrl)
     {
-        ChangeState(new MoveToTarget(Player.transform, new AttackPlayer()));
+        ctrl.ChangeState(new Patrol());
     }
 }

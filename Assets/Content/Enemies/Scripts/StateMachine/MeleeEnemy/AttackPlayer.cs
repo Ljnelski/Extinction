@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
-public class AttackPlayer : EnemyState<EnemyController>
+public class AttackPlayer : StateWithTarget
 {
     private float _attackCoolDownTimer;
     private float _attackDurationTimer;
@@ -36,7 +36,7 @@ public class AttackPlayer : EnemyState<EnemyController>
                 _isAttacking = false;
             }
 
-            _attackDurationTimer += Time.deltaTime;
+            _attackDurationTimer += Time.fixedDeltaTime;
 
             foreach (var hurtBox in _lastHits)
             {
@@ -55,7 +55,7 @@ public class AttackPlayer : EnemyState<EnemyController>
                 _isAttacking = true;
             }
 
-            _attackCoolDownTimer += Time.deltaTime;
+            _attackCoolDownTimer += Time.fixedDeltaTime;
 
             if (_controller.DistanceToPlayer > _controller.AttackRadius)
             {

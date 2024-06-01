@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
-public class AttackRanged : EnemyState<EnemyController>
+public class AttackRanged : StateWithTarget
 {
     private float _attackCoolDownTimer;
     private float _attackDurationTimer;
@@ -12,41 +12,55 @@ public class AttackRanged : EnemyState<EnemyController>
 
     private float _tempAttackDuration = 1f;
 
-    private List<HitBox.HurtBoxHitData> _lastHits;
+    //private List<HitBox.HurtBoxHitData> _lastHits;
 
-    Transform _target;
+    bool _resetAfterOne;
 
-    public AttackRanged(Transform target)
+    public AttackRanged(bool resetAfterOne = false)
     {
-        _target = target;
+        _resetAfterOne = resetAfterOne;
     }
 
     public override void Init(EnemyController enemy)
     {
         base.Init(enemy);
-        _lastHits = new List<HitBox.HurtBoxHitData>();
+        //_lastHits = new List<HitBox.HurtBoxHitData>();
     }
 
     public override void Enter()
     {
-        _controller.HitBox.HurtBoxEntered += AddHitObject;
     }
 
     public override void Run()
     {
-        if (_target || Vector3.Distance(_controller.transform.position, _target.position) > _controller.AttackRadius)
+        if (!_target || !IsTargetInRange())
         {
             _controller.SetDefaultState();
             return;
         }
 
-        if (_attackCoolDownTimer >= _controller.Stats.AttackSpeed)
+        if (_isAttacking)
         {
-            _attackCoolDownTimer = 0;
-            _controller.projectileSpawner.Spawn(_target);
+            _attackDurationTimer += Time.fixedDeltaTime;
+            if (_attackDurationTimer >= _tempAttackDuration)
+            {
+                _isAttacking = false;
+                _controller.projectileSpawner.Spawn(_target);
+                if (_resetAfterOne)
+                {
+                    _controller.SetDefaultState();
+                }
+            }
         }
-
-        _attackCoolDownTimer += Time.deltaTime;
+        else {
+            _attackCoolDownTimer += Time.fixedDeltaTime;
+            if (_attackCoolDownTimer >= _controller.Stats.AttackSpeed)
+            {
+                _attackCoolDownTimer = 0;
+                _attackDurationTimer = 0;
+                _isAttacking = true;
+            }
+        }
     }
 
     public override void Exit()
@@ -55,14 +69,9 @@ public class AttackRanged : EnemyState<EnemyController>
         _attackCoolDownTimer = 0f;
 
         _isAttacking = false;
-
-        _controller.HitBox.HurtBoxEntered -= AddHitObject;
     }
 
-    private void AddHitObject(HitBox.HurtBoxHitData hitData)
-    {
-        _lastHits.Add(hitData);
-    }
+    
 }
 
 

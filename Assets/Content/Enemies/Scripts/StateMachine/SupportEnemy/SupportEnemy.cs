@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SupportEnemy : EnemyController
+public class SupportEnemy : EnemyStateInit
 {
-    public override void SetDefaultState()
+    public override void SetDefaultState(EnemyController ctrl)
     {
-        base.SetDefaultState();
-
-        //ToDo: support default state
+        ctrl.ChangeState(new FindClosestEnemy(
+            new MoveToTarget(new AttackRanged(true),
+                (x) => x.TryGetComponent<EnemyController>(out var enemy) && !enemy.BubbleBuff),
+                (x) => !x.BubbleBuff
+            ));
     }
 }

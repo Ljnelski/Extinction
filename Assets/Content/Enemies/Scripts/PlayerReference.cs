@@ -24,14 +24,6 @@ public class PlayerReference : MonoBehaviour
         }
     }
 
-    public void Awake()
-    {
-        if (_instance != null) 
-        {
-            Destroy(this);
-        }
-    }
-
     public GameObject Get()
     {
         return gameObject;

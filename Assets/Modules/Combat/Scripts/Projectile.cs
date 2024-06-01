@@ -42,6 +42,11 @@ public class Projectile : MonoBehaviour
                 breakable.DoBreakDamage(breakAmount);
             }
 
+            if (TryGetComponent<IProjectileAction>(out var projAction))
+            {
+                projAction.Apply(target);
+            }
+
             action?.Invoke(target);
 
             if (collideParticle)

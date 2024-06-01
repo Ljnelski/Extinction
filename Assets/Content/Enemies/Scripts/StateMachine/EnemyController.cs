@@ -11,7 +11,7 @@ public abstract class StateMachineController : MonoBehaviour
 {
     protected State _currentState;
 
-    private void Update()
+    private void FixedUpdate()
     {
         _currentState.Run();
     }
@@ -37,7 +37,7 @@ public abstract class StateMachineController : MonoBehaviour
     }
 }
 
-public abstract class EnemyController : StateMachineController, IDamageAble
+public class EnemyController : StateMachineController, IDamageAble
 {
     [SerializeField] protected EnemyStats _stats;
     [SerializeField] protected float _attackRadius;
@@ -45,7 +45,7 @@ public abstract class EnemyController : StateMachineController, IDamageAble
     [SerializeField] private EnemyAttackStats _attackStats;
     [SerializeField] public DebugColorChanger _colorChanger;
 
-    [SerializeField] public ProjectileSpawner projectileSpawner;
+    [HideInInspector] public ProjectileSpawner projectileSpawner;
 
     [Header("Debug")]
     [SerializeField] private DebugInWorldUI _debugUI;
@@ -55,7 +55,7 @@ public abstract class EnemyController : StateMachineController, IDamageAble
     private NavMeshAgent _navAgent;
     private HurtBox _hurtBox;
 
-    private float _health;
+    private float _health = 10;
     private bool _zeroHealth;
 
     public EnemyStats Stats => _stats;
@@ -78,7 +78,57 @@ public abstract class EnemyController : StateMachineController, IDamageAble
     public float AttackRadius => _attackRadius * 0.95f + _navAgent.radius;
     public bool ZeroHealth => _zeroHealth;
 
+    [SerializeField] float _speed = 2f;
     
+    int _speedBuff = 0;
+    public int SpeedBuff
+    {
+        get => _speedBuff;
+        set
+        {
+            _speedBuff = value;
+            // maybe set some speedup particles
+            OnSpeedUpdated();
+        }
+    }
+
+    public float Speed
+    {
+        get
+        {
+            if (SpeedBuff > 0)
+            {
+                return _speed * 5f;
+            }
+            else if (SpeedBuff < 0)
+            {
+                return _speed * 0.2f;
+            }
+            else
+            {
+                return _speed;
+            }
+        }
+
+        set
+        {
+            _speed = value;
+            OnSpeedUpdated();
+        }
+    }
+
+    [SerializeField] ProtectiveBubble bubbleVisuals;
+    bool _bubbleBuff = false;
+    public bool BubbleBuff
+    {
+        get => _bubbleBuff;
+        set
+        {
+            _bubbleBuff = value;
+            bubbleVisuals.gameObject.SetActive(value);
+        }
+    }
+
 
     protected HitBox _hitBox;
     public HitBox HitBox => _hitBox;
@@ -92,7 +142,14 @@ public abstract class EnemyController : StateMachineController, IDamageAble
         _navAgent = GetComponent<NavMeshAgent>();
         _hurtBox = GetComponentInChildren<HurtBox>();
         _hitBox = GetComponentInChildren<HitBox>();
+        projectileSpawner = GetComponentInChildren<ProjectileSpawner>();
+
         SetDefaultState();
+    }
+
+    void OnSpeedUpdated()
+    {
+        NavAgent.speed = Speed;
     }
 
     private void OnEnable()
@@ -124,13 +181,13 @@ public abstract class EnemyController : StateMachineController, IDamageAble
 
     public virtual void SetDefaultState()
     {
-
+        GetComponent<EnemyStateInit>()?.SetDefaultState(this);
     }
 
     public void ApplyDamage(float amount)
     {
         TakeDamage(amount);
-        _colorChanger.TriggerColorChange(Color.red, 0.5f);
+        _colorChanger?.TriggerColorChange(Color.red, 0.5f);
     }
 
     public void ApplyEffect()
@@ -150,10 +207,17 @@ public abstract class EnemyController : StateMachineController, IDamageAble
 
     public void TakeDamage(float damage)
     {
-        _hitBox = GetComponentInChildren<HitBox>();
+        if (damage < float.Epsilon) return;
+
+        if (BubbleBuff)
+        {
+            BubbleBuff = false;
+            return;
+        }
+
+        if (ZeroHealth) return;
 
         _health = Mathf.Max(0f, _health - damage);
-        Debug.Log($"TakeDamage {damage}; current {_health}");
 
         if(_health < float.Epsilon)
         {
@@ -161,5 +225,10 @@ public abstract class EnemyController : StateMachineController, IDamageAble
             _zeroHealth = true;
             ChangeState(new Die());
         }
+    }
+
+    private void Start()
+    {
+        OnSpeedUpdated();
     }
 }

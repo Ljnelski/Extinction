@@ -2,16 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RangedEnemy : EnemyController
+public class RangedEnemy : EnemyStateInit
 {
-    protected override void Awake()
+    public override void SetDefaultState(EnemyController ctrl)
     {
-        base.Awake();
-    }
-
-    public override void SetDefaultState()
-    {
-        base.SetDefaultState();
-        ChangeState(new MoveToTarget(Player.transform, new AttackRanged(Player.transform)));
+        ctrl.ChangeState(new MoveToTarget(
+            new AttackRanged()
+        ).SetTarget(ctrl.Player.transform));
     }
 }

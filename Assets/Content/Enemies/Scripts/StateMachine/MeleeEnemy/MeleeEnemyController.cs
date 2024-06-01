@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class MeleeEnemyController : EnemyController
+public class MeleeEnemyController : EnemyStateInit
 {
-    public override void SetDefaultState()
+    public override void SetDefaultState(EnemyController ctrl)
     {
-        ChangeState(new MoveToTarget(Player.transform, new AttackPlayer()));
+        ctrl.ChangeState(new MoveToTarget(new AttackPlayer()).SetTarget(ctrl.Player.transform));
     }
 }
