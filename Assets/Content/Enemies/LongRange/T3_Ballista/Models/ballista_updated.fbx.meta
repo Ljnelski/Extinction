@@ -1,0 +1,459 @@
+fileFormatVersion: 2
+guid: a3f782b65fc13c24b8afe3307c45f361
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crossbow_Beard
+    second: {fileID: 2100000, guid: c9c6029e842288b47a3fa3139e8d02d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crossbow_Body
+    second: {fileID: 2100000, guid: 81c42060438d2f747bac95e3c9fae90b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crossbow_Bottom
+    second: {fileID: 2100000, guid: 375477a558b8d2d468daa6cb20842070, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crossbow_Hair
+    second: {fileID: 2100000, guid: 9a002cd33289b5a4e86eae550ac48cf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crossbow_Moustache
+    second: {fileID: 2100000, guid: 363f169e472dd1145acaf82d01046f07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crossbow_Shoes
+    second: {fileID: 2100000, guid: 109ada9a74a9c364e8ea5db5cbeb4328, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crossbow_Top
+    second: {fileID: 2100000, guid: c761f2b87140d0a43b85b1b0f4b73694, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: c89a94fe5e5d4d54c9e38008e785b390, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Siege_Ballista_Ballista_arm_base
+    second: {fileID: 2100000, guid: 48cac5792d38d844cb18de1ec9f5638c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Siege_Ballista_Ballista_arm_bow
+    second: {fileID: 2100000, guid: 7d0dee5eb49e2584dad3801e9102f669, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Siege_Ballista_Metalic Base
+    second: {fileID: 2100000, guid: c3060ae92755caa4cbb2af2d557fc570, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Siege_Ballista_Metalic Wheels
+    second: {fileID: 2100000, guid: 345db9fa07ae39d49bd0f4e81acbbb6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Siege_Ballista_Metalic_Shield
+    second: {fileID: 2100000, guid: e0dad760cc8129b4c91a370d89cb78e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Siege_Ballista_Wood Base
+    second: {fileID: 2100000, guid: c5be65e476dcaca4dabf4067111fb820, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Siege_Ballista_Wood_Shield
+    second: {fileID: 2100000, guid: e80118a0be849a44aa4fd7b9e621d819, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crossbow_Beard
+    second: {fileID: 2100000, guid: c9c6029e842288b47a3fa3139e8d02d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crossbow_Body
+    second: {fileID: 2100000, guid: 81c42060438d2f747bac95e3c9fae90b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crossbow_Bottom
+    second: {fileID: 2100000, guid: 375477a558b8d2d468daa6cb20842070, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crossbow_Default_Material
+    second: {fileID: 2100000, guid: efc67e601f4c50c4c92612778944f306, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crossbow_Hair
+    second: {fileID: 2100000, guid: 9a002cd33289b5a4e86eae550ac48cf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crossbow_Moustache
+    second: {fileID: 2100000, guid: 363f169e472dd1145acaf82d01046f07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crossbow_Shoes
+    second: {fileID: 2100000, guid: 109ada9a74a9c364e8ea5db5cbeb4328, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crossbow_Top
+    second: {fileID: 2100000, guid: c761f2b87140d0a43b85b1b0f4b73694, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Arming_Ballista_arm_base_BaseColor
+    second: {fileID: 2800000, guid: 5de87726684ea734b9588a5e76f82fca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Arming_Ballista_arm_base_Metallic
+    second: {fileID: 2800000, guid: 122b8b58ca8133b46be4ca55f4e76453, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Arming_Ballista_arm_base_Normal
+    second: {fileID: 2800000, guid: b9379c983cd3a454a948b7b926b2a775, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Arming_Ballista_arm_bow_BaseColor
+    second: {fileID: 2800000, guid: ed2ca9a51f791bf4ab495ec10ce9aba7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Arming_Ballista_arm_bow_Metallic
+    second: {fileID: 2800000, guid: 6bc01155e2c9e9c478f5fb48cb7aa042, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Arming_Ballista_arm_bow_Normal
+    second: {fileID: 2800000, guid: 9dd3fa75445666c448595f012ead4f17, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Arming_Ballista_arm_bow_Roughness
+    second: {fileID: 2800000, guid: bebd6210b04d6c44fb2c059c78433bf8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Base_Metalic Base_BaseColor
+    second: {fileID: 2800000, guid: f03fbfbf2f7ed7942bf1970ed6a40754, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Base_Metalic Base_Metallic
+    second: {fileID: 2800000, guid: 10cc9f9555cb12546ad1685bd0986923, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Base_Metalic Base_Roughness
+    second: {fileID: 2800000, guid: ee0258c9de9025d4b9aec79e767e9b52, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Base_Wood Base_BaseColor
+    second: {fileID: 2800000, guid: 386e3a77ef089db41aaa99a9055a10ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Base_Wood Base_Metallic
+    second: {fileID: 2800000, guid: 7c4876a44b26ad546843a9c1e52ae101, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Base_Wood Base_Normal
+    second: {fileID: 2800000, guid: db68771bdc15d1a46a1867bcc677e131, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Base_Wood Base_Roughness
+    second: {fileID: 2800000, guid: 840bcef7f1533f14ab62919c1064bd2c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Wheels_Metalic Wheels_BaseColor
+    second: {fileID: 2800000, guid: c15890ef7c7635f47a7943bbf2426a5d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Wheels_Metalic Wheels_Metallic
+    second: {fileID: 2800000, guid: 315a521dcb5d85e44a818edc8442bdcb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Wheels_Metalic Wheels_Normal
+    second: {fileID: 2800000, guid: aa6eaa60b4f1b504c8a1963609da82b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ballista Wheels_Metalic Wheels_Roughness
+    second: {fileID: 2800000, guid: c78f67e68f785404a9aa90a2cec2759c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shield part_Metalic_Shield_BaseColor
+    second: {fileID: 2800000, guid: 9d4cb9120a2a5834db4f13e36ea1a750, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shield part_Metalic_Shield_Metallic
+    second: {fileID: 2800000, guid: e09705dbe0f66ce49a83e223eb66f127, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shield part_Metalic_Shield_Normal
+    second: {fileID: 2800000, guid: f652c70ff7d5f764f9452589be0308e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shield part_Metalic_Shield_Roughness
+    second: {fileID: 2800000, guid: aafc0f3bbc319894189e8bdd9a4ffece, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shield part_Wood_Shield_BaseColor
+    second: {fileID: 2800000, guid: d32ec915438cc8a49b0687b6b2239631, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shield part_Wood_Shield_Metallic
+    second: {fileID: 2800000, guid: 49ee570d02ac91a4c979e5f9ddb1128d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shield part_Wood_Shield_Normal
+    second: {fileID: 2800000, guid: cdac0f34a1f3081448b2283eb7a71897, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shield part_Wood_Shield_Roughness
+    second: {fileID: 2800000, guid: 879b5db397b2e3d4f9c15e084caff0d5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Beard_diffuse
+    second: {fileID: 2800000, guid: 8d0f1306b72343841a9828d794cd3c01, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Beard_normal
+    second: {fileID: 2800000, guid: 2c877c850350c974cbd93651a2598fad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Beard_specular
+    second: {fileID: 2800000, guid: 06cd67909e0729d4f80a416accfdf352, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Body_diffuse
+    second: {fileID: 2800000, guid: 6f3542bb4b7ef7041bb1af5b6f5a718d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Body_normal
+    second: {fileID: 2800000, guid: dd56cb270f1d91645a8aa939b7c2984b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Body_specular
+    second: {fileID: 2800000, guid: df8877c3b6a2cc74193dd1a34331a5fe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Bottom_diffuse
+    second: {fileID: 2800000, guid: 00f3626bb1c70f746bb15790f2c0a4c0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Bottom_normal
+    second: {fileID: 2800000, guid: c78cdcc9f42b4ba48a77c90e019a0804, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Bottom_specular
+    second: {fileID: 2800000, guid: 8d2152f4873278c45b9a0345fd70b826, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Hair_diffuse
+    second: {fileID: 2800000, guid: a3c3fd9d3f897c94c8caa4322a6b0be4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Hair_normal
+    second: {fileID: 2800000, guid: 31b61f0443429114e88b1aa6aee8d55f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Hair_specular
+    second: {fileID: 2800000, guid: 10a78d2cb64e0134bbfa6d04830107b3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Moustache_diffuse
+    second: {fileID: 2800000, guid: 8cfef18595901a645870c767aba37fd3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Moustache_normal
+    second: {fileID: 2800000, guid: 1af23b92df9000c44aba920b251bd943, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Moustache_specular
+    second: {fileID: 2800000, guid: 54b622e04cc58ab409f32155079536e8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Shoes_diffuse
+    second: {fileID: 2800000, guid: e507976e111ebdd49bb00be44f2dad2d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Shoes_normal
+    second: {fileID: 2800000, guid: 3ec2a871568be7244855885674f5f22c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Shoes_specular
+    second: {fileID: 2800000, guid: dabcd3793438bff41a8ede9d34d5af1c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Top_diffuse
+    second: {fileID: 2800000, guid: 6d7b9e249eefd374085ca062a76f3d68, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Top_normal
+    second: {fileID: 2800000, guid: efe73056acc3cd043ac841615e96cc44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: civilian 3_Top_specular
+    second: {fileID: 2800000, guid: 223fc7a1a26d9344b8311b59d348e751, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
