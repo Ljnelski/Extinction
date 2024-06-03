@@ -53,7 +53,6 @@ public class EnemySpawner : MonoBehaviour
         {
             if (Time.time - _lastSpawn >= _spawnInterval)
             {
-                Debug.LogWarning("SPAWNING!");
                 CreateEnemyBatch();
                 _lastSpawn = Time.time;
 
@@ -129,8 +128,8 @@ public class EnemySpawner : MonoBehaviour
             int randomSpawnPoint = R.Next(0, _spawnPoints.Count);
             Transform chosenSpawnLocation = _spawnPoints[randomSpawnPoint].transform; */
 
-            Instantiate(batch[0], _spawnPoints[0].transform.position, _spawnPoints[0].transform.rotation);
-
+            GameObject newEnemy = Instantiate(batch[0], _spawnPoints[0].transform.position, _spawnPoints[0].transform.rotation);
+            newEnemy.GetComponent<NavMeshAgent>().Warp(_spawnPoints[0].transform.position);
             //Debug.Log(batch[i].name);
         }
 

@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _cameraRotationLimit = 85f;
 
     private PlayerInputRecorder _input;
-    private Idle _idleAttack;
+
+    private PlayerIdle _idle;
+    private PlayerDead _dead;
     private PlayerState _currentAttack;
 
     private Vector3 _cameraLookDirLimit;
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour
     public int BreathBoolID { get; private set; }
     public int WingFlapTriggerID { get; private set; }
     public int RoarAttackAnimationTransition { get; private set; }
+    public int DeathTriggerID { get; private set; }
 
     public PlayerStats Stats => _stats;
     public Animator Animator => _animator;
@@ -66,12 +69,13 @@ public class PlayerController : MonoBehaviour
     public WingFlapAttack WingFlapleftAttack { get => _wingFlapleftAttack; }
     public WingFlapAttack WingFlapRightAttack { get => _wingFlapRightAttack; }
     public RoarAttack RoarAttack { get => _roarAttack; }
+    public PlayerDead Dead { get => _dead; }
 
-    private void Awake()
+    private void OnEnable()
     {
         SetUpAttacks();
 
-        _currentAttack = _idleAttack;
+        _currentAttack = _idle;
 
         RotationFloatID = Animator.StringToHash("Rotation");
         LeftSwipeTriggerID = Animator.StringToHash("ClawSwipeLeft");
@@ -79,6 +83,7 @@ public class PlayerController : MonoBehaviour
         BiteTriggerID = Animator.StringToHash("Bite");
         BreathBoolID = Animator.StringToHash("Breath");
         WingFlapTriggerID = Animator.StringToHash("WingFlap");
+        DeathTriggerID = Animator.StringToHash("Death");
 
         _stats.RestoreStats();
 
@@ -87,10 +92,7 @@ public class PlayerController : MonoBehaviour
         _armRight.PlayerStats = _stats;
         _wingLeft.PlayerStats = _stats;
         _wingRight.PlayerStats = _stats;
-    }
 
-    private void OnEnable()
-    {
         _input = GetComponent<PlayerInputRecorder>();
         _input.TestInputPressed += TestFunction;
     }
@@ -102,15 +104,21 @@ public class PlayerController : MonoBehaviour
 
     private void SetUpAttacks()
     {
-        _idleAttack = GetComponent<Idle>();
+        _idle = GetComponent<PlayerIdle>();
+        _dead = GetComponent<PlayerDead>();
 
-        if (_idleAttack == null)
+        if (_idle == null)
         {
-            gameObject.AddComponent<Idle>();
-            _idleAttack = GetComponent<Idle>();
+            gameObject.AddComponent<PlayerIdle>();
+            _idle = GetComponent<PlayerIdle>();
+        }
+        if(_dead == null)
+        {
+            gameObject.AddComponent<PlayerDead>();
+            _dead = gameObject.AddComponent<PlayerDead>();
         }
 
-        _idleAttack.Init(this);
+        _idle.Init(this);
 
         string errorMsg = "";
 
@@ -151,7 +159,11 @@ public class PlayerController : MonoBehaviour
         }
 
         _clawSwipeLeftAttack.Init(this, _armLeft);
+        _clawSwipeLeftAttack.SetDirection(ClawAttack.AttackDirection.Left);
+
         _clawSwipeRightAttack.Init(this, _armRight);
+        _clawSwipeRightAttack.SetDirection(ClawAttack.AttackDirection.Right);
+
         _biteAttack.Init(this, _head);
         _breathAttack.Init(this, _head);
         _wingFlapleftAttack.Init(this, _wingLeft);
@@ -167,15 +179,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Rotate();
-
         _currentAttack.Run(_input);
         _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;
+
+        if (Stats.Health <= 0)
+        {
+            _animator.SetBool("Death", true);
+        }
     }
 
-    private void Rotate()
+    public void Rotate()
     {
-
         if (!MovementLocked)
         {
             // Calculate the angle change
@@ -212,7 +226,7 @@ public class PlayerController : MonoBehaviour
 
     public void ExitAttack()
     {
-        _currentAttack = _idleAttack;
+        _currentAttack = _idle;
     }
 
     public void AdvanceAttackPhase()
@@ -223,9 +237,52 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void SetAttack(PlayerAttackState attackState)
+    public void SetState(PlayerState attackState)
     {
         _currentAttack = attackState;
         _currentAttack.Enter();
+    }
+
+    public void AttackedByEnemy(float damage, float breakDamage, Vector3 worldPos)
+    {
+        float[] distanceToBodyParts = new float[5];
+
+        BodyPart[] bodyParts = new BodyPart[5];
+
+        bodyParts[0] = _head;
+        bodyParts[1] = _armLeft;
+        bodyParts[2] = _armRight;
+        bodyParts[3] = _wingLeft;
+        bodyParts[4] = _wingRight;
+
+        float distanceToHead = Vector3.Distance(_head.transform.position, worldPos);
+        float distanceToArmLeft = Vector3.Distance(_armLeft.transform.position, worldPos);
+        float distanceToArmRight = Vector3.Distance(_armRight.transform.position, worldPos);
+        float distanceToWingLeft = Vector3.Distance(_wingLeft.transform.position, worldPos);
+        float distanceToWingRight = Vector3.Distance(_wingRight.transform.position, worldPos);
+
+        int bodyPartIndex = 0;
+
+        if (distanceToHead > distanceToArmLeft)
+        {
+            bodyPartIndex = 1;
+        }
+        if (distanceToArmRight > distanceToArmLeft)
+        {
+            bodyPartIndex = 2;
+        }
+        if (distanceToArmRight > distanceToWingLeft)
+        {
+            bodyPartIndex = 3;
+        }
+        if (distanceToWingLeft > distanceToWingRight)
+        {
+            bodyPartIndex = 4;
+        }
+
+        bodyParts[bodyPartIndex].ApplyDamage(damage);
+        bodyParts[bodyPartIndex].DoBreakDamage(breakDamage);
+
+        Debug.Log("Doing Damage to: " + bodyPartIndex);
     }
 }

@@ -18,6 +18,8 @@ public class WingFlapAttack : PlayerAttackState
     {
         base.Run(playerInput);
 
+        _player.Rotate();
+
         Collider[] hitEnemies = Physics.OverlapSphere(_sphereCastSource.position, _attackRadius);
 
         Vector2 dirHemisphere = GetHemiSphereDirection();
@@ -41,6 +43,11 @@ public class WingFlapAttack : PlayerAttackState
                 //enemies.Add(collider.transform);
                 indicator.DebugIndicateHit(GetHemisphereColor());
             }
+        }
+
+        if (_player.Stats.Health <= 0)
+        {
+            _player.SetState(_player.Dead);
         }
     }
 

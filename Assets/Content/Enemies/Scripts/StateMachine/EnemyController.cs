@@ -54,7 +54,7 @@ public class EnemyController : StateMachineController, IDamageAble
 
     private GameObject _player;
     private Animator _animator;
-    private NavMeshAgent _navAgent;
+    [SerializeField] private NavMeshAgent _navAgent;
     private HurtBox _hurtBox;
 
     private float _health = 10;
@@ -67,7 +67,7 @@ public class EnemyController : StateMachineController, IDamageAble
         {
             if (_player == null)
             {
-                _player = PlayerReference.Instance.Get();
+                _player = PlayerReference.Instance.GetGameObject();
             }
 
             return _player;
@@ -77,7 +77,7 @@ public class EnemyController : StateMachineController, IDamageAble
     public Animator Animator => _animator;
     public NavMeshAgent NavAgent => _navAgent;
     public HurtBox HurtBox => _hurtBox;
-    public float AttackRadius => _attackRadius * 0.95f + _navAgent.radius;
+    public float AttackRadius => _attackRadius * 0.95f + _navAgent.radius + PlayerReference.Instance.GetRadius();
     public bool ZeroHealth => _zeroHealth;
 
     [SerializeField] float _speed = 2f;
@@ -156,6 +156,7 @@ public class EnemyController : StateMachineController, IDamageAble
 
     private void OnEnable()
     {
+        // Calculate Stopping Distance
         _hurtBox.DamageDealt += TakeDamage;
         Restore();
     }
@@ -209,6 +210,8 @@ public class EnemyController : StateMachineController, IDamageAble
 
     public void TakeDamage(float damage)
     {
+        Debug.Log("Enemy Took: " + damage);
+
         if (damage < float.Epsilon) return;
 
         if (BubbleBuff)
@@ -234,4 +237,12 @@ public class EnemyController : StateMachineController, IDamageAble
         OnSpeedUpdated();
     }
 
+
+
+    private void Update()
+    {
+        //Debug.Log("current state: " + _currentState);
+        //Debug.Log("current position: " + transform.position);
+        //Debug.Log("current destination: " + NavAgent.destination);
+    }
 }
