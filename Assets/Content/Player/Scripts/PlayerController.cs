@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
     public int BreathBoolID { get; private set; }
     public int WingFlapTriggerID { get; private set; }
     public int RoarAttackAnimationTransition { get; private set; }
-    public int DeathBoolID { get; private set; }
+    public int DeathTriggerID { get; private set; }
 
     public PlayerStats Stats => _stats;
     public Animator Animator => _animator;
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
         BiteTriggerID = Animator.StringToHash("Bite");
         BreathBoolID = Animator.StringToHash("Breath");
         WingFlapTriggerID = Animator.StringToHash("WingFlap");
-        DeathBoolID = Animator.StringToHash("Death");
+        DeathTriggerID = Animator.StringToHash("Death");
 
         _stats.RestoreStats();
 
