@@ -732,8 +732,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AgentTypeID: -334000983
   m_CollectObjects: 1
-  m_Size: {x: 346.31818, y: 107.5, z: 304.2}
-  m_Center: {x: 3.5909042, y: -37.259995, z: 0}
+  m_Size: {x: 182.2, y: 52.9, z: 138.86}
+  m_Center: {x: 10.1, y: -21, z: 18}
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -742,13 +742,13 @@ MonoBehaviour:
   m_GenerateLinks: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
+  m_OverrideTileSize: 1
+  m_TileSize: 128
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.083333336
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: fc9aea4930abc7a438c1301cafe6ab39, type: 2}
-  m_BuildHeightMesh: 0
+  m_BuildHeightMesh: 1
 --- !u!1001 &77674010
 PrefabInstance:
   m_ObjectHideFlags: 0
