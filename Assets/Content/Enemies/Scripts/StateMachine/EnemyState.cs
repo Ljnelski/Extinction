@@ -14,8 +14,8 @@ public abstract class EnemyState<TController> : State where TController : EnemyC
 {
     protected TController _controller;
 
-    public EnemyState(TController enemy)
+    public virtual void Init(TController enemy)
     {
         _controller = enemy;
-    }   
+    }
 }

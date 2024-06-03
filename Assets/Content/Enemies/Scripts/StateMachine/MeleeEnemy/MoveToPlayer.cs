@@ -4,15 +4,22 @@ using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class MoveToPlayer : EnemyState<MeleeEnemyController>
+public class MoveToPlayer : EnemyState<EnemyController>
 {
     private Transform _playerPosition;
-    private float _distanceToPlayer;
+    EnemyState<EnemyController> attackState;
 
-    public MoveToPlayer(MeleeEnemyController controller) : base(controller)
+    public MoveToPlayer(EnemyState<EnemyController> attackState)
     {
-        _controller.NavAgent.stoppingDistance = _controller.AttackRadius;        
+        this.attackState = attackState;
     }
+
+    public override void Init(EnemyController enemy)
+    {
+        base.Init(enemy);
+        _controller.NavAgent.stoppingDistance = _controller.AttackRadius;
+    }
+
 
     public override void Enter()
     {
@@ -26,18 +33,12 @@ public class MoveToPlayer : EnemyState<MeleeEnemyController>
     }
 
     public override void Run()
-    {     
-        if(_controller.ZeroHealth)
-        {
-            _controller.ChangeState(_controller.DieState);
-            return;
-        }
-
+    {
         _controller.NavAgent.SetDestination(_playerPosition.position);
 
         if (_controller.DistanceToPlayer <= _controller.AttackRadius) 
         {
-            _controller.ChangeState(_controller.AttackPlayerState);
+            _controller.ChangeState(attackState);
         }        
     }
 

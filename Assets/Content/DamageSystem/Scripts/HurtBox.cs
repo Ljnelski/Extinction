@@ -9,7 +9,7 @@ public class HurtBox : MonoBehaviour, IDamageAble
 
     public void ApplyDamage(float amount)
     {
-        throw new System.NotImplementedException();
+        DamageDealt?.Invoke(amount);
     }
 
     public void ApplyEffect()
