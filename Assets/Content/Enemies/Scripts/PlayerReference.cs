@@ -24,9 +24,24 @@ public class PlayerReference : MonoBehaviour
         }
     }
 
-    public GameObject Get()
+    public GameObject GetGameObject()
     {
         return gameObject;
+    }
+
+    public Transform GetTransform()
+    {
+        return transform;
+    }
+
+    public PlayerController GetPlayerController()
+    {
+        return gameObject.GetComponent<PlayerController>();
+    }
+
+    public float GetRadius()
+    {
+        return gameObject.transform.Find("PlayerNavRadius").GetComponent<CapsuleCollider>().radius;
     }
 }
 

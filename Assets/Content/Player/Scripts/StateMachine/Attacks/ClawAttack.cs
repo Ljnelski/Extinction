@@ -29,6 +29,11 @@ public class ClawAttack : HitBoxAttack
     public override void Run(PlayerInputRecorder playerInput)
     {
         base.Run(playerInput);
+
+        if (_player.Stats.Health <= 0)
+        {
+            _player.SetState(_player.Dead);
+        }
     }
 
     public override void Deactivate()

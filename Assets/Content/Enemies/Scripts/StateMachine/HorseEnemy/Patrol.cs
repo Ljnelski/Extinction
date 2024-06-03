@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class Patrol : EnemyState<EnemyController>
 {
-    Transform Target => PlayerReference.Instance.Get().transform;
+    Transform Target => PlayerReference.Instance.GetTransform().transform;
 
     private Vector3 pointA;
     private Vector3 pointB;

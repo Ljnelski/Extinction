@@ -45,7 +45,17 @@ public class AttackRanged : StateWithTarget
             if (_attackDurationTimer >= _tempAttackDuration)
             {
                 _isAttacking = false;
+                
+                // Visual Effect of Attack
                 _controller.projectileSpawner.Spawn(_target);
+
+                // Actual Attack
+                PlayerReference.Instance.GetPlayerController().AttackedByEnemy(
+                    _controller.AttackStats.DamageToHealth,
+                    _controller.AttackStats.DamageToBodyPart,
+                    _controller.transform.position);
+
+
                 if (_resetAfterOne)
                 {
                     _controller.SetDefaultState();

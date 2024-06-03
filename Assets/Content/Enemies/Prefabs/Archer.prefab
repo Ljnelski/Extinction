@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: c9f9132c4207c7646b72032fb7033fc0, type: 2}
-  _attackRadius: 5
+  _attackRadius: 8
   _attackStats: {fileID: 11400000, guid: 7f440f5e9ebb43a46b557f964e674f50, type: 2}
   _colorChanger: {fileID: 0}
   projectileSpawner: {fileID: 0}

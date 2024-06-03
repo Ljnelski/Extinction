@@ -22,6 +22,12 @@ public class PlayerStats : ScriptableObject
         set
         {
             _health = Mathf.Max(0f, Mathf.Min(value, MaxHealth));
+
+            if(Health < 0)
+            {
+                _playerStatChanges.Died?.Invoke();
+            }
+
             _playerStatChanges.HealthChanged?.Invoke(_health / _maxHealth);
         }
     }

@@ -17,16 +17,12 @@ public class MoveToPlayer : EnemyState<EnemyController>
     public override void Init(EnemyController enemy)
     {
         base.Init(enemy);
-
-        _controller.NavAgent.stoppingDistance = _controller.Player.transform.localScale.x *
-            _controller.Player.transform.Find("EnemyStopDistance")
-            .GetComponent<CapsuleCollider>().radius + _controller.NavAgent.radius;
     }
 
 
     public override void Enter()
     {
-        if(_playerPosition == null)
+        if (_playerPosition == null)
         {
             _playerPosition = _controller.Player.transform;
         }
@@ -39,10 +35,12 @@ public class MoveToPlayer : EnemyState<EnemyController>
     {
         _controller.NavAgent.SetDestination(_playerPosition.position);
 
-        if (_controller.DistanceToPlayer <= _controller.AttackRadius) 
+      
+
+        if (_controller.DistanceToPlayer <= _controller.AttackRadius)
         {
             _controller.ChangeState(attackState);
-        }        
+        }
     }
 
     public override void Exit()
@@ -50,5 +48,5 @@ public class MoveToPlayer : EnemyState<EnemyController>
         ;
     }
 
-   
+
 }

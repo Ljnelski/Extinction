@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _cameraRotationLimit = 85f;
 
     private PlayerInputRecorder _input;
-    private Idle _idleAttack;
+
+    private PlayerIdle _idle;
+    private PlayerDead _dead;
     private PlayerState _currentAttack;
 
     private Vector3 _cameraLookDirLimit;
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour
     public int BreathBoolID { get; private set; }
     public int WingFlapTriggerID { get; private set; }
     public int RoarAttackAnimationTransition { get; private set; }
+    public int DeathBoolID { get; private set; }
 
     public PlayerStats Stats => _stats;
     public Animator Animator => _animator;
@@ -65,13 +68,14 @@ public class PlayerController : MonoBehaviour
     public BreathAttack BreathAttack { get => _breathAttack; }
     public WingFlapAttack WingFlapleftAttack { get => _wingFlapleftAttack; }
     public WingFlapAttack WingFlapRightAttack { get => _wingFlapRightAttack; }
-    public RoarAttack RoarAttack { get => _roarAttack; }    
+    public RoarAttack RoarAttack { get => _roarAttack; }
+    public PlayerDead Dead { get => _dead; }
 
     private void OnEnable()
     {
         SetUpAttacks();
 
-        _currentAttack = _idleAttack;
+        _currentAttack = _idle;
 
         RotationFloatID = Animator.StringToHash("Rotation");
         LeftSwipeTriggerID = Animator.StringToHash("ClawSwipeLeft");
@@ -79,6 +83,7 @@ public class PlayerController : MonoBehaviour
         BiteTriggerID = Animator.StringToHash("Bite");
         BreathBoolID = Animator.StringToHash("Breath");
         WingFlapTriggerID = Animator.StringToHash("WingFlap");
+        DeathBoolID = Animator.StringToHash("Death");
 
         _stats.RestoreStats();
 
@@ -99,15 +104,21 @@ public class PlayerController : MonoBehaviour
 
     private void SetUpAttacks()
     {
-        _idleAttack = GetComponent<Idle>();
+        _idle = GetComponent<PlayerIdle>();
+        _dead = GetComponent<PlayerDead>();
 
-        if (_idleAttack == null)
+        if (_idle == null)
         {
-            gameObject.AddComponent<Idle>();
-            _idleAttack = GetComponent<Idle>();
+            gameObject.AddComponent<PlayerIdle>();
+            _idle = GetComponent<PlayerIdle>();
+        }
+        if(_dead == null)
+        {
+            gameObject.AddComponent<PlayerDead>();
+            _dead = gameObject.AddComponent<PlayerDead>();
         }
 
-        _idleAttack.Init(this);
+        _idle.Init(this);
 
         string errorMsg = "";
 
@@ -168,15 +179,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Rotate();
-
         _currentAttack.Run(_input);
         _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;
+
+        if (Stats.Health <= 0)
+        {
+            _animator.SetBool("Death", true);
+        }
     }
 
-    private void Rotate()
+    public void Rotate()
     {
-
         if (!MovementLocked)
         {
             // Calculate the angle change
@@ -213,7 +226,7 @@ public class PlayerController : MonoBehaviour
 
     public void ExitAttack()
     {
-        _currentAttack = _idleAttack;
+        _currentAttack = _idle;
     }
 
     public void AdvanceAttackPhase()
@@ -224,13 +237,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void SetAttack(PlayerAttackState attackState)
+    public void SetState(PlayerState attackState)
     {
         _currentAttack = attackState;
         _currentAttack.Enter();
     }
 
-    public void AttackedByEnemy(float damage, float breakDamage, Vector3 position)
+    public void AttackedByEnemy(float damage, float breakDamage, Vector3 worldPos)
     {
         float[] distanceToBodyParts = new float[5];
 
@@ -242,11 +255,11 @@ public class PlayerController : MonoBehaviour
         bodyParts[3] = _wingLeft;
         bodyParts[4] = _wingRight;
 
-        float distanceToHead = Vector3.Distance(_head.transform.position, position);
-        float distanceToArmLeft = Vector3.Distance(_armLeft.transform.position, position);
-        float distanceToArmRight = Vector3.Distance(_armRight.transform.position, position);
-        float distanceToWingLeft = Vector3.Distance(_wingLeft.transform.position, position);
-        float distanceToWingRight = Vector3.Distance(_wingRight.transform.position, position);
+        float distanceToHead = Vector3.Distance(_head.transform.position, worldPos);
+        float distanceToArmLeft = Vector3.Distance(_armLeft.transform.position, worldPos);
+        float distanceToArmRight = Vector3.Distance(_armRight.transform.position, worldPos);
+        float distanceToWingLeft = Vector3.Distance(_wingLeft.transform.position, worldPos);
+        float distanceToWingRight = Vector3.Distance(_wingRight.transform.position, worldPos);
 
         int bodyPartIndex = 0;
 
@@ -270,6 +283,6 @@ public class PlayerController : MonoBehaviour
         bodyParts[bodyPartIndex].ApplyDamage(damage);
         bodyParts[bodyPartIndex].DoBreakDamage(breakDamage);
 
-        Debug.Log("Doing Damage to: " +  bodyPartIndex);
+        Debug.Log("Doing Damage to: " + bodyPartIndex);
     }
 }

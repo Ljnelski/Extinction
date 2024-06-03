@@ -52,9 +52,9 @@ public class AttackPlayer : StateWithTarget
             {
                 _attackCoolDownTimer = 0;
                 //_controller.HitBox.Activate();
-                
+
                 // hard Code the Attack the the player
-                _controller.Player.GetComponent<PlayerController>().AttackedByEnemy(
+                PlayerReference.Instance.GetPlayerController().AttackedByEnemy(
                     _controller.AttackStats.DamageToHealth,
                     _controller.AttackStats.DamageToBodyPart,
                     _controller.transform.position);

@@ -9,7 +9,7 @@ public abstract class StateWithTarget : EnemyState<EnemyController>
     
     public bool IsTargetInRange()
     {
-        return Vector3.Distance(_controller.transform.position, _target.transform.position) <= _controller.AttackRadius;
+        return Vector3.Distance(_controller.transform.position, _target.transform.position) <= _controller.AttackRadius + 20;
     }
 
     public StateWithTarget SetTarget(Transform target)

@@ -67,7 +67,7 @@ public class EnemyController : StateMachineController, IDamageAble
         {
             if (_player == null)
             {
-                _player = PlayerReference.Instance.Get();
+                _player = PlayerReference.Instance.GetGameObject();
             }
 
             return _player;
@@ -77,7 +77,7 @@ public class EnemyController : StateMachineController, IDamageAble
     public Animator Animator => _animator;
     public NavMeshAgent NavAgent => _navAgent;
     public HurtBox HurtBox => _hurtBox;
-    public float AttackRadius => _attackRadius * 0.95f + _navAgent.radius;
+    public float AttackRadius => _attackRadius * 0.95f + _navAgent.radius + PlayerReference.Instance.GetRadius();
     public bool ZeroHealth => _zeroHealth;
 
     [SerializeField] float _speed = 2f;

@@ -25,6 +25,8 @@ public class BreathAttack : HitBoxAttack
     {
         base.Run(playerInput);
 
+        _player.Rotate();
+
         if(_attackPhase == AttackPhase.Activated)
         {
             float staminaDrain = (_staminaDrain) * Time.deltaTime;
@@ -36,7 +38,12 @@ public class BreathAttack : HitBoxAttack
             }
 
             Stats.Stamina -= staminaDrain;
-        }        
+        }
+
+        if (_player.Stats.Health <= 0)
+        {
+            _player.SetState(_player.Dead);
+        }
     }
 
     public override void Deactivate()

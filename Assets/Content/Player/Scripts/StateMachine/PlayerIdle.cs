@@ -3,42 +3,44 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows;
 
-public class Idle : PlayerState
+public class PlayerIdle : PlayerState
 {
     public override void Enter()
     {
-        Debug.Log("Idle State Entered");
+
     }
 
     public override void Run(PlayerInputRecorder playerInput)
     {
+        _player.Rotate();        
+
         if (playerInput.PrimaryAttack && playerInput.SecondaryAttack)
         {
             if (_player.BiteAttack.CanStart())
             {
-                _player.SetAttack(_player.BiteAttack);
+                _player.SetState(_player.BiteAttack);
             }
         }
         else if (playerInput.PrimaryAttack)
         {
             if (_player.ClawSwipeLeftAttack.CanStart())
             {
-                _player.SetAttack(_player.ClawSwipeLeftAttack);
+                _player.SetState(_player.ClawSwipeLeftAttack);
             }
         }
         else if (playerInput.SecondaryAttack)
         {
             if (_player.ClawSwipeRightAttack.CanStart())
             {
-                _player.SetAttack(_player.ClawSwipeRightAttack);
+                _player.SetState(_player.ClawSwipeRightAttack);
             }
         }
         else if (playerInput.WingAttack)
         {
             if (_player.WingFlapleftAttack.CanStart() && _player.WingFlapRightAttack.CanStart())
             {
-                _player.SetAttack(_player.WingFlapleftAttack);
-                _player.SetAttack(_player.WingFlapRightAttack);
+                _player.SetState(_player.WingFlapleftAttack);
+                _player.SetState(_player.WingFlapRightAttack);
             }
         }
         else if (playerInput.BreathAttack)
@@ -46,8 +48,13 @@ public class Idle : PlayerState
             if (_player.BreathAttack.CanStart())
             {
                 Debug.Log("BreathingAttackInputConditionsMet");
-                _player.SetAttack(_player.BreathAttack);
+                _player.SetState(_player.BreathAttack);
             }
+        }
+
+        if (_player.Stats.Health <= 0)
+        {
+            _player.SetState(_player.Dead);
         }
     }
 
