@@ -24,9 +24,9 @@ MonoBehaviour:
     type: 3}
   _longRangeTier3: {fileID: 7383592310609938371, guid: e18b9f338402fb94abd78152ee3eb041,
     type: 3}
-  _closeRangeChance: 50
-  _mediumRangeChance: 25
-  _longRangeChance: 15
-  _tier1Chance: 75
-  _tier2Chance: 20
-  _tier3Chance: 5
+  _closeRangeChance: 100
+  _mediumRangeChance: 0
+  _longRangeChance: 0
+  _tier1Chance: 100
+  _tier2Chance: 0
+  _tier3Chance: 0

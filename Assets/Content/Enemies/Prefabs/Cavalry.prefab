@@ -240,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 9066377821727146864}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 212.78, y: 42.32, z: 179.87328}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -269,10 +269,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1.5
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Radius: 1.4736469
+  m_Height: 4.075947
+  m_Direction: 2
+  m_Center: {x: 0, y: 1.488626, z: -0.104854345}
 --- !u!54 &9079537340096132101
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -361,6 +361,7 @@ MonoBehaviour:
   _colorChanger: {fileID: 0}
   projectileSpawner: {fileID: 0}
   _debugUI: {fileID: 0}
+  _navAgent: {fileID: 5145234798962362362}
   _speed: 5
   bubbleVisuals: {fileID: 8024160077508242369}
 --- !u!114 &2085613076037180665

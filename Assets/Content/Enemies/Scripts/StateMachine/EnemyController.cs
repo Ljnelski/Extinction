@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.PlayerLoop;
 
 
 // TODO Implement a slower tick cycle to save performance
@@ -13,6 +14,7 @@ public abstract class StateMachineController : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         _currentState.Run();
     }
 
@@ -52,7 +54,7 @@ public class EnemyController : StateMachineController, IDamageAble
 
     private GameObject _player;
     private Animator _animator;
-    private NavMeshAgent _navAgent;
+    [SerializeField] private NavMeshAgent _navAgent;
     private HurtBox _hurtBox;
 
     private float _health = 10;
@@ -230,5 +232,14 @@ public class EnemyController : StateMachineController, IDamageAble
     private void Start()
     {
         OnSpeedUpdated();
+    }
+
+
+
+    private void Update()
+    {
+        Debug.Log("current state: " + _currentState);
+        Debug.Log("current position: " + transform.position);
+        Debug.Log("current destination: " + NavAgent.destination);
     }
 }

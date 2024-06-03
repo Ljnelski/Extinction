@@ -60,9 +60,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 1.5
+  m_Height: 1.8442464
   m_Direction: 1
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Center: {x: 0, y: 0.92614436, z: 0}
 --- !u!54 &7085815130046896328
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -151,6 +151,7 @@ MonoBehaviour:
   _colorChanger: {fileID: 0}
   projectileSpawner: {fileID: 0}
   _debugUI: {fileID: 0}
+  _navAgent: {fileID: 3438898720099316358}
   _speed: 2
   bubbleVisuals: {fileID: 9096941250411873890}
 --- !u!114 &1211239139160636297

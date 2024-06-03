@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -124,10 +125,14 @@ public class EnemySpawner : MonoBehaviour
         // Spawn Enemies
         for (int i = 0; i < batch.Length; i++)
         {
-            System.Random R = new System.Random();
+            /* System.Random R = new System.Random();
             int randomSpawnPoint = R.Next(0, _spawnPoints.Count);
-            Transform chosenSpawnLocation = _spawnPoints[randomSpawnPoint].transform;
-            Instantiate<GameObject>(batch[i], chosenSpawnLocation);
+            Transform chosenSpawnLocation = _spawnPoints[randomSpawnPoint].transform; */
+            EnemyController ctrl = batch[i].GetComponent<EnemyController>();
+
+            Instantiate<GameObject>(batch[i], _spawnPoints[0].transform.position, Quaternion.identity);
+
+            ctrl.NavAgent.Warp(_spawnPoints[0].transform.position);
 
             //Debug.Log(batch[i].name);
         }
