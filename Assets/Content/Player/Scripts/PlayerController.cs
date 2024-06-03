@@ -151,7 +151,11 @@ public class PlayerController : MonoBehaviour
         }
 
         _clawSwipeLeftAttack.Init(this, _armLeft);
+        _clawSwipeLeftAttack.SetDirection(ClawAttack.AttackDirection.Left);
+
         _clawSwipeRightAttack.Init(this, _armRight);
+        _clawSwipeRightAttack.SetDirection(ClawAttack.AttackDirection.Right);
+
         _biteAttack.Init(this, _head);
         _breathAttack.Init(this, _head);
         _wingFlapleftAttack.Init(this, _wingLeft);
@@ -227,5 +231,48 @@ public class PlayerController : MonoBehaviour
     {
         _currentAttack = attackState;
         _currentAttack.Enter();
+    }
+
+    public void AttackedByEnemy(float damage, float breakDamage, Vector3 position)
+    {
+        float[] distanceToBodyParts = new float[5];
+
+        BodyPart[] bodyParts = new BodyPart[5];
+
+        bodyParts[0] = _head;
+        bodyParts[1] = _armLeft;
+        bodyParts[2] = _armRight;
+        bodyParts[3] = _wingLeft;
+        bodyParts[4] = _wingRight;
+
+        float distanceToHead = Vector3.Distance(_head.transform.position, position);
+        float distanceToArmLeft = Vector3.Distance(_armLeft.transform.position, position);
+        float distanceToArmRight = Vector3.Distance(_armRight.transform.position, position);
+        float distanceToWingLeft = Vector3.Distance(_wingLeft.transform.position, position);
+        float distanceToWingRight = Vector3.Distance(_wingRight.transform.position, position);
+
+        int bodyPartIndex = 0;
+
+        if (distanceToHead > distanceToArmLeft)
+        {
+            bodyPartIndex = 1;
+        }
+        if (distanceToArmRight > distanceToArmLeft)
+        {
+            bodyPartIndex = 2;
+        }
+        if (distanceToArmRight > distanceToWingLeft)
+        {
+            bodyPartIndex = 3;
+        }
+        if (distanceToWingLeft > distanceToWingRight)
+        {
+            bodyPartIndex = 4;
+        }
+
+        bodyParts[bodyPartIndex].ApplyDamage(damage);
+        bodyParts[bodyPartIndex].DoBreakDamage(breakDamage);
+
+        Debug.Log("Doing Damage to: " +  bodyPartIndex);
     }
 }

@@ -54,7 +54,7 @@ public class EnemyController : StateMachineController, IDamageAble
 
     private GameObject _player;
     private Animator _animator;
-    private NavMeshAgent _navAgent;
+    [SerializeField] private NavMeshAgent _navAgent;
     private HurtBox _hurtBox;
 
     private float _health = 10;
@@ -156,6 +156,7 @@ public class EnemyController : StateMachineController, IDamageAble
 
     private void OnEnable()
     {
+        // Calculate Stopping Distance
         _hurtBox.DamageDealt += TakeDamage;
         Restore();
     }
@@ -209,6 +210,8 @@ public class EnemyController : StateMachineController, IDamageAble
 
     public void TakeDamage(float damage)
     {
+        Debug.Log("Enemy Took: " + damage);
+
         if (damage < float.Epsilon) return;
 
         if (BubbleBuff)
@@ -234,4 +237,12 @@ public class EnemyController : StateMachineController, IDamageAble
         OnSpeedUpdated();
     }
 
+
+
+    private void Update()
+    {
+        //Debug.Log("current state: " + _currentState);
+        //Debug.Log("current position: " + transform.position);
+        //Debug.Log("current destination: " + NavAgent.destination);
+    }
 }

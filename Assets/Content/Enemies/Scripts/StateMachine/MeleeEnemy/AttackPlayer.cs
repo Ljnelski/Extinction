@@ -13,7 +13,7 @@ public class AttackPlayer : StateWithTarget
     private float _tempAttackDuration = 1f;
 
     private List<HitBox.HurtBoxHitData> _lastHits;
-  
+
     public override void Init(EnemyController enemy)
     {
         base.Init(enemy);
@@ -32,17 +32,17 @@ public class AttackPlayer : StateWithTarget
             if (_attackDurationTimer >= _tempAttackDuration)
             {
                 _attackDurationTimer = 0f;
-                _controller.HitBox.Deactivate();
+                //_controller.HitBox.Deactivate();
                 _isAttacking = false;
             }
 
             _attackDurationTimer += Time.fixedDeltaTime;
 
-            foreach (var hurtBox in _lastHits)
-            {
-                hurtBox.Damagable?.ApplyDamage(_controller.AttackStats.DamageToBodyPart);
-                hurtBox.Breakable?.DoBreakDamage(_controller.AttackStats.DamageToHealth);
-            }
+            //foreach (var hurtBox in _lastHits)
+            //{
+            //    hurtBox.Damagable?.ApplyDamage(_controller.AttackStats.DamageToBodyPart);
+            //    hurtBox.Breakable?.DoBreakDamage(_controller.AttackStats.DamageToHealth);
+            //}
 
             _lastHits.Clear();
         }
@@ -51,7 +51,14 @@ public class AttackPlayer : StateWithTarget
             if (_attackCoolDownTimer >= _controller.Stats.AttackSpeed)
             {
                 _attackCoolDownTimer = 0;
-                _controller.HitBox.Activate();
+                //_controller.HitBox.Activate();
+                
+                // hard Code the Attack the the player
+                _controller.Player.GetComponent<PlayerController>().AttackedByEnemy(
+                    _controller.AttackStats.DamageToHealth,
+                    _controller.AttackStats.DamageToBodyPart,
+                    _controller.transform.position);
+
                 _isAttacking = true;
             }
 
@@ -61,7 +68,7 @@ public class AttackPlayer : StateWithTarget
             {
                 _controller.SetDefaultState();
             }
-        }        
+        }
     }
 
     public override void Exit()
@@ -76,7 +83,7 @@ public class AttackPlayer : StateWithTarget
 
     private void AddHitObject(HitBox.HurtBoxHitData hitData)
     {
-       _lastHits.Add(hitData);
+        _lastHits.Add(hitData);
     }
 
 

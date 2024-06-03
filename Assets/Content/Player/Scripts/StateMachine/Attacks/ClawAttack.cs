@@ -5,15 +5,23 @@ using UnityEngine;
 public class ClawAttack : HitBoxAttack
 {
     [SerializeField] HitBox hitbox;
+
+    private AttackDirection _attackDir;
+
+    public void SetDirection(AttackDirection dir)
+    {
+        _attackDir = dir;
+    }
+
     public override void Enter()
     {
         base.Enter();
         _hitBox = hitbox;
-        if (_player.ClawSwipeLeftAttack)
+        if (_attackDir == AttackDirection.Left)
         {
             Animator.SetTrigger(_player.LeftSwipeTriggerID);
         }
-        else
+        else if ( _attackDir == AttackDirection.Right)
         {
             Animator.SetTrigger(_player.RightSwipeTriggerID);
         }
@@ -32,5 +40,11 @@ public class ClawAttack : HitBoxAttack
     protected override void HitBoxEntered(HitBox.HurtBoxHitData target)
     {
         target.Damagable.ApplyDamage(Damage);
+    }
+
+    public enum AttackDirection
+    {
+        Left,
+        Right
     }
 }
