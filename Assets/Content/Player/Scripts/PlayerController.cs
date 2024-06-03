@@ -65,9 +65,9 @@ public class PlayerController : MonoBehaviour
     public BreathAttack BreathAttack { get => _breathAttack; }
     public WingFlapAttack WingFlapleftAttack { get => _wingFlapleftAttack; }
     public WingFlapAttack WingFlapRightAttack { get => _wingFlapRightAttack; }
-    public RoarAttack RoarAttack { get => _roarAttack; }
+    public RoarAttack RoarAttack { get => _roarAttack; }    
 
-    private void Awake()
+    private void OnEnable()
     {
         SetUpAttacks();
 
@@ -87,10 +87,7 @@ public class PlayerController : MonoBehaviour
         _armRight.PlayerStats = _stats;
         _wingLeft.PlayerStats = _stats;
         _wingRight.PlayerStats = _stats;
-    }
 
-    private void OnEnable()
-    {
         _input = GetComponent<PlayerInputRecorder>();
         _input.TestInputPressed += TestFunction;
     }
