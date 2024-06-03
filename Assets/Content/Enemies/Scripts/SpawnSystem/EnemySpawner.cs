@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditorInternal;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private List<SpawnPoint> _spawnPoints = new List<SpawnPoint>();
+    [SerializeField] private List<GameObject> _spawnPoints = new List<GameObject>();
     [SerializeField] private SpawnList _spawnList;
     [SerializeField] private bool _beginSpawningAtStart;
 
@@ -125,7 +126,8 @@ public class EnemySpawner : MonoBehaviour
         {
             System.Random R = new System.Random();
             int randomSpawnPoint = R.Next(0, _spawnPoints.Count);
-            Instantiate<GameObject>(batch[i], _spawnPoints[randomSpawnPoint].transform);
+            Transform chosenSpawnLocation = _spawnPoints[randomSpawnPoint].transform;
+            Instantiate<GameObject>(batch[i], chosenSpawnLocation);
 
             //Debug.Log(batch[i].name);
         }

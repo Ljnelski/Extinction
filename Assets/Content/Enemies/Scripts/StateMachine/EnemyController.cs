@@ -79,7 +79,7 @@ public class EnemyController : StateMachineController, IDamageAble
     public bool ZeroHealth => _zeroHealth;
 
     [SerializeField] float _speed = 2f;
-    
+
     int _speedBuff = 0;
     public int SpeedBuff
     {
@@ -219,7 +219,7 @@ public class EnemyController : StateMachineController, IDamageAble
 
         _health = Mathf.Max(0f, _health - damage);
 
-        if(_health < float.Epsilon)
+        if (_health < float.Epsilon)
         {
             //Debug.Log("Enemy Took Damage");
             _zeroHealth = true;

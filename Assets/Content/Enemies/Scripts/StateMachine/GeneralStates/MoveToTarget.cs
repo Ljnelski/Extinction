@@ -35,12 +35,12 @@ public class MoveToTarget : StateWithTarget
         // this is to optimize and let some spawn animations play
         if (spawnedAt - Time.time > 0.2f) return;
 
-        if(!_target)
+        if (!_target)
         {
             _controller.SetDefaultState();
             return;
         }
-        
+
         if (_filter != null && !_filter(_target))
         {
             _controller.SetDefaultState();
@@ -60,7 +60,6 @@ public class MoveToTarget : StateWithTarget
 
     public override void Exit()
     {
-        ;
     }
 
 
