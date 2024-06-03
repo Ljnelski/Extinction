@@ -128,11 +128,8 @@ public class EnemySpawner : MonoBehaviour
             /* System.Random R = new System.Random();
             int randomSpawnPoint = R.Next(0, _spawnPoints.Count);
             Transform chosenSpawnLocation = _spawnPoints[randomSpawnPoint].transform; */
-            EnemyController ctrl = batch[i].GetComponent<EnemyController>();
 
-            Instantiate<GameObject>(batch[i], _spawnPoints[0].transform.position, Quaternion.identity);
-
-            ctrl.NavAgent.Warp(_spawnPoints[0].transform.position);
+            Instantiate(batch[0], _spawnPoints[0].transform.position, _spawnPoints[0].transform.rotation);
 
             //Debug.Log(batch[i].name);
         }
