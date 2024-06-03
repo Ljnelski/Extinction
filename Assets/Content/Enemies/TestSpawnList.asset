@@ -12,21 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38eab2db37635eb49a48a2fda0a79a3e, type: 3}
   m_Name: TestSpawnList
   m_EditorClassIdentifier: 
-  _closeRangeTier1: {fileID: 897016631982190242, guid: 08defe24c6d156949be690c26d0d5cb6,
+  _closeRangeTier1: {fileID: 2880460769818529921, guid: 3ae58e825c9c27a4bb8a32ea02546ae1,
     type: 3}
-  _closeRangeTier2: {fileID: 897016631982190242, guid: f84a1c3ef03a89c4bafec6b7d430be89,
+  _closeRangeTier2: {fileID: 2880460769818529921, guid: 3e57fd50e136d234e873f2df5486f889,
     type: 3}
-  _closeRangeTier3: {fileID: 897016631982190242, guid: e56249afb1ded814c807ae3ef9906668,
+  _mediumRangeTier1: {fileID: 7383592310609938371, guid: bd379e6e352f3b8419884aabb6b73c4a,
     type: 3}
-  _mediumRangeTier1: {fileID: 897016631982190242, guid: 05f69b0173ca47947974b9db132874f7,
+  _mediumRangeTier2: {fileID: 9066377821727146864, guid: 2b0b97ccdb7ad9c45a6ff78126b21f4c,
     type: 3}
-  _mediumRangeTier2: {fileID: 897016631982190242, guid: 1ab6b0b921ca3154abc925548b950017,
+  _longRangeTier1: {fileID: 7383592310609938371, guid: bd379e6e352f3b8419884aabb6b73c4a,
     type: 3}
-  _mediumRangeTier3: {fileID: 0}
-  _longRangeTier1: {fileID: 897016631982190242, guid: ec9d1fcb2f890d34bb16f17661b336ef,
-    type: 3}
-  _longRangeTier2: {fileID: 0}
-  _longRangeTier3: {fileID: 897016631982190242, guid: 444d8e2c93d1d3c49aac14ca50865ae0,
+  _longRangeTier3: {fileID: 7383592310609938371, guid: e18b9f338402fb94abd78152ee3eb041,
     type: 3}
   _closeRangeChance: 50
   _mediumRangeChance: 25

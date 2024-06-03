@@ -3,7 +3,22 @@ guid: 38eab2db37635eb49a48a2fda0a79a3e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _closeRangeTier1: {fileID: 2880460769818529921, guid: 3ae58e825c9c27a4bb8a32ea02546ae1,
+      type: 3}
+  - _closeRangeTier2: {fileID: 2880460769818529921, guid: 3e57fd50e136d234e873f2df5486f889,
+      type: 3}
+  - _closeRangeTier3: {instanceID: 0}
+  - _mediumRangeTier1: {fileID: 2139322598507198438, guid: b74ec10dc68d4234f83219144ff1c375,
+      type: 3}
+  - _mediumRangeTier2: {fileID: 9066377821727146864, guid: 2b0b97ccdb7ad9c45a6ff78126b21f4c,
+      type: 3}
+  - _mediumRangeTier3: {instanceID: 0}
+  - _longRangeTier1: {fileID: 7383592310609938371, guid: bd379e6e352f3b8419884aabb6b73c4a,
+      type: 3}
+  - _longRangeTier2: {instanceID: 0}
+  - _longRangeTier3: {fileID: 7383592310609938371, guid: e18b9f338402fb94abd78152ee3eb041,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

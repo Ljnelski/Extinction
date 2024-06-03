@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -118,8 +119,14 @@ public class EnemySpawner : MonoBehaviour
             }
         }
 
+
+        // Spawn Enemies
         for (int i = 0; i < batch.Length; i++)
         {
+            System.Random R = new System.Random();
+            int randomSpawnPoint = R.Next(0, _spawnPoints.Count);
+            Instantiate<GameObject>(batch[i], _spawnPoints[randomSpawnPoint].transform);
+
             //Debug.Log(batch[i].name);
         }
 
@@ -150,6 +157,7 @@ public class SpawnCycle
 
     public bool Spawn()
     {
+
         if (Time.time - _lastSpawn >= 5f)
         {
             // Update the last spawn time

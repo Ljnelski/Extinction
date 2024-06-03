@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ClawAttack : HitBoxAttack
 {
+    [SerializeField] HitBox hitbox;
     public override void Enter()
     {
         base.Enter();
-
-        if(_player.ClawSwipeLeftAttack)
+        _hitBox = hitbox;
+        if (_player.ClawSwipeLeftAttack)
         {
             Animator.SetTrigger(_player.LeftSwipeTriggerID);
         }
@@ -26,7 +27,7 @@ public class ClawAttack : HitBoxAttack
     {
         base.Deactivate();
         _hitBox.Deactivate();
-    } 
+    }
 
     protected override void HitBoxEntered(HitBox.HurtBoxHitData target)
     {

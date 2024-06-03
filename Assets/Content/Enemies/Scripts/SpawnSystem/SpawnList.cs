@@ -8,14 +8,14 @@ public class SpawnList : ScriptableObject
 {
     [SerializeField] private GameObject _closeRangeTier1;
     [SerializeField] private GameObject _closeRangeTier2;
-    [SerializeField] private GameObject _closeRangeTier3;
+    // [SerializeField] private GameObject _closeRangeTier3;
 
     [SerializeField] private GameObject _mediumRangeTier1;
     [SerializeField] private GameObject _mediumRangeTier2;
-    [SerializeField] private GameObject _mediumRangeTier3;
+    //[SerializeField] private GameObject _mediumRangeTier3;
 
     [SerializeField] private GameObject _longRangeTier1;
-    [SerializeField] private GameObject _longRangeTier2;
+    //[SerializeField] private GameObject _longRangeTier2;
     [SerializeField] private GameObject _longRangeTier3;
 
     [Range(0f, 100f)][SerializeField] private float _closeRangeChance = 50f;
@@ -37,14 +37,14 @@ public class SpawnList : ScriptableObject
 
                 _enemies[(int)EnemyType.CloseRange, (int)EnemyTier.Tier1] = _closeRangeTier1;
                 _enemies[(int)EnemyType.CloseRange, (int)EnemyTier.Tier2] = _closeRangeTier2;
-                _enemies[(int)EnemyType.CloseRange, (int)EnemyTier.Tier3] = _closeRangeTier3;
+                //_enemies[(int)EnemyType.CloseRange, (int)EnemyTier.Tier3] = _closeRangeTier3;
 
                 _enemies[(int)EnemyType.MediumRange, (int)EnemyTier.Tier1] = _mediumRangeTier1;
                 _enemies[(int)EnemyType.MediumRange, (int)EnemyTier.Tier2] = _mediumRangeTier2;
-                _enemies[(int)EnemyType.MediumRange, (int)EnemyTier.Tier3] = _mediumRangeTier3;
+                //_enemies[(int)EnemyType.MediumRange, (int)EnemyTier.Tier3] = _mediumRangeTier3;
 
                 _enemies[(int)EnemyType.LongRange, (int)EnemyTier.Tier1] = _longRangeTier1;
-                _enemies[(int)EnemyType.LongRange, (int)EnemyTier.Tier2] = _longRangeTier2;
+                //_enemies[(int)EnemyType.LongRange, (int)EnemyTier.Tier2] = _longRangeTier2;
                 _enemies[(int)EnemyType.LongRange, (int)EnemyTier.Tier3] = _longRangeTier3;
             }
 
@@ -70,5 +70,3 @@ public class SpawnList : ScriptableObject
     }
 
 }
-
-

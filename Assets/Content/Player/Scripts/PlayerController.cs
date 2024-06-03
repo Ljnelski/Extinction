@@ -176,7 +176,7 @@ public class PlayerController : MonoBehaviour
     private void Rotate()
     {
 
-        if(!MovementLocked)
+        if (!MovementLocked)
         {
             // Calculate the angle change
             float angle = _input.LookDirection.x * _cameraRotationSpeed;
@@ -189,7 +189,7 @@ public class PlayerController : MonoBehaviour
 
             // Apply rotation transform
             _cameraLookPivot.LookAt(transform.position + lookAtDir);
-        }        
+        }
 
         // Rotate the player body to the direction the camera target is facing        
         Vector3 dirBeforeRotation = _playerPivot.forward;
@@ -203,7 +203,10 @@ public class PlayerController : MonoBehaviour
 
         float rotationSpeed = Vector3.SignedAngle(dirBeforeRotation, dirAfterRotation, Vector3.up);
 
-        Animator.SetFloat(RotationFloatID, rotationSpeed);
+        //clamp rotation in the animator to turning left, turning right, or idle.
+
+
+        Animator.SetFloat(RotationFloatID, rotationSpeed, 0.1f, Time.deltaTime);
 
     }
 
@@ -226,5 +229,3 @@ public class PlayerController : MonoBehaviour
         _currentAttack.Enter();
     }
 }
-
-

@@ -30,7 +30,7 @@ public class Idle : PlayerState
         {
             if (_player.ClawSwipeRightAttack.CanStart())
             {
-                _player.SetAttack(_player.ClawSwipeLeftAttack);
+                _player.SetAttack(_player.ClawSwipeRightAttack);
             }
         }
         else if (playerInput.WingAttack)
