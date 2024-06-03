@@ -54,7 +54,7 @@ public class EnemyController : StateMachineController, IDamageAble
 
     private GameObject _player;
     private Animator _animator;
-    [SerializeField] private NavMeshAgent _navAgent;
+    private NavMeshAgent _navAgent;
     private HurtBox _hurtBox;
 
     private float _health = 10;
@@ -234,12 +234,4 @@ public class EnemyController : StateMachineController, IDamageAble
         OnSpeedUpdated();
     }
 
-
-
-    private void Update()
-    {
-        Debug.Log("current state: " + _currentState);
-        Debug.Log("current position: " + transform.position);
-        Debug.Log("current destination: " + NavAgent.destination);
-    }
 }
