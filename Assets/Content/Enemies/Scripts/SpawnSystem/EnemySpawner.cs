@@ -120,7 +120,7 @@ public class EnemySpawner : MonoBehaviour
 
         for (int i = 0; i < batch.Length; i++)
         {
-            Debug.Log(batch[i].name);
+            //Debug.Log(batch[i].name);
         }
 
         if (_canSpawnTier3)

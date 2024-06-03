@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -34,13 +35,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform _cameraLookTarget;
     [SerializeField] private Transform _cameraLookPivot;
     [SerializeField] private float _cameraRotationSpeed;
+    [SerializeField] private float _cameraRotationLimit = 85f;
 
     private PlayerInputRecorder _input;
     private Idle _idleAttack;
     private PlayerState _currentAttack;
 
+    private Vector3 _cameraLookDirLimit;
     private float _rotateSpeed;
-    
+
+    private float _cameraAngle = 0;
+
+    public bool MovementLocked { get; set; } = false;
+
+    public int RotationFloatID { get; private set; }
     public int BiteTriggerID { get; private set; }
     public int LeftSwipeTriggerID { get; private set; }
     public int RightSwipeTriggerID { get; private set; }
@@ -65,6 +73,7 @@ public class PlayerController : MonoBehaviour
 
         _currentAttack = _idleAttack;
 
+        RotationFloatID = Animator.StringToHash("Rotation");
         LeftSwipeTriggerID = Animator.StringToHash("ClawSwipeLeft");
         RightSwipeTriggerID = Animator.StringToHash("ClawSwipeRight");
         BiteTriggerID = Animator.StringToHash("Bite");
@@ -158,20 +167,44 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Rotate The Camera Look Target as the player moves there mouse
-        _cameraLookPivot.Rotate(new Vector3(0f, _input.LookDirection.x * _cameraRotationSpeed, 0f));
+        Rotate();
 
-        // Rotate the player body to the direction the camera target is facing
+        _currentAttack.Run(_input);
+        _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;
+    }
 
-        Vector3 lookDirection = Vector3.Slerp(_playerPivot.forward, _cameraLookPivot.forward, _rotationSpeed);
+    private void Rotate()
+    {
 
+        if(!MovementLocked)
+        {
+            // Calculate the angle change
+            float angle = _input.LookDirection.x * _cameraRotationSpeed;
+
+            // Clamp angle change within limit
+            _cameraAngle = Mathf.Min(Mathf.Max(_cameraAngle + angle, -_cameraRotationLimit), _cameraRotationLimit);
+
+            // Turn the angle into a vector direction to look at
+            Vector3 lookAtDir = Quaternion.AngleAxis(_cameraAngle, Vector3.up) * transform.forward;
+
+            // Apply rotation transform
+            _cameraLookPivot.LookAt(transform.position + lookAtDir);
+        }        
+
+        // Rotate the player body to the direction the camera target is facing        
+        Vector3 dirBeforeRotation = _playerPivot.forward;
+
+        Vector3 lookDirection = Vector3.Slerp(_playerPivot.forward, _cameraLookPivot.forward, _rotationSpeed * Time.deltaTime);
         Quaternion quaternion = Quaternion.LookRotation(lookDirection);
 
         _playerPivot.rotation = quaternion;
 
-        _currentAttack.Run(_input);
-        
-        _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;      
+        Vector3 dirAfterRotation = _playerPivot.forward;
+
+        float rotationSpeed = Vector3.SignedAngle(dirBeforeRotation, dirAfterRotation, Vector3.up);
+
+        Animator.SetFloat(RotationFloatID, rotationSpeed);
+
     }
 
     public void ExitAttack()
@@ -181,7 +214,7 @@ public class PlayerController : MonoBehaviour
 
     public void AdvanceAttackPhase()
     {
-        if(_currentAttack as PlayerAttackState)
+        if (_currentAttack as PlayerAttackState)
         {
             ((PlayerAttackState)_currentAttack).QueuePhaseAdvance();
         }

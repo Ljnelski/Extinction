@@ -27,7 +27,7 @@ public class BreathAttack : HitBoxAttack
 
         if(_attackPhase == AttackPhase.Activated)
         {
-            float staminaDrain = (_staminaDrain + StaminaCost) * Time.deltaTime;
+            float staminaDrain = (_staminaDrain) * Time.deltaTime;
 
             if (!playerInput.BreathAttack || Stats.Stamina < staminaDrain)
             {

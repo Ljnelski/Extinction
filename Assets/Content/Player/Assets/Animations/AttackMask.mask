@@ -1,0 +1,1993 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AttackMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_inputLayer_hrc/arm_L_elbowPv_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_inputLayer_hrc/arm_L_shldr_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_inputLayer_hrc/arm_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_inputLayer_hrc/arm_L_wrist_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_outputLayer_hrc/arm_L_shldr_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_outputLayer_hrc/arm_L_shldr_out/arm_L_elbow_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_outputLayer_hrc/arm_L_shldr_out/arm_L_elbow_out/arm_L_wrist_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_elbowPv_pv_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_elbowPv_pv_anim_srt/arm_L_elbowPv_pv_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_elbowPv_pv_anim_srt/arm_L_elbowPv_pv_anim_space/arm_L_elbowPv_pv_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_shldr_fk_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_shldr_fk_anim_srt/arm_L_shldr_fk_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_shldr_fk_anim_srt/arm_L_shldr_fk_anim_space/arm_L_shldr_fk_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_shldr_fk_anim_srt/arm_L_shldr_fk_anim_space/arm_L_shldr_fk_anim/arm_L_elbow_fk_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_shldr_fk_anim_srt/arm_L_shldr_fk_anim_space/arm_L_shldr_fk_anim/arm_L_elbow_fk_anim_srt/arm_L_elbow_fk_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_shldr_fk_anim_srt/arm_L_shldr_fk_anim_space/arm_L_shldr_fk_anim/arm_L_elbow_fk_anim_srt/arm_L_elbow_fk_anim/arm_L_wrist_fk_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_shldr_fk_anim_srt/arm_L_shldr_fk_anim_space/arm_L_shldr_fk_anim/arm_L_elbow_fk_anim_srt/arm_L_elbow_fk_anim/arm_L_wrist_fk_anim_srt/arm_L_wrist_fk_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_shldr_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_shldr_ik_jnt/arm_L_elbow_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_shldr_ik_jnt/arm_L_elbow_ik_jnt/arm_L_wrist_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_uprblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_uprblend_srt/arm_L_midblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_parentSpace_srt/arm_L_uprblend_srt/arm_L_midblend_srt/arm_L_endblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_shldr_ik_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_shldr_ik_anim_srt/arm_L_shldr_ik_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_upvec_ann
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_wrist_ik_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_wrist_ik_anim_srt/arm_L_wrist_ik_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_wrist_ik_anim_srt/arm_L_wrist_ik_anim_space/arm_L_wrist_ik_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_L_hrc/arm_L_rigLayer_hrc/arm_L_wrist_ik_anim_srt/arm_L_wrist_ik_anim_space/arm_L_wrist_ik_anim/arm_L_ik_ikhandle
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_inputLayer_hrc/arm_R_elbowPv_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_inputLayer_hrc/arm_R_shldr_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_inputLayer_hrc/arm_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_inputLayer_hrc/arm_R_wrist_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_outputLayer_hrc/arm_R_shldr_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_outputLayer_hrc/arm_R_shldr_out/arm_R_elbow_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_outputLayer_hrc/arm_R_shldr_out/arm_R_elbow_out/arm_R_wrist_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_elbowPv_pv_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_elbowPv_pv_anim_srt/arm_R_elbowPv_pv_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_elbowPv_pv_anim_srt/arm_R_elbowPv_pv_anim_space/arm_R_elbowPv_pv_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_shldr_fk_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_shldr_fk_anim_srt/arm_R_shldr_fk_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_shldr_fk_anim_srt/arm_R_shldr_fk_anim_space/arm_R_shldr_fk_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_shldr_fk_anim_srt/arm_R_shldr_fk_anim_space/arm_R_shldr_fk_anim/arm_R_elbow_fk_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_shldr_fk_anim_srt/arm_R_shldr_fk_anim_space/arm_R_shldr_fk_anim/arm_R_elbow_fk_anim_srt/arm_R_elbow_fk_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_shldr_fk_anim_srt/arm_R_shldr_fk_anim_space/arm_R_shldr_fk_anim/arm_R_elbow_fk_anim_srt/arm_R_elbow_fk_anim/arm_R_wrist_fk_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_shldr_fk_anim_srt/arm_R_shldr_fk_anim_space/arm_R_shldr_fk_anim/arm_R_elbow_fk_anim_srt/arm_R_elbow_fk_anim/arm_R_wrist_fk_anim_srt/arm_R_wrist_fk_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_shldr_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_shldr_ik_jnt/arm_R_elbow_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_shldr_ik_jnt/arm_R_elbow_ik_jnt/arm_R_wrist_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_uprblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_uprblend_srt/arm_R_midblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_parentSpace_srt/arm_R_uprblend_srt/arm_R_midblend_srt/arm_R_endblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_shldr_ik_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_shldr_ik_anim_srt/arm_R_shldr_ik_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_upvec_ann
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_wrist_ik_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_wrist_ik_anim_srt/arm_R_wrist_ik_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_wrist_ik_anim_srt/arm_R_wrist_ik_anim_space/arm_R_wrist_ik_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_wrist_ik_anim_srt/arm_R_wrist_ik_anim_space/arm_R_wrist_ik_anim/arm_R_ik_ikhandle
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/arm_R_hrc/arm_R_rigLayer_hrc/arm_R_wrist_ik_anim_srt/arm_R_wrist_ik_anim_space/arm_R_wrist_ik_anim1
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc/clavical_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc/clavical_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc/clavical_L_inputLayer_hrc/clavical_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc/clavical_L_inputLayer_hrc/clavical_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc/clavical_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc/clavical_L_outputLayer_hrc/clavical_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc/clavical_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc/clavical_L_rigLayer_hrc/clavical_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc/clavical_L_rigLayer_hrc/clavical_L_00_anim_srt/clavical_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_L_hrc/clavical_L_rigLayer_hrc/clavical_L_00_anim_srt/clavical_L_00_anim_space/clavical_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc/clavical_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc/clavical_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc/clavical_R_inputLayer_hrc/clavical_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc/clavical_R_inputLayer_hrc/clavical_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc/clavical_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc/clavical_R_outputLayer_hrc/clavical_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc/clavical_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc/clavical_R_rigLayer_hrc/clavical_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc/clavical_R_rigLayer_hrc/clavical_R_00_anim_srt/clavical_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/clavical_R_hrc/clavical_R_rigLayer_hrc/clavical_R_00_anim_srt/clavical_R_00_anim_space/clavical_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_deformLayer_hrc/eye_L_differentiatorBS_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_inputLayer_hrc/eye_L_eyeTarget_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_inputLayer_hrc/eye_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_outputLayer_hrc/eye_L_eye_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_rigLayer_hrc/eye_L_extras_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_rigLayer_hrc/eye_L_parentSpace_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_rigLayer_hrc/eye_L_parentSpace_srt/eye_L_eyeMain_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_rigLayer_hrc/eye_L_parentSpace_srt/eye_L_eyeMain_anim/eye_L_ctrls_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_rigLayer_hrc/eye_L_parentSpace_srt/eye_L_eyeMain_anim/eye_L_eye_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_rigLayer_hrc/eye_L_parentSpace_srt/eye_L_eyeMain_anim/eye_L_eye_srt/eye_L_eye_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_rigLayer_hrc/eye_L_parentSpace_srt/eye_L_eyeTarget_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_L_hrc/eye_L_rigLayer_hrc/eye_L_parentSpace_srt/eye_L_outTrs_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_deformLayer_hrc/eye_R_differentiatorBS_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_inputLayer_hrc/eye_R_eyeTarget_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_inputLayer_hrc/eye_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_outputLayer_hrc/eye_R_eye_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_rigLayer_hrc/eye_R_extras_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_rigLayer_hrc/eye_R_parentSpace_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_rigLayer_hrc/eye_R_parentSpace_srt/eye_R_eyeMain_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_rigLayer_hrc/eye_R_parentSpace_srt/eye_R_eyeMain_anim/eye_R_ctrls_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_rigLayer_hrc/eye_R_parentSpace_srt/eye_R_eyeMain_anim/eye_R_eye_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_rigLayer_hrc/eye_R_parentSpace_srt/eye_R_eyeMain_anim/eye_R_eye_srt/eye_R_eye_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_rigLayer_hrc/eye_R_parentSpace_srt/eye_R_eyeTarget_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/eye_R_hrc/eye_R_rigLayer_hrc/eye_R_parentSpace_srt/eye_R_outTrs_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_inputLayer_hrc/finger_middle_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_inputLayer_hrc/finger_middle_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_outputLayer_hrc/finger_middle_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_outputLayer_hrc/finger_middle_L_00_out/finger_middle_L_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_outputLayer_hrc/finger_middle_L_00_out/finger_middle_L_01_out/finger_middle_L_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_outputLayer_hrc/finger_middle_L_00_out/finger_middle_L_01_out/finger_middle_L_02_out/finger_middle_L_03_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space/finger_middle_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space/finger_middle_L_00_anim/finger_middle_L_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space/finger_middle_L_00_anim/finger_middle_L_01_anim_srt/finger_middle_L_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space/finger_middle_L_00_anim/finger_middle_L_01_anim_srt/finger_middle_L_01_anim_space/finger_middle_L_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space/finger_middle_L_00_anim/finger_middle_L_01_anim_srt/finger_middle_L_01_anim_space/finger_middle_L_01_anim/finger_middle_L_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space/finger_middle_L_00_anim/finger_middle_L_01_anim_srt/finger_middle_L_01_anim_space/finger_middle_L_01_anim/finger_middle_L_02_anim_srt/finger_middle_L_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space/finger_middle_L_00_anim/finger_middle_L_01_anim_srt/finger_middle_L_01_anim_space/finger_middle_L_01_anim/finger_middle_L_02_anim_srt/finger_middle_L_02_anim_space/finger_middle_L_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space/finger_middle_L_00_anim/finger_middle_L_01_anim_srt/finger_middle_L_01_anim_space/finger_middle_L_01_anim/finger_middle_L_02_anim_srt/finger_middle_L_02_anim_space/finger_middle_L_02_anim/finger_middle_L_03_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space/finger_middle_L_00_anim/finger_middle_L_01_anim_srt/finger_middle_L_01_anim_space/finger_middle_L_01_anim/finger_middle_L_02_anim_srt/finger_middle_L_02_anim_space/finger_middle_L_02_anim/finger_middle_L_03_anim_srt/finger_middle_L_03_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_L_hrc/finger_middle_L_rigLayer_hrc/finger_middle_L_00_anim_srt/finger_middle_L_00_anim_space/finger_middle_L_00_anim/finger_middle_L_01_anim_srt/finger_middle_L_01_anim_space/finger_middle_L_01_anim/finger_middle_L_02_anim_srt/finger_middle_L_02_anim_space/finger_middle_L_02_anim/finger_middle_L_03_anim_srt/finger_middle_L_03_anim_space/finger_middle_L_03_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_inputLayer_hrc/finger_middle_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_inputLayer_hrc/finger_middle_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_outputLayer_hrc/finger_middle_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_outputLayer_hrc/finger_middle_R_00_out/finger_middle_R_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_outputLayer_hrc/finger_middle_R_00_out/finger_middle_R_01_out/finger_middle_R_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_outputLayer_hrc/finger_middle_R_00_out/finger_middle_R_01_out/finger_middle_R_02_out/finger_middle_R_03_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space/finger_middle_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space/finger_middle_R_00_anim/finger_middle_R_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space/finger_middle_R_00_anim/finger_middle_R_01_anim_srt/finger_middle_R_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space/finger_middle_R_00_anim/finger_middle_R_01_anim_srt/finger_middle_R_01_anim_space/finger_middle_R_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space/finger_middle_R_00_anim/finger_middle_R_01_anim_srt/finger_middle_R_01_anim_space/finger_middle_R_01_anim/finger_middle_R_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space/finger_middle_R_00_anim/finger_middle_R_01_anim_srt/finger_middle_R_01_anim_space/finger_middle_R_01_anim/finger_middle_R_02_anim_srt/finger_middle_R_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space/finger_middle_R_00_anim/finger_middle_R_01_anim_srt/finger_middle_R_01_anim_space/finger_middle_R_01_anim/finger_middle_R_02_anim_srt/finger_middle_R_02_anim_space/finger_middle_R_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space/finger_middle_R_00_anim/finger_middle_R_01_anim_srt/finger_middle_R_01_anim_space/finger_middle_R_01_anim/finger_middle_R_02_anim_srt/finger_middle_R_02_anim_space/finger_middle_R_02_anim/finger_middle_R_03_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space/finger_middle_R_00_anim/finger_middle_R_01_anim_srt/finger_middle_R_01_anim_space/finger_middle_R_01_anim/finger_middle_R_02_anim_srt/finger_middle_R_02_anim_space/finger_middle_R_02_anim/finger_middle_R_03_anim_srt/finger_middle_R_03_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_middle_R_hrc/finger_middle_R_rigLayer_hrc/finger_middle_R_00_anim_srt/finger_middle_R_00_anim_space/finger_middle_R_00_anim/finger_middle_R_01_anim_srt/finger_middle_R_01_anim_space/finger_middle_R_01_anim/finger_middle_R_02_anim_srt/finger_middle_R_02_anim_space/finger_middle_R_02_anim/finger_middle_R_03_anim_srt/finger_middle_R_03_anim_space/finger_middle_R_03_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_inputLayer_hrc/finger_pinky_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_inputLayer_hrc/finger_pinky_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_outputLayer_hrc/finger_pinky_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_outputLayer_hrc/finger_pinky_L_00_out/finger_pinky_L_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_outputLayer_hrc/finger_pinky_L_00_out/finger_pinky_L_01_out/finger_pinky_L_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_outputLayer_hrc/finger_pinky_L_00_out/finger_pinky_L_01_out/finger_pinky_L_02_out/finger_pinky_L_03_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space/finger_pinky_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space/finger_pinky_L_00_anim/finger_pinky_L_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space/finger_pinky_L_00_anim/finger_pinky_L_01_anim_srt/finger_pinky_L_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space/finger_pinky_L_00_anim/finger_pinky_L_01_anim_srt/finger_pinky_L_01_anim_space/finger_pinky_L_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space/finger_pinky_L_00_anim/finger_pinky_L_01_anim_srt/finger_pinky_L_01_anim_space/finger_pinky_L_01_anim/finger_pinky_L_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space/finger_pinky_L_00_anim/finger_pinky_L_01_anim_srt/finger_pinky_L_01_anim_space/finger_pinky_L_01_anim/finger_pinky_L_02_anim_srt/finger_pinky_L_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space/finger_pinky_L_00_anim/finger_pinky_L_01_anim_srt/finger_pinky_L_01_anim_space/finger_pinky_L_01_anim/finger_pinky_L_02_anim_srt/finger_pinky_L_02_anim_space/finger_pinky_L_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space/finger_pinky_L_00_anim/finger_pinky_L_01_anim_srt/finger_pinky_L_01_anim_space/finger_pinky_L_01_anim/finger_pinky_L_02_anim_srt/finger_pinky_L_02_anim_space/finger_pinky_L_02_anim/finger_pinky_L_03_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space/finger_pinky_L_00_anim/finger_pinky_L_01_anim_srt/finger_pinky_L_01_anim_space/finger_pinky_L_01_anim/finger_pinky_L_02_anim_srt/finger_pinky_L_02_anim_space/finger_pinky_L_02_anim/finger_pinky_L_03_anim_srt/finger_pinky_L_03_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_L_hrc/finger_pinky_L_rigLayer_hrc/finger_pinky_L_00_anim_srt/finger_pinky_L_00_anim_space/finger_pinky_L_00_anim/finger_pinky_L_01_anim_srt/finger_pinky_L_01_anim_space/finger_pinky_L_01_anim/finger_pinky_L_02_anim_srt/finger_pinky_L_02_anim_space/finger_pinky_L_02_anim/finger_pinky_L_03_anim_srt/finger_pinky_L_03_anim_space/finger_pinky_L_03_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_inputLayer_hrc/finger_pinky_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_inputLayer_hrc/finger_pinky_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_outputLayer_hrc/finger_pinky_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_outputLayer_hrc/finger_pinky_R_00_out/finger_pinky_R_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_outputLayer_hrc/finger_pinky_R_00_out/finger_pinky_R_01_out/finger_pinky_R_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_outputLayer_hrc/finger_pinky_R_00_out/finger_pinky_R_01_out/finger_pinky_R_02_out/finger_pinky_R_03_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space/finger_pinky_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space/finger_pinky_R_00_anim/finger_pinky_R_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space/finger_pinky_R_00_anim/finger_pinky_R_01_anim_srt/finger_pinky_R_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space/finger_pinky_R_00_anim/finger_pinky_R_01_anim_srt/finger_pinky_R_01_anim_space/finger_pinky_R_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space/finger_pinky_R_00_anim/finger_pinky_R_01_anim_srt/finger_pinky_R_01_anim_space/finger_pinky_R_01_anim/finger_pinky_R_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space/finger_pinky_R_00_anim/finger_pinky_R_01_anim_srt/finger_pinky_R_01_anim_space/finger_pinky_R_01_anim/finger_pinky_R_02_anim_srt/finger_pinky_R_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space/finger_pinky_R_00_anim/finger_pinky_R_01_anim_srt/finger_pinky_R_01_anim_space/finger_pinky_R_01_anim/finger_pinky_R_02_anim_srt/finger_pinky_R_02_anim_space/finger_pinky_R_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space/finger_pinky_R_00_anim/finger_pinky_R_01_anim_srt/finger_pinky_R_01_anim_space/finger_pinky_R_01_anim/finger_pinky_R_02_anim_srt/finger_pinky_R_02_anim_space/finger_pinky_R_02_anim/finger_pinky_R_03_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space/finger_pinky_R_00_anim/finger_pinky_R_01_anim_srt/finger_pinky_R_01_anim_space/finger_pinky_R_01_anim/finger_pinky_R_02_anim_srt/finger_pinky_R_02_anim_space/finger_pinky_R_02_anim/finger_pinky_R_03_anim_srt/finger_pinky_R_03_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pinky_R_hrc/finger_pinky_R_rigLayer_hrc/finger_pinky_R_00_anim_srt/finger_pinky_R_00_anim_space/finger_pinky_R_00_anim/finger_pinky_R_01_anim_srt/finger_pinky_R_01_anim_space/finger_pinky_R_01_anim/finger_pinky_R_02_anim_srt/finger_pinky_R_02_anim_space/finger_pinky_R_02_anim/finger_pinky_R_03_anim_srt/finger_pinky_R_03_anim_space/finger_pinky_R_03_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_inputLayer_hrc/finger_pointer_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_inputLayer_hrc/finger_pointer_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_outputLayer_hrc/finger_pointer_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_outputLayer_hrc/finger_pointer_L_00_out/finger_pointer_L_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_outputLayer_hrc/finger_pointer_L_00_out/finger_pointer_L_01_out/finger_pointer_L_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_outputLayer_hrc/finger_pointer_L_00_out/finger_pointer_L_01_out/finger_pointer_L_02_out/finger_pointer_L_03_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space/finger_pointer_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space/finger_pointer_L_00_anim/finger_pointer_L_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space/finger_pointer_L_00_anim/finger_pointer_L_01_anim_srt/finger_pointer_L_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space/finger_pointer_L_00_anim/finger_pointer_L_01_anim_srt/finger_pointer_L_01_anim_space/finger_pointer_L_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space/finger_pointer_L_00_anim/finger_pointer_L_01_anim_srt/finger_pointer_L_01_anim_space/finger_pointer_L_01_anim/finger_pointer_L_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space/finger_pointer_L_00_anim/finger_pointer_L_01_anim_srt/finger_pointer_L_01_anim_space/finger_pointer_L_01_anim/finger_pointer_L_02_anim_srt/finger_pointer_L_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space/finger_pointer_L_00_anim/finger_pointer_L_01_anim_srt/finger_pointer_L_01_anim_space/finger_pointer_L_01_anim/finger_pointer_L_02_anim_srt/finger_pointer_L_02_anim_space/finger_pointer_L_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space/finger_pointer_L_00_anim/finger_pointer_L_01_anim_srt/finger_pointer_L_01_anim_space/finger_pointer_L_01_anim/finger_pointer_L_02_anim_srt/finger_pointer_L_02_anim_space/finger_pointer_L_02_anim/finger_pointer_L_03_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space/finger_pointer_L_00_anim/finger_pointer_L_01_anim_srt/finger_pointer_L_01_anim_space/finger_pointer_L_01_anim/finger_pointer_L_02_anim_srt/finger_pointer_L_02_anim_space/finger_pointer_L_02_anim/finger_pointer_L_03_anim_srt/finger_pointer_L_03_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_L_hrc/finger_pointer_L_rigLayer_hrc/finger_pointer_L_00_anim_srt/finger_pointer_L_00_anim_space/finger_pointer_L_00_anim/finger_pointer_L_01_anim_srt/finger_pointer_L_01_anim_space/finger_pointer_L_01_anim/finger_pointer_L_02_anim_srt/finger_pointer_L_02_anim_space/finger_pointer_L_02_anim/finger_pointer_L_03_anim_srt/finger_pointer_L_03_anim_space/finger_pointer_L_03_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_inputLayer_hrc/finger_pointer_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_inputLayer_hrc/finger_pointer_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_outputLayer_hrc/finger_pointer_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_outputLayer_hrc/finger_pointer_R_00_out/finger_pointer_R_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_outputLayer_hrc/finger_pointer_R_00_out/finger_pointer_R_01_out/finger_pointer_R_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_outputLayer_hrc/finger_pointer_R_00_out/finger_pointer_R_01_out/finger_pointer_R_02_out/finger_pointer_R_03_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space/finger_pointer_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space/finger_pointer_R_00_anim/finger_pointer_R_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space/finger_pointer_R_00_anim/finger_pointer_R_01_anim_srt/finger_pointer_R_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space/finger_pointer_R_00_anim/finger_pointer_R_01_anim_srt/finger_pointer_R_01_anim_space/finger_pointer_R_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space/finger_pointer_R_00_anim/finger_pointer_R_01_anim_srt/finger_pointer_R_01_anim_space/finger_pointer_R_01_anim/finger_pointer_R_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space/finger_pointer_R_00_anim/finger_pointer_R_01_anim_srt/finger_pointer_R_01_anim_space/finger_pointer_R_01_anim/finger_pointer_R_02_anim_srt/finger_pointer_R_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space/finger_pointer_R_00_anim/finger_pointer_R_01_anim_srt/finger_pointer_R_01_anim_space/finger_pointer_R_01_anim/finger_pointer_R_02_anim_srt/finger_pointer_R_02_anim_space/finger_pointer_R_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space/finger_pointer_R_00_anim/finger_pointer_R_01_anim_srt/finger_pointer_R_01_anim_space/finger_pointer_R_01_anim/finger_pointer_R_02_anim_srt/finger_pointer_R_02_anim_space/finger_pointer_R_02_anim/finger_pointer_R_03_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space/finger_pointer_R_00_anim/finger_pointer_R_01_anim_srt/finger_pointer_R_01_anim_space/finger_pointer_R_01_anim/finger_pointer_R_02_anim_srt/finger_pointer_R_02_anim_space/finger_pointer_R_02_anim/finger_pointer_R_03_anim_srt/finger_pointer_R_03_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_pointer_R_hrc/finger_pointer_R_rigLayer_hrc/finger_pointer_R_00_anim_srt/finger_pointer_R_00_anim_space/finger_pointer_R_00_anim/finger_pointer_R_01_anim_srt/finger_pointer_R_01_anim_space/finger_pointer_R_01_anim/finger_pointer_R_02_anim_srt/finger_pointer_R_02_anim_space/finger_pointer_R_02_anim/finger_pointer_R_03_anim_srt/finger_pointer_R_03_anim_space/finger_pointer_R_03_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_inputLayer_hrc/finger_thumb_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_inputLayer_hrc/finger_thumb_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_outputLayer_hrc/finger_thumb_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_outputLayer_hrc/finger_thumb_L_00_out/finger_thumb_L_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_outputLayer_hrc/finger_thumb_L_00_out/finger_thumb_L_01_out/finger_thumb_L_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_rigLayer_hrc/finger_thumb_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_rigLayer_hrc/finger_thumb_L_00_anim_srt/finger_thumb_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_rigLayer_hrc/finger_thumb_L_00_anim_srt/finger_thumb_L_00_anim_space/finger_thumb_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_rigLayer_hrc/finger_thumb_L_00_anim_srt/finger_thumb_L_00_anim_space/finger_thumb_L_00_anim/finger_thumb_L_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_rigLayer_hrc/finger_thumb_L_00_anim_srt/finger_thumb_L_00_anim_space/finger_thumb_L_00_anim/finger_thumb_L_01_anim_srt/finger_thumb_L_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_rigLayer_hrc/finger_thumb_L_00_anim_srt/finger_thumb_L_00_anim_space/finger_thumb_L_00_anim/finger_thumb_L_01_anim_srt/finger_thumb_L_01_anim_space/finger_thumb_L_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_rigLayer_hrc/finger_thumb_L_00_anim_srt/finger_thumb_L_00_anim_space/finger_thumb_L_00_anim/finger_thumb_L_01_anim_srt/finger_thumb_L_01_anim_space/finger_thumb_L_01_anim/finger_thumb_L_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_rigLayer_hrc/finger_thumb_L_00_anim_srt/finger_thumb_L_00_anim_space/finger_thumb_L_00_anim/finger_thumb_L_01_anim_srt/finger_thumb_L_01_anim_space/finger_thumb_L_01_anim/finger_thumb_L_02_anim_srt/finger_thumb_L_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_L_hrc/finger_thumb_L_rigLayer_hrc/finger_thumb_L_00_anim_srt/finger_thumb_L_00_anim_space/finger_thumb_L_00_anim/finger_thumb_L_01_anim_srt/finger_thumb_L_01_anim_space/finger_thumb_L_01_anim/finger_thumb_L_02_anim_srt/finger_thumb_L_02_anim_space/finger_thumb_L_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_inputLayer_hrc/finger_thumb_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_inputLayer_hrc/finger_thumb_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_outputLayer_hrc/finger_thumb_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_outputLayer_hrc/finger_thumb_R_00_out/finger_thumb_R_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_outputLayer_hrc/finger_thumb_R_00_out/finger_thumb_R_01_out/finger_thumb_R_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_rigLayer_hrc/finger_thumb_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_rigLayer_hrc/finger_thumb_R_00_anim_srt/finger_thumb_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_rigLayer_hrc/finger_thumb_R_00_anim_srt/finger_thumb_R_00_anim_space/finger_thumb_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_rigLayer_hrc/finger_thumb_R_00_anim_srt/finger_thumb_R_00_anim_space/finger_thumb_R_00_anim/finger_thumb_R_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_rigLayer_hrc/finger_thumb_R_00_anim_srt/finger_thumb_R_00_anim_space/finger_thumb_R_00_anim/finger_thumb_R_01_anim_srt/finger_thumb_R_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_rigLayer_hrc/finger_thumb_R_00_anim_srt/finger_thumb_R_00_anim_space/finger_thumb_R_00_anim/finger_thumb_R_01_anim_srt/finger_thumb_R_01_anim_space/finger_thumb_R_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_rigLayer_hrc/finger_thumb_R_00_anim_srt/finger_thumb_R_00_anim_space/finger_thumb_R_00_anim/finger_thumb_R_01_anim_srt/finger_thumb_R_01_anim_space/finger_thumb_R_01_anim/finger_thumb_R_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_rigLayer_hrc/finger_thumb_R_00_anim_srt/finger_thumb_R_00_anim_space/finger_thumb_R_00_anim/finger_thumb_R_01_anim_srt/finger_thumb_R_01_anim_space/finger_thumb_R_01_anim/finger_thumb_R_02_anim_srt/finger_thumb_R_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/finger_thumb_R_hrc/finger_thumb_R_rigLayer_hrc/finger_thumb_R_00_anim_srt/finger_thumb_R_00_anim_space/finger_thumb_R_00_anim/finger_thumb_R_01_anim_srt/finger_thumb_R_01_anim_space/finger_thumb_R_01_anim/finger_thumb_R_02_anim_srt/finger_thumb_R_02_anim_space/finger_thumb_R_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_inputLayer_hrc/god_M_godnode_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_outputLayer_hrc/god_M_godnode_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_outputLayer_hrc/god_M_godnode_out/god_M_offset_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_outputLayer_hrc/god_M_godnode_out/god_M_offset_out/god_M_rootMotion_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_rigLayer_hrc/god_M_godnode_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_rigLayer_hrc/god_M_godnode_anim_srt/god_M_godnode_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_rigLayer_hrc/god_M_godnode_anim_srt/god_M_godnode_anim/god_M_offset_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_rigLayer_hrc/god_M_godnode_anim_srt/god_M_godnode_anim/god_M_offset_anim_srt/god_M_offset_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_rigLayer_hrc/god_M_godnode_anim_srt/god_M_godnode_anim/god_M_offset_anim_srt/god_M_offset_anim/god_M_rootMotion_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/god_M_hrc/god_M_rigLayer_hrc/god_M_godnode_anim_srt/god_M_godnode_anim/god_M_offset_anim_srt/god_M_offset_anim/god_M_rootMotion_anim_srt/god_M_rootMotion_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_inputLayer_hrc/head_M_neck_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_inputLayer_hrc/head_M_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_outputLayer_hrc/head_M_neck_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_outputLayer_hrc/head_M_neck_out/head_M_head_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_rigLayer_hrc/parentSpace
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_rigLayer_hrc/parentSpace/head_M_neck_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_rigLayer_hrc/parentSpace/head_M_neck_anim_srt/head_M_neck_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_rigLayer_hrc/parentSpace/head_M_neck_anim_srt/head_M_neck_anim_space/head_M_neck_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_rigLayer_hrc/parentSpace/head_M_neck_anim_srt/head_M_neck_anim_space/head_M_neck_anim/head_M_neck_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_rigLayer_hrc/parentSpace/head_M_neck_anim_srt/head_M_neck_anim_space/head_M_neck_anim/head_M_neck_anim_srt/head_M_head_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/head_M_hrc/head_M_rigLayer_hrc/parentSpace/head_M_neck_anim_srt/head_M_neck_anim_space/head_M_neck_anim/head_M_neck_anim_srt/head_M_head_anim_space/head_M_head_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_inputLayer_hrc/jaw_M_root_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_outputLayer_hrc/jaw_M_jaw_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_outputLayer_hrc/jaw_M_jaw_out/jaw_M_botLip_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_outputLayer_hrc/jaw_M_jaw_out/jaw_M_chin_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_outputLayer_hrc/jaw_M_topLip_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc/jaw_M_rotAll_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc/jaw_M_rotAll_anim_srt/jaw_M_rotAll_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc/jaw_M_rotAll_anim_srt/jaw_M_rotAll_anim/jaw_M_jaw_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc/jaw_M_rotAll_anim_srt/jaw_M_rotAll_anim/jaw_M_jaw_anim_srt/jaw_M_jaw_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc/jaw_M_rotAll_anim_srt/jaw_M_rotAll_anim/jaw_M_jaw_anim_srt/jaw_M_jaw_anim/jaw_M_botLip_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc/jaw_M_rotAll_anim_srt/jaw_M_rotAll_anim/jaw_M_jaw_anim_srt/jaw_M_jaw_anim/jaw_M_botLip_anim_srt/jaw_M_botLip_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc/jaw_M_rotAll_anim_srt/jaw_M_rotAll_anim/jaw_M_jaw_anim_srt/jaw_M_jaw_anim/jaw_M_chin_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc/jaw_M_rotAll_anim_srt/jaw_M_rotAll_anim/jaw_M_jaw_anim_srt/jaw_M_jaw_anim/jaw_M_chin_anim_srt/jaw_M_chin_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc/jaw_M_rotAll_anim_srt/jaw_M_rotAll_anim/jaw_M_topLip_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/jaw_M_hrc/jaw_M_rigLayer_hrc/jaw_M_rotAll_anim_srt/jaw_M_rotAll_anim/jaw_M_topLip_anim_srt/jaw_M_topLip_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_inputLayer_hrc/leg_L_foot_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_inputLayer_hrc/leg_L_kneePv_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_inputLayer_hrc/leg_L_upr_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_inputLayer_hrc/leg_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_outputLayer_hrc/leg_L_upr_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_outputLayer_hrc/leg_L_upr_out/leg_L_knee_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_outputLayer_hrc/leg_L_upr_out/leg_L_knee_out/leg_L_ankle_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_outputLayer_hrc/leg_L_upr_out/leg_L_knee_out/leg_L_ankle_out/leg_L_foot_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_outputLayer_hrc/leg_L_upr_out/leg_L_knee_out/leg_L_ankle_out/leg_L_foot_out/leg_L_ball_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/baseik_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/baseik_srt/leg_L_hip_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt/leg_L_toeTip_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt/leg_L_toeTip_anim/leg_L_ball_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt/leg_L_toeTip_anim/leg_L_ball_anim_srt/leg_L_ball_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt/leg_L_toeTip_anim/leg_L_ball_anim_srt/leg_L_ball_anim_attr_srt/leg_L_ball_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt/leg_L_toeTip_anim/leg_L_ball_anim_srt/leg_L_ball_anim_attr_srt/leg_L_ball_anim/leg_L_ballik_ikhandle
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt/leg_L_toeTip_anim/leg_L_ball_anim_srt/leg_L_ball_anim_attr_srt/leg_L_ball_anim/leg_L_primary_ikhandleSpring
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt/leg_L_toeTip_anim/leg_L_toeTap_piv_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt/leg_L_toeTip_anim/leg_L_toeTap_piv_anim_srt/leg_L_toeTap_piv_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt/leg_L_toeTip_anim/leg_L_toeTap_piv_anim_srt/leg_L_toeTap_piv_anim_attr_srt/leg_L_toeTap_piv_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/end_srt/leg_L_foot_anim_space/leg_L_foot_anim/leg_L_heel_anim_srt/leg_L_heel_anim_attr_srt/leg_L_heel_anim/leg_L_outer_anim_srt/leg_L_outer_anim_attr_srt/leg_L_outer_anim/leg_L_inner_anim_srt/leg_L_inner_anim_attr_srt/leg_L_inner_anim/leg_L_toeTip_anim_srt/leg_L_toeTip_anim_attr_srt/leg_L_toeTip_anim/leg_L_toeTap_piv_anim_srt/leg_L_toeTap_piv_anim_attr_srt/leg_L_toeTap_piv_anim/leg_L_toeik_ikhandle
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/hock_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/hock_srt/leg_L_ankleik_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/hock_srt/leg_L_ankleik_anim/leg_L_secondary_ikhandleRP
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt/leg_L_upr_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt/leg_L_upr_anim_space/leg_L_upr_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt/leg_L_upr_anim_space/leg_L_upr_anim/leg_L_knee_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt/leg_L_upr_anim_space/leg_L_upr_anim/leg_L_knee_anim_srt/leg_L_knee_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt/leg_L_upr_anim_space/leg_L_upr_anim/leg_L_knee_anim_srt/leg_L_knee_anim/leg_L_anklefk_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt/leg_L_upr_anim_space/leg_L_upr_anim/leg_L_knee_anim_srt/leg_L_knee_anim/leg_L_anklefk_anim_srt/leg_L_anklefk_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt/leg_L_upr_anim_space/leg_L_upr_anim/leg_L_knee_anim_srt/leg_L_knee_anim/leg_L_anklefk_anim_srt/leg_L_anklefk_anim/leg_L_foot_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt/leg_L_upr_anim_space/leg_L_upr_anim/leg_L_knee_anim_srt/leg_L_knee_anim/leg_L_anklefk_anim_srt/leg_L_anklefk_anim/leg_L_foot_anim_srt/leg_L_foot_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt/leg_L_upr_anim_space/leg_L_upr_anim/leg_L_knee_anim_srt/leg_L_knee_anim/leg_L_anklefk_anim_srt/leg_L_anklefk_anim/leg_L_foot_anim_srt/leg_L_foot_anim/leg_L_ball_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_upr_anim_srt/leg_L_upr_anim_space/leg_L_upr_anim/leg_L_knee_anim_srt/leg_L_knee_anim/leg_L_anklefk_anim_srt/leg_L_anklefk_anim/leg_L_foot_anim_srt/leg_L_foot_anim/leg_L_ball_anim_srt/leg_L_ball_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_uprblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_uprblend_srt/leg_L_midblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_uprblend_srt/leg_L_midblend_srt/leg_L_ankleblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_uprblend_srt/leg_L_midblend_srt/leg_L_ankleblend_srt/leg_L_endblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_parentSpace_srt/leg_L_uprblend_srt/leg_L_midblend_srt/leg_L_ankleblend_srt/leg_L_endblend_srt/leg_L_ballblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upr_Spring_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upr_Spring_jnt/leg_L_knee_Spring_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upr_Spring_jnt/leg_L_knee_Spring_jnt/leg_L_ankle_Spring_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upr_Spring_jnt/leg_L_knee_Spring_jnt/leg_L_ankle_Spring_jnt/leg_L_foot_Spring_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upr_Spring_jnt/leg_L_upr_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upr_Spring_jnt/leg_L_upr_ik_jnt/leg_L_knee_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upr_Spring_jnt/leg_L_upr_ik_jnt/leg_L_knee_ik_jnt/leg_L_ankleik_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upr_Spring_jnt/leg_L_upr_ik_jnt/leg_L_knee_ik_jnt/leg_L_ankleik_ik_jnt/leg_L_foot_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upr_Spring_jnt/leg_L_upr_ik_jnt/leg_L_knee_ik_jnt/leg_L_ankleik_ik_jnt/leg_L_foot_ik_jnt/leg_L_ballik_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upr_Spring_jnt/leg_L_upr_ik_jnt/leg_L_knee_ik_jnt/leg_L_ankleik_ik_jnt/leg_L_foot_ik_jnt/leg_L_ballik_ik_jnt/leg_L_toeik_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/leg_L_upvec_ann
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/upVecLwr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/upVecLwr_srt/leg_L_upVecLwr_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/upVecLwr_srt/leg_L_upVecLwr_anim_space/leg_L_upVecLwr_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/upVecLwr_srt/leg_L_upVecLwr_anim_space/leg_L_upVecLwr_anim/upVec_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_L_hrc/leg_L_rigLayer_hrc/upVecLwr_srt/leg_L_upVecLwr_anim_space/leg_L_upVecLwr_anim/upVec_srt/leg_L_kneePv_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_inputLayer_hrc/leg_R_foot_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_inputLayer_hrc/leg_R_kneePv_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_inputLayer_hrc/leg_R_upr_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_inputLayer_hrc/leg_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_outputLayer_hrc/leg_R_upr_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_outputLayer_hrc/leg_R_upr_out/leg_R_knee_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_outputLayer_hrc/leg_R_upr_out/leg_R_knee_out/leg_R_ankle_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_outputLayer_hrc/leg_R_upr_out/leg_R_knee_out/leg_R_ankle_out/leg_R_foot_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_outputLayer_hrc/leg_R_upr_out/leg_R_knee_out/leg_R_ankle_out/leg_R_foot_out/leg_R_ball_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/baseik_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/baseik_srt/leg_R_hip_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt/leg_R_toeTip_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt/leg_R_toeTip_anim/leg_R_ball_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt/leg_R_toeTip_anim/leg_R_ball_anim_srt/leg_R_ball_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt/leg_R_toeTip_anim/leg_R_ball_anim_srt/leg_R_ball_anim_attr_srt/leg_R_ball_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt/leg_R_toeTip_anim/leg_R_ball_anim_srt/leg_R_ball_anim_attr_srt/leg_R_ball_anim/leg_R_ballik_ikhandle
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt/leg_R_toeTip_anim/leg_R_ball_anim_srt/leg_R_ball_anim_attr_srt/leg_R_ball_anim/leg_R_primary_ikhandleSpring
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt/leg_R_toeTip_anim/leg_R_toeTap_piv_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt/leg_R_toeTip_anim/leg_R_toeTap_piv_anim_srt/leg_R_toeTap_piv_anim_attr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt/leg_R_toeTip_anim/leg_R_toeTap_piv_anim_srt/leg_R_toeTap_piv_anim_attr_srt/leg_R_toeTap_piv_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/end_srt/leg_R_foot_anim_space/leg_R_foot_anim/leg_R_heel_anim_srt/leg_R_heel_anim_attr_srt/leg_R_heel_anim/leg_R_outer_anim_srt/leg_R_outer_anim_attr_srt/leg_R_outer_anim/leg_R_inner_anim_srt/leg_R_inner_anim_attr_srt/leg_R_inner_anim/leg_R_toeTip_anim_srt/leg_R_toeTip_anim_attr_srt/leg_R_toeTip_anim/leg_R_toeTap_piv_anim_srt/leg_R_toeTap_piv_anim_attr_srt/leg_R_toeTap_piv_anim/leg_R_toeik_ikhandle
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/hock_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/hock_srt/leg_R_ankleik_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/hock_srt/leg_R_ankleik_anim/leg_R_secondary_ikhandleRP
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt/leg_R_upr_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt/leg_R_upr_anim_space/leg_R_upr_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt/leg_R_upr_anim_space/leg_R_upr_anim/leg_R_knee_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt/leg_R_upr_anim_space/leg_R_upr_anim/leg_R_knee_anim_srt/leg_R_knee_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt/leg_R_upr_anim_space/leg_R_upr_anim/leg_R_knee_anim_srt/leg_R_knee_anim/leg_R_anklefk_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt/leg_R_upr_anim_space/leg_R_upr_anim/leg_R_knee_anim_srt/leg_R_knee_anim/leg_R_anklefk_anim_srt/leg_R_anklefk_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt/leg_R_upr_anim_space/leg_R_upr_anim/leg_R_knee_anim_srt/leg_R_knee_anim/leg_R_anklefk_anim_srt/leg_R_anklefk_anim/leg_R_foot_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt/leg_R_upr_anim_space/leg_R_upr_anim/leg_R_knee_anim_srt/leg_R_knee_anim/leg_R_anklefk_anim_srt/leg_R_anklefk_anim/leg_R_foot_anim_srt/leg_R_foot_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt/leg_R_upr_anim_space/leg_R_upr_anim/leg_R_knee_anim_srt/leg_R_knee_anim/leg_R_anklefk_anim_srt/leg_R_anklefk_anim/leg_R_foot_anim_srt/leg_R_foot_anim/leg_R_ball_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_upr_anim_srt/leg_R_upr_anim_space/leg_R_upr_anim/leg_R_knee_anim_srt/leg_R_knee_anim/leg_R_anklefk_anim_srt/leg_R_anklefk_anim/leg_R_foot_anim_srt/leg_R_foot_anim/leg_R_ball_anim_srt/leg_R_ball_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_uprblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_uprblend_srt/leg_R_midblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_uprblend_srt/leg_R_midblend_srt/leg_R_ankleblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_uprblend_srt/leg_R_midblend_srt/leg_R_ankleblend_srt/leg_R_endblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_parentSpace_srt/leg_R_uprblend_srt/leg_R_midblend_srt/leg_R_ankleblend_srt/leg_R_endblend_srt/leg_R_ballblend_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upr_Spring_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upr_Spring_jnt/leg_R_knee_Spring_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upr_Spring_jnt/leg_R_knee_Spring_jnt/leg_R_ankle_Spring_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upr_Spring_jnt/leg_R_knee_Spring_jnt/leg_R_ankle_Spring_jnt/leg_R_foot_Spring_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upr_Spring_jnt/leg_R_upr_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upr_Spring_jnt/leg_R_upr_ik_jnt/leg_R_knee_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upr_Spring_jnt/leg_R_upr_ik_jnt/leg_R_knee_ik_jnt/leg_R_ankleik_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upr_Spring_jnt/leg_R_upr_ik_jnt/leg_R_knee_ik_jnt/leg_R_ankleik_ik_jnt/leg_R_foot_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upr_Spring_jnt/leg_R_upr_ik_jnt/leg_R_knee_ik_jnt/leg_R_ankleik_ik_jnt/leg_R_foot_ik_jnt/leg_R_ballik_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upr_Spring_jnt/leg_R_upr_ik_jnt/leg_R_knee_ik_jnt/leg_R_ankleik_ik_jnt/leg_R_foot_ik_jnt/leg_R_ballik_ik_jnt/leg_R_toeik_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/leg_R_upvec_ann
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/upVecLwr_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/upVecLwr_srt/leg_R_upVecLwr_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/upVecLwr_srt/leg_R_upVecLwr_anim_space/leg_R_upVecLwr_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/upVecLwr_srt/leg_R_upVecLwr_anim_space/leg_R_upVecLwr_anim/upVec_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/leg_R_hrc/leg_R_rigLayer_hrc/upVecLwr_srt/leg_R_upVecLwr_anim_space/leg_R_upVecLwr_anim/upVec_srt/leg_R_kneePv_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_inputLayer_hrc/neckBase_M_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_inputLayer_hrc/neckBase_M_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_outputLayer_hrc/neckBase_M_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_outputLayer_hrc/neckBase_M_00_out/neckBase_M_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_rigLayer_hrc/neckBase_M_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_rigLayer_hrc/neckBase_M_00_anim_srt/neckBase_M_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_rigLayer_hrc/neckBase_M_00_anim_srt/neckBase_M_00_anim_space/neckBase_M_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_rigLayer_hrc/neckBase_M_00_anim_srt/neckBase_M_00_anim_space/neckBase_M_00_anim/neckBase_M_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_rigLayer_hrc/neckBase_M_00_anim_srt/neckBase_M_00_anim_space/neckBase_M_00_anim/neckBase_M_01_anim_srt/neckBase_M_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/neckBase_M_hrc/neckBase_M_rigLayer_hrc/neckBase_M_00_anim_srt/neckBase_M_00_anim_space/neckBase_M_00_anim/neckBase_M_01_anim_srt/neckBase_M_01_anim_space/neckBase_M_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_inputLayer_hrc/spine001_M_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_inputLayer_hrc/spine001_M_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_outputLayer_hrc/spine001_M_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_outputLayer_hrc/spine001_M_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_outputLayer_hrc/spine001_M_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_outputLayer_hrc/spine001_M_03_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_outputLayer_hrc/spine001_M_04_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_outputLayer_hrc/spine001_M_05_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim/spine001_M_ctrl01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim/spine001_M_ctrl01_anim_srt/spine001_M_ctrl01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim/spine001_M_ctrl01_anim_srt/spine001_M_ctrl01_anim_space/spine001_M_ctrl01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim/spine001_M_ctrl01_anim_srt/spine001_M_ctrl01_anim_space/spine001_M_ctrl01_anim/spine001_M_ctrl02_anim_orientWorld
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim/spine001_M_ctrl01_anim_srt/spine001_M_ctrl01_anim_space/spine001_M_ctrl01_anim/spine001_M_ctrl02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim/spine001_M_ctrl01_anim_srt/spine001_M_ctrl01_anim_space/spine001_M_ctrl01_anim/spine001_M_ctrl02_anim_srt/spine001_M_ctrl02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim/spine001_M_ctrl01_anim_srt/spine001_M_ctrl01_anim_space/spine001_M_ctrl01_anim/spine001_M_ctrl02_anim_srt/spine001_M_ctrl02_anim_space/spine001_M_ctrl02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim/spine001_M_ctrl01_anim_srt/spine001_M_ctrl01_anim_space/spine001_M_ctrl01_anim/spine001_M_ctrl02_anim_srt/spine001_M_ctrl02_anim_space/spine001_M_ctrl02_anim/spine001_M_endCurveManip_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim/spine001_M_ctrl01_anim_srt/spine001_M_ctrl01_anim_space/spine001_M_ctrl01_anim/spine001_M_ctrl02_anim_srt/spine001_M_ctrl02_anim_space/spine001_M_ctrl02_anim/spine001_M_tweaker02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_ctrl00_anim_srt/spine001_M_ctrl00_anim_space/spine001_M_ctrl00_anim/spine001_M_ctrl01_anim_srt/spine001_M_ctrl01_anim_space/spine001_M_ctrl01_anim/spine001_M_ctrl02_anim_srt/spine001_M_ctrl02_anim_space/spine001_M_ctrl02_anim/spine001_M_tweaker02_anim_srt/spine001_M_tweaker02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt/spine001_M_hipSwing_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt/spine001_M_hipSwing_anim_space/spine001_M_hipSwing_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt/spine001_M_hipSwing_anim_space/spine001_M_hipSwing_anim/spine001_M_hips_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt/spine001_M_hipSwing_anim_space/spine001_M_hipSwing_anim/spine001_M_hips_anim_srt/spine001_M_hips_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt/spine001_M_hipSwing_anim_space/spine001_M_hipSwing_anim/spine001_M_hips_anim_srt/spine001_M_hips_anim_space/spine001_M_hips_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt/spine001_M_hipSwing_anim_space/spine001_M_hipSwing_anim/spine001_M_hips_anim_srt/spine001_M_hips_anim_space/spine001_M_hips_anim/spine001_M_startCurveManip_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt/spine001_M_hipSwing_anim_space/spine001_M_hipSwing_anim/spine001_M_hips_anim_srt/spine001_M_hips_anim_space/spine001_M_hips_anim/spine001_M_tweaker00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt/spine001_M_hipSwing_anim_space/spine001_M_hipSwing_anim/spine001_M_hips_anim_srt/spine001_M_hips_anim_space/spine001_M_hips_anim/spine001_M_tweaker00_anim_srt/spine001_M_tweaker00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt/spine001_M_hipSwing_anim_space/spine001_M_hipSwing_anim/spine001_M_hips_anim_srt/spine001_M_hips_anim_space/spine001_M_hips_anim/spine001_M_worldUpVec_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_cog_anim_srt/spine001_M_cog_anim_space/spine001_M_cog_anim/spine001_M_cogGimbal_anim_srt/spine001_M_cogGimbal_anim/spine001_M_hipSwing_anim_srt/spine001_M_hipSwing_anim_space/spine001_M_hipSwing_anim/spine001_M_hips_anim_srt/spine001_M_hips_anim_space/spine001_M_hips_anim/spine001_M_worldUpVec_anim_srt/spine001_M_worldUpVec_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt/spine001_M_spineIk17_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt/spine001_M_spineIk17_ik_jnt/spine001_M_spineIk18_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt/spine001_M_spineIk17_ik_jnt/spine001_M_spineIk18_ik_jnt/spine001_M_spineIk19_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt/spine001_M_spineIk17_ik_jnt/spine001_M_spineIk18_ik_jnt/spine001_M_spineIk19_ik_jnt/spine001_M_spineIk20_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt/spine001_M_spineIk17_ik_jnt/spine001_M_spineIk18_ik_jnt/spine001_M_spineIk19_ik_jnt/spine001_M_spineIk20_ik_jnt/spine001_M_spineIk21_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt/spine001_M_spineIk17_ik_jnt/spine001_M_spineIk18_ik_jnt/spine001_M_spineIk19_ik_jnt/spine001_M_spineIk20_ik_jnt/spine001_M_spineIk21_ik_jnt/spine001_M_spineIk22_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt/spine001_M_spineIk17_ik_jnt/spine001_M_spineIk18_ik_jnt/spine001_M_spineIk19_ik_jnt/spine001_M_spineIk20_ik_jnt/spine001_M_spineIk21_ik_jnt/spine001_M_spineIk22_ik_jnt/spine001_M_spineIk23_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt/spine001_M_spineIk17_ik_jnt/spine001_M_spineIk18_ik_jnt/spine001_M_spineIk19_ik_jnt/spine001_M_spineIk20_ik_jnt/spine001_M_spineIk21_ik_jnt/spine001_M_spineIk22_ik_jnt/spine001_M_spineIk23_ik_jnt/spine001_M_spineIk24_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt/spine001_M_spineIk17_ik_jnt/spine001_M_spineIk18_ik_jnt/spine001_M_spineIk19_ik_jnt/spine001_M_spineIk20_ik_jnt/spine001_M_spineIk21_ik_jnt/spine001_M_spineIk22_ik_jnt/spine001_M_spineIk23_ik_jnt/spine001_M_spineIk24_ik_jnt/spine001_M_spineIk25_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/parent_space_srt/spine001_M_splineIkStart_ik_jnt/spine001_M_spineIk00_ik_jnt/spine001_M_spineIk01_ik_jnt/spine001_M_spineIk02_ik_jnt/spine001_M_spineIk03_ik_jnt/spine001_M_spineIk04_ik_jnt/spine001_M_spineIk05_ik_jnt/spine001_M_spineIk06_ik_jnt/spine001_M_spineIk07_ik_jnt/spine001_M_spineIk08_ik_jnt/spine001_M_spineIk09_ik_jnt/spine001_M_spineIk10_ik_jnt/spine001_M_spineIk11_ik_jnt/spine001_M_spineIk12_ik_jnt/spine001_M_spineIk13_ik_jnt/spine001_M_spineIk14_ik_jnt/spine001_M_spineIk15_ik_jnt/spine001_M_spineIk16_ik_jnt/spine001_M_spineIk17_ik_jnt/spine001_M_spineIk18_ik_jnt/spine001_M_spineIk19_ik_jnt/spine001_M_spineIk20_ik_jnt/spine001_M_spineIk21_ik_jnt/spine001_M_spineIk22_ik_jnt/spine001_M_spineIk23_ik_jnt/spine001_M_spineIk24_ik_jnt/spine001_M_spineIk25_ik_jnt/spine001_M_ikSplineEnd_ik_jnt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/spine001_M_splineIk_ikhandle
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/spine001_M_tweaker01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/spine001_M_tweaker01_anim_srt/spine001_M_tweaker01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/spine001_M_hrc/spine001_M_rigLayer_hrc/spineSpline_crv
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_inputLayer_hrc/tail_M_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_inputLayer_hrc/tail_M_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_outputLayer_hrc/tail_M_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_outputLayer_hrc/tail_M_00_out/tail_M_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_outputLayer_hrc/tail_M_00_out/tail_M_01_out/tail_M_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_outputLayer_hrc/tail_M_00_out/tail_M_01_out/tail_M_02_out/tail_M_03_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_outputLayer_hrc/tail_M_00_out/tail_M_01_out/tail_M_02_out/tail_M_03_out/tail_M_04_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_outputLayer_hrc/tail_M_00_out/tail_M_01_out/tail_M_02_out/tail_M_03_out/tail_M_04_out/tail_M_05_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_outputLayer_hrc/tail_M_00_out/tail_M_01_out/tail_M_02_out/tail_M_03_out/tail_M_04_out/tail_M_05_out/tail_M_06_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_outputLayer_hrc/tail_M_00_out/tail_M_01_out/tail_M_02_out/tail_M_03_out/tail_M_04_out/tail_M_05_out/tail_M_06_out/tail_M_07_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space/tail_M_04_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space/tail_M_04_anim/tail_M_05_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space/tail_M_04_anim/tail_M_05_anim_srt/tail_M_05_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space/tail_M_04_anim/tail_M_05_anim_srt/tail_M_05_anim_space/tail_M_05_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space/tail_M_04_anim/tail_M_05_anim_srt/tail_M_05_anim_space/tail_M_05_anim/tail_M_06_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space/tail_M_04_anim/tail_M_05_anim_srt/tail_M_05_anim_space/tail_M_05_anim/tail_M_06_anim_srt/tail_M_06_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space/tail_M_04_anim/tail_M_05_anim_srt/tail_M_05_anim_space/tail_M_05_anim/tail_M_06_anim_srt/tail_M_06_anim_space/tail_M_06_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space/tail_M_04_anim/tail_M_05_anim_srt/tail_M_05_anim_space/tail_M_05_anim/tail_M_06_anim_srt/tail_M_06_anim_space/tail_M_06_anim/tail_M_07_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space/tail_M_04_anim/tail_M_05_anim_srt/tail_M_05_anim_space/tail_M_05_anim/tail_M_06_anim_srt/tail_M_06_anim_space/tail_M_06_anim/tail_M_07_anim_srt/tail_M_07_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/tail_M_hrc/tail_M_rigLayer_hrc/tail_M_00_anim_srt/tail_M_00_anim_space/tail_M_00_anim/tail_M_01_anim_srt/tail_M_01_anim_space/tail_M_01_anim/tail_M_02_anim_srt/tail_M_02_anim_space/tail_M_02_anim/tail_M_03_anim_srt/tail_M_03_anim_space/tail_M_03_anim/tail_M_04_anim_srt/tail_M_04_anim_space/tail_M_04_anim/tail_M_05_anim_srt/tail_M_05_anim_space/tail_M_05_anim/tail_M_06_anim_srt/tail_M_06_anim_space/tail_M_06_anim/tail_M_07_anim_srt/tail_M_07_anim_space/tail_M_07_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_inputLayer_hrc/toe_inner_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_inputLayer_hrc/toe_inner_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_outputLayer_hrc/toe_inner_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_outputLayer_hrc/toe_inner_L_00_out/toe_inner_L_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_outputLayer_hrc/toe_inner_L_00_out/toe_inner_L_01_out/toe_inner_L_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_rigLayer_hrc/toe_inner_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_rigLayer_hrc/toe_inner_L_00_anim_srt/toe_inner_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_rigLayer_hrc/toe_inner_L_00_anim_srt/toe_inner_L_00_anim_space/toe_inner_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_rigLayer_hrc/toe_inner_L_00_anim_srt/toe_inner_L_00_anim_space/toe_inner_L_00_anim/toe_inner_L_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_rigLayer_hrc/toe_inner_L_00_anim_srt/toe_inner_L_00_anim_space/toe_inner_L_00_anim/toe_inner_L_01_anim_srt/toe_inner_L_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_rigLayer_hrc/toe_inner_L_00_anim_srt/toe_inner_L_00_anim_space/toe_inner_L_00_anim/toe_inner_L_01_anim_srt/toe_inner_L_01_anim_space/toe_inner_L_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_rigLayer_hrc/toe_inner_L_00_anim_srt/toe_inner_L_00_anim_space/toe_inner_L_00_anim/toe_inner_L_01_anim_srt/toe_inner_L_01_anim_space/toe_inner_L_01_anim/toe_inner_L_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_rigLayer_hrc/toe_inner_L_00_anim_srt/toe_inner_L_00_anim_space/toe_inner_L_00_anim/toe_inner_L_01_anim_srt/toe_inner_L_01_anim_space/toe_inner_L_01_anim/toe_inner_L_02_anim_srt/toe_inner_L_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_L_hrc/toe_inner_L_rigLayer_hrc/toe_inner_L_00_anim_srt/toe_inner_L_00_anim_space/toe_inner_L_00_anim/toe_inner_L_01_anim_srt/toe_inner_L_01_anim_space/toe_inner_L_01_anim/toe_inner_L_02_anim_srt/toe_inner_L_02_anim_space/toe_inner_L_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_inputLayer_hrc/toe_inner_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_inputLayer_hrc/toe_inner_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_outputLayer_hrc/toe_inner_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_outputLayer_hrc/toe_inner_R_00_out/toe_inner_R_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_outputLayer_hrc/toe_inner_R_00_out/toe_inner_R_01_out/toe_inner_R_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_rigLayer_hrc/toe_inner_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_rigLayer_hrc/toe_inner_R_00_anim_srt/toe_inner_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_rigLayer_hrc/toe_inner_R_00_anim_srt/toe_inner_R_00_anim_space/toe_inner_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_rigLayer_hrc/toe_inner_R_00_anim_srt/toe_inner_R_00_anim_space/toe_inner_R_00_anim/toe_inner_R_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_rigLayer_hrc/toe_inner_R_00_anim_srt/toe_inner_R_00_anim_space/toe_inner_R_00_anim/toe_inner_R_01_anim_srt/toe_inner_R_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_rigLayer_hrc/toe_inner_R_00_anim_srt/toe_inner_R_00_anim_space/toe_inner_R_00_anim/toe_inner_R_01_anim_srt/toe_inner_R_01_anim_space/toe_inner_R_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_rigLayer_hrc/toe_inner_R_00_anim_srt/toe_inner_R_00_anim_space/toe_inner_R_00_anim/toe_inner_R_01_anim_srt/toe_inner_R_01_anim_space/toe_inner_R_01_anim/toe_inner_R_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_rigLayer_hrc/toe_inner_R_00_anim_srt/toe_inner_R_00_anim_space/toe_inner_R_00_anim/toe_inner_R_01_anim_srt/toe_inner_R_01_anim_space/toe_inner_R_01_anim/toe_inner_R_02_anim_srt/toe_inner_R_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_inner_R_hrc/toe_inner_R_rigLayer_hrc/toe_inner_R_00_anim_srt/toe_inner_R_00_anim_space/toe_inner_R_00_anim/toe_inner_R_01_anim_srt/toe_inner_R_01_anim_space/toe_inner_R_01_anim/toe_inner_R_02_anim_srt/toe_inner_R_02_anim_space/toe_inner_R_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_inputLayer_hrc/toe_middle_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_inputLayer_hrc/toe_middle_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_outputLayer_hrc/toe_middle_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_outputLayer_hrc/toe_middle_L_00_out/toe_middle_L_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_outputLayer_hrc/toe_middle_L_00_out/toe_middle_L_01_out/toe_middle_L_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_rigLayer_hrc/toe_middle_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_rigLayer_hrc/toe_middle_L_00_anim_srt/toe_middle_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_rigLayer_hrc/toe_middle_L_00_anim_srt/toe_middle_L_00_anim_space/toe_middle_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_rigLayer_hrc/toe_middle_L_00_anim_srt/toe_middle_L_00_anim_space/toe_middle_L_00_anim/toe_middle_L_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_rigLayer_hrc/toe_middle_L_00_anim_srt/toe_middle_L_00_anim_space/toe_middle_L_00_anim/toe_middle_L_01_anim_srt/toe_middle_L_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_rigLayer_hrc/toe_middle_L_00_anim_srt/toe_middle_L_00_anim_space/toe_middle_L_00_anim/toe_middle_L_01_anim_srt/toe_middle_L_01_anim_space/toe_middle_L_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_rigLayer_hrc/toe_middle_L_00_anim_srt/toe_middle_L_00_anim_space/toe_middle_L_00_anim/toe_middle_L_01_anim_srt/toe_middle_L_01_anim_space/toe_middle_L_01_anim/toe_middle_L_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_rigLayer_hrc/toe_middle_L_00_anim_srt/toe_middle_L_00_anim_space/toe_middle_L_00_anim/toe_middle_L_01_anim_srt/toe_middle_L_01_anim_space/toe_middle_L_01_anim/toe_middle_L_02_anim_srt/toe_middle_L_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_L_hrc/toe_middle_L_rigLayer_hrc/toe_middle_L_00_anim_srt/toe_middle_L_00_anim_space/toe_middle_L_00_anim/toe_middle_L_01_anim_srt/toe_middle_L_01_anim_space/toe_middle_L_01_anim/toe_middle_L_02_anim_srt/toe_middle_L_02_anim_space/toe_middle_L_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_inputLayer_hrc/toe_middle_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_inputLayer_hrc/toe_middle_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_outputLayer_hrc/toe_middle_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_outputLayer_hrc/toe_middle_R_00_out/toe_middle_R_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_outputLayer_hrc/toe_middle_R_00_out/toe_middle_R_01_out/toe_middle_R_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_rigLayer_hrc/toe_middle_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_rigLayer_hrc/toe_middle_R_00_anim_srt/toe_middle_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_rigLayer_hrc/toe_middle_R_00_anim_srt/toe_middle_R_00_anim_space/toe_middle_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_rigLayer_hrc/toe_middle_R_00_anim_srt/toe_middle_R_00_anim_space/toe_middle_R_00_anim/toe_middle_R_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_rigLayer_hrc/toe_middle_R_00_anim_srt/toe_middle_R_00_anim_space/toe_middle_R_00_anim/toe_middle_R_01_anim_srt/toe_middle_R_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_rigLayer_hrc/toe_middle_R_00_anim_srt/toe_middle_R_00_anim_space/toe_middle_R_00_anim/toe_middle_R_01_anim_srt/toe_middle_R_01_anim_space/toe_middle_R_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_rigLayer_hrc/toe_middle_R_00_anim_srt/toe_middle_R_00_anim_space/toe_middle_R_00_anim/toe_middle_R_01_anim_srt/toe_middle_R_01_anim_space/toe_middle_R_01_anim/toe_middle_R_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_rigLayer_hrc/toe_middle_R_00_anim_srt/toe_middle_R_00_anim_space/toe_middle_R_00_anim/toe_middle_R_01_anim_srt/toe_middle_R_01_anim_space/toe_middle_R_01_anim/toe_middle_R_02_anim_srt/toe_middle_R_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_middle_R_hrc/toe_middle_R_rigLayer_hrc/toe_middle_R_00_anim_srt/toe_middle_R_00_anim_space/toe_middle_R_00_anim/toe_middle_R_01_anim_srt/toe_middle_R_01_anim_space/toe_middle_R_01_anim/toe_middle_R_02_anim_srt/toe_middle_R_02_anim_space/toe_middle_R_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_inputLayer_hrc/toe_outer_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_inputLayer_hrc/toe_outer_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_outputLayer_hrc/toe_outer_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_outputLayer_hrc/toe_outer_L_00_out/toe_outer_L_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_outputLayer_hrc/toe_outer_L_00_out/toe_outer_L_01_out/toe_outer_L_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_rigLayer_hrc/toe_outer_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_rigLayer_hrc/toe_outer_L_00_anim_srt/toe_outer_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_rigLayer_hrc/toe_outer_L_00_anim_srt/toe_outer_L_00_anim_space/toe_outer_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_rigLayer_hrc/toe_outer_L_00_anim_srt/toe_outer_L_00_anim_space/toe_outer_L_00_anim/toe_outer_L_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_rigLayer_hrc/toe_outer_L_00_anim_srt/toe_outer_L_00_anim_space/toe_outer_L_00_anim/toe_outer_L_01_anim_srt/toe_outer_L_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_rigLayer_hrc/toe_outer_L_00_anim_srt/toe_outer_L_00_anim_space/toe_outer_L_00_anim/toe_outer_L_01_anim_srt/toe_outer_L_01_anim_space/toe_outer_L_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_rigLayer_hrc/toe_outer_L_00_anim_srt/toe_outer_L_00_anim_space/toe_outer_L_00_anim/toe_outer_L_01_anim_srt/toe_outer_L_01_anim_space/toe_outer_L_01_anim/toe_outer_L_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_rigLayer_hrc/toe_outer_L_00_anim_srt/toe_outer_L_00_anim_space/toe_outer_L_00_anim/toe_outer_L_01_anim_srt/toe_outer_L_01_anim_space/toe_outer_L_01_anim/toe_outer_L_02_anim_srt/toe_outer_L_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_L_hrc/toe_outer_L_rigLayer_hrc/toe_outer_L_00_anim_srt/toe_outer_L_00_anim_space/toe_outer_L_00_anim/toe_outer_L_01_anim_srt/toe_outer_L_01_anim_space/toe_outer_L_01_anim/toe_outer_L_02_anim_srt/toe_outer_L_02_anim_space/toe_outer_L_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_inputLayer_hrc/toe_outer_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_inputLayer_hrc/toe_outer_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_outputLayer_hrc/toe_outer_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_outputLayer_hrc/toe_outer_R_00_out/toe_outer_R_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_outputLayer_hrc/toe_outer_R_00_out/toe_outer_R_01_out/toe_outer_R_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_rigLayer_hrc/toe_outer_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_rigLayer_hrc/toe_outer_R_00_anim_srt/toe_outer_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_rigLayer_hrc/toe_outer_R_00_anim_srt/toe_outer_R_00_anim_space/toe_outer_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_rigLayer_hrc/toe_outer_R_00_anim_srt/toe_outer_R_00_anim_space/toe_outer_R_00_anim/toe_outer_R_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_rigLayer_hrc/toe_outer_R_00_anim_srt/toe_outer_R_00_anim_space/toe_outer_R_00_anim/toe_outer_R_01_anim_srt/toe_outer_R_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_rigLayer_hrc/toe_outer_R_00_anim_srt/toe_outer_R_00_anim_space/toe_outer_R_00_anim/toe_outer_R_01_anim_srt/toe_outer_R_01_anim_space/toe_outer_R_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_rigLayer_hrc/toe_outer_R_00_anim_srt/toe_outer_R_00_anim_space/toe_outer_R_00_anim/toe_outer_R_01_anim_srt/toe_outer_R_01_anim_space/toe_outer_R_01_anim/toe_outer_R_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_rigLayer_hrc/toe_outer_R_00_anim_srt/toe_outer_R_00_anim_space/toe_outer_R_00_anim/toe_outer_R_01_anim_srt/toe_outer_R_01_anim_space/toe_outer_R_01_anim/toe_outer_R_02_anim_srt/toe_outer_R_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/toe_outer_R_hrc/toe_outer_R_rigLayer_hrc/toe_outer_R_00_anim_srt/toe_outer_R_00_anim_space/toe_outer_R_00_anim/toe_outer_R_01_anim_srt/toe_outer_R_01_anim_space/toe_outer_R_01_anim/toe_outer_R_02_anim_srt/toe_outer_R_02_anim_space/toe_outer_R_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_inputLayer_hrc/wingFront_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_inputLayer_hrc/wingFront_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_outputLayer_hrc/wingFront_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_outputLayer_hrc/wingFront_L_00_out/wingFront_L_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_outputLayer_hrc/wingFront_L_00_out/wingFront_L_01_out/wingFront_L_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_outputLayer_hrc/wingFront_L_00_out/wingFront_L_01_out/wingFront_L_02_out/wingFront_L_03_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space/wingFront_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space/wingFront_L_00_anim/wingFront_L_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space/wingFront_L_00_anim/wingFront_L_01_anim_srt/wingFront_L_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space/wingFront_L_00_anim/wingFront_L_01_anim_srt/wingFront_L_01_anim_space/wingFront_L_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space/wingFront_L_00_anim/wingFront_L_01_anim_srt/wingFront_L_01_anim_space/wingFront_L_01_anim/wingFront_L_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space/wingFront_L_00_anim/wingFront_L_01_anim_srt/wingFront_L_01_anim_space/wingFront_L_01_anim/wingFront_L_02_anim_srt/wingFront_L_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space/wingFront_L_00_anim/wingFront_L_01_anim_srt/wingFront_L_01_anim_space/wingFront_L_01_anim/wingFront_L_02_anim_srt/wingFront_L_02_anim_space/wingFront_L_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space/wingFront_L_00_anim/wingFront_L_01_anim_srt/wingFront_L_01_anim_space/wingFront_L_01_anim/wingFront_L_02_anim_srt/wingFront_L_02_anim_space/wingFront_L_02_anim/wingFront_L_03_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space/wingFront_L_00_anim/wingFront_L_01_anim_srt/wingFront_L_01_anim_space/wingFront_L_01_anim/wingFront_L_02_anim_srt/wingFront_L_02_anim_space/wingFront_L_02_anim/wingFront_L_03_anim_srt/wingFront_L_03_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_L_hrc/wingFront_L_rigLayer_hrc/wingFront_L_00_anim_srt/wingFront_L_00_anim_space/wingFront_L_00_anim/wingFront_L_01_anim_srt/wingFront_L_01_anim_space/wingFront_L_01_anim/wingFront_L_02_anim_srt/wingFront_L_02_anim_space/wingFront_L_02_anim/wingFront_L_03_anim_srt/wingFront_L_03_anim_space/wingFront_L_03_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_inputLayer_hrc/wingFront_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_inputLayer_hrc/wingFront_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_outputLayer_hrc/wingFront_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_outputLayer_hrc/wingFront_R_00_out/wingFront_R_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_outputLayer_hrc/wingFront_R_00_out/wingFront_R_01_out/wingFront_R_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_outputLayer_hrc/wingFront_R_00_out/wingFront_R_01_out/wingFront_R_02_out/wingFront_R_03_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space/wingFront_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space/wingFront_R_00_anim/wingFront_R_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space/wingFront_R_00_anim/wingFront_R_01_anim_srt/wingFront_R_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space/wingFront_R_00_anim/wingFront_R_01_anim_srt/wingFront_R_01_anim_space/wingFront_R_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space/wingFront_R_00_anim/wingFront_R_01_anim_srt/wingFront_R_01_anim_space/wingFront_R_01_anim/wingFront_R_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space/wingFront_R_00_anim/wingFront_R_01_anim_srt/wingFront_R_01_anim_space/wingFront_R_01_anim/wingFront_R_02_anim_srt/wingFront_R_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space/wingFront_R_00_anim/wingFront_R_01_anim_srt/wingFront_R_01_anim_space/wingFront_R_01_anim/wingFront_R_02_anim_srt/wingFront_R_02_anim_space/wingFront_R_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space/wingFront_R_00_anim/wingFront_R_01_anim_srt/wingFront_R_01_anim_space/wingFront_R_01_anim/wingFront_R_02_anim_srt/wingFront_R_02_anim_space/wingFront_R_02_anim/wingFront_R_03_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space/wingFront_R_00_anim/wingFront_R_01_anim_srt/wingFront_R_01_anim_space/wingFront_R_01_anim/wingFront_R_02_anim_srt/wingFront_R_02_anim_space/wingFront_R_02_anim/wingFront_R_03_anim_srt/wingFront_R_03_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingFront_R_hrc/wingFront_R_rigLayer_hrc/wingFront_R_00_anim_srt/wingFront_R_00_anim_space/wingFront_R_00_anim/wingFront_R_01_anim_srt/wingFront_R_01_anim_space/wingFront_R_01_anim/wingFront_R_02_anim_srt/wingFront_R_02_anim_space/wingFront_R_02_anim/wingFront_R_03_anim_srt/wingFront_R_03_anim_space/wingFront_R_03_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_inputLayer_hrc/wingLower_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_inputLayer_hrc/wingLower_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_outputLayer_hrc/wingLower_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_outputLayer_hrc/wingLower_L_00_out/wingLower_L_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_outputLayer_hrc/wingLower_L_00_out/wingLower_L_01_out/wingLower_L_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_rigLayer_hrc/wingLower_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_rigLayer_hrc/wingLower_L_00_anim_srt/wingLower_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_rigLayer_hrc/wingLower_L_00_anim_srt/wingLower_L_00_anim_space/wingLower_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_rigLayer_hrc/wingLower_L_00_anim_srt/wingLower_L_00_anim_space/wingLower_L_00_anim/wingLower_L_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_rigLayer_hrc/wingLower_L_00_anim_srt/wingLower_L_00_anim_space/wingLower_L_00_anim/wingLower_L_01_anim_srt/wingLower_L_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_rigLayer_hrc/wingLower_L_00_anim_srt/wingLower_L_00_anim_space/wingLower_L_00_anim/wingLower_L_01_anim_srt/wingLower_L_01_anim_space/wingLower_L_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_rigLayer_hrc/wingLower_L_00_anim_srt/wingLower_L_00_anim_space/wingLower_L_00_anim/wingLower_L_01_anim_srt/wingLower_L_01_anim_space/wingLower_L_01_anim/wingLower_L_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_rigLayer_hrc/wingLower_L_00_anim_srt/wingLower_L_00_anim_space/wingLower_L_00_anim/wingLower_L_01_anim_srt/wingLower_L_01_anim_space/wingLower_L_01_anim/wingLower_L_02_anim_srt/wingLower_L_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_L_hrc/wingLower_L_rigLayer_hrc/wingLower_L_00_anim_srt/wingLower_L_00_anim_space/wingLower_L_00_anim/wingLower_L_01_anim_srt/wingLower_L_01_anim_space/wingLower_L_01_anim/wingLower_L_02_anim_srt/wingLower_L_02_anim_space/wingLower_L_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_inputLayer_hrc/wingLower_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_inputLayer_hrc/wingLower_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_outputLayer_hrc/wingLower_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_outputLayer_hrc/wingLower_R_00_out/wingLower_R_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_outputLayer_hrc/wingLower_R_00_out/wingLower_R_01_out/wingLower_R_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_rigLayer_hrc/wingLower_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_rigLayer_hrc/wingLower_R_00_anim_srt/wingLower_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_rigLayer_hrc/wingLower_R_00_anim_srt/wingLower_R_00_anim_space/wingLower_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_rigLayer_hrc/wingLower_R_00_anim_srt/wingLower_R_00_anim_space/wingLower_R_00_anim/wingLower_R_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_rigLayer_hrc/wingLower_R_00_anim_srt/wingLower_R_00_anim_space/wingLower_R_00_anim/wingLower_R_01_anim_srt/wingLower_R_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_rigLayer_hrc/wingLower_R_00_anim_srt/wingLower_R_00_anim_space/wingLower_R_00_anim/wingLower_R_01_anim_srt/wingLower_R_01_anim_space/wingLower_R_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_rigLayer_hrc/wingLower_R_00_anim_srt/wingLower_R_00_anim_space/wingLower_R_00_anim/wingLower_R_01_anim_srt/wingLower_R_01_anim_space/wingLower_R_01_anim/wingLower_R_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_rigLayer_hrc/wingLower_R_00_anim_srt/wingLower_R_00_anim_space/wingLower_R_00_anim/wingLower_R_01_anim_srt/wingLower_R_01_anim_space/wingLower_R_01_anim/wingLower_R_02_anim_srt/wingLower_R_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingLower_R_hrc/wingLower_R_rigLayer_hrc/wingLower_R_00_anim_srt/wingLower_R_00_anim_space/wingLower_R_00_anim/wingLower_R_01_anim_srt/wingLower_R_01_anim_space/wingLower_R_01_anim/wingLower_R_02_anim_srt/wingLower_R_02_anim_space/wingLower_R_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_inputLayer_hrc/wingMid_L_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_inputLayer_hrc/wingMid_L_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_outputLayer_hrc/wingMid_L_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_outputLayer_hrc/wingMid_L_00_out/wingMid_L_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_outputLayer_hrc/wingMid_L_00_out/wingMid_L_01_out/wingMid_L_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_rigLayer_hrc/wingMid_L_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_rigLayer_hrc/wingMid_L_00_anim_srt/wingMid_L_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_rigLayer_hrc/wingMid_L_00_anim_srt/wingMid_L_00_anim_space/wingMid_L_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_rigLayer_hrc/wingMid_L_00_anim_srt/wingMid_L_00_anim_space/wingMid_L_00_anim/wingMid_L_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_rigLayer_hrc/wingMid_L_00_anim_srt/wingMid_L_00_anim_space/wingMid_L_00_anim/wingMid_L_01_anim_srt/wingMid_L_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_rigLayer_hrc/wingMid_L_00_anim_srt/wingMid_L_00_anim_space/wingMid_L_00_anim/wingMid_L_01_anim_srt/wingMid_L_01_anim_space/wingMid_L_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_rigLayer_hrc/wingMid_L_00_anim_srt/wingMid_L_00_anim_space/wingMid_L_00_anim/wingMid_L_01_anim_srt/wingMid_L_01_anim_space/wingMid_L_01_anim/wingMid_L_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_rigLayer_hrc/wingMid_L_00_anim_srt/wingMid_L_00_anim_space/wingMid_L_00_anim/wingMid_L_01_anim_srt/wingMid_L_01_anim_space/wingMid_L_01_anim/wingMid_L_02_anim_srt/wingMid_L_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_L_hrc/wingMid_L_rigLayer_hrc/wingMid_L_00_anim_srt/wingMid_L_00_anim_space/wingMid_L_00_anim/wingMid_L_01_anim_srt/wingMid_L_01_anim_space/wingMid_L_01_anim/wingMid_L_02_anim_srt/wingMid_L_02_anim_space/wingMid_L_02_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_inputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_inputLayer_hrc/wingMid_R_parent_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_inputLayer_hrc/wingMid_R_world_in
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_outputLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_outputLayer_hrc/wingMid_R_00_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_outputLayer_hrc/wingMid_R_00_out/wingMid_R_01_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_outputLayer_hrc/wingMid_R_00_out/wingMid_R_01_out/wingMid_R_02_out
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_rigLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_rigLayer_hrc/wingMid_R_00_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_rigLayer_hrc/wingMid_R_00_anim_srt/wingMid_R_00_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_rigLayer_hrc/wingMid_R_00_anim_srt/wingMid_R_00_anim_space/wingMid_R_00_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_rigLayer_hrc/wingMid_R_00_anim_srt/wingMid_R_00_anim_space/wingMid_R_00_anim/wingMid_R_01_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_rigLayer_hrc/wingMid_R_00_anim_srt/wingMid_R_00_anim_space/wingMid_R_00_anim/wingMid_R_01_anim_srt/wingMid_R_01_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_rigLayer_hrc/wingMid_R_00_anim_srt/wingMid_R_00_anim_space/wingMid_R_00_anim/wingMid_R_01_anim_srt/wingMid_R_01_anim_space/wingMid_R_01_anim
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_rigLayer_hrc/wingMid_R_00_anim_srt/wingMid_R_00_anim_space/wingMid_R_00_anim/wingMid_R_01_anim_srt/wingMid_R_01_anim_space/wingMid_R_01_anim/wingMid_R_02_anim_srt
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_rigLayer_hrc/wingMid_R_00_anim_srt/wingMid_R_00_anim_space/wingMid_R_00_anim/wingMid_R_01_anim_srt/wingMid_R_01_anim_space/wingMid_R_01_anim/wingMid_R_02_anim_srt/wingMid_R_02_anim_space
+    m_Weight: 1
+  - m_Path: dragon_componentLayer_hrc/wingMid_R_hrc/wingMid_R_rigLayer_hrc/wingMid_R_00_anim_srt/wingMid_R_00_anim_space/wingMid_R_00_anim/wingMid_R_01_anim_srt/wingMid_R_01_anim_space/wingMid_R_01_anim/wingMid_R_02_anim_srt/wingMid_R_02_anim_space/wingMid_R_02_anim
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt/leg_L_ball_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt/leg_L_ball_jnt/toe_inner_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt/leg_L_ball_jnt/toe_inner_L_00_jnt/toe_inner_L_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt/leg_L_ball_jnt/toe_inner_L_00_jnt/toe_inner_L_01_jnt/toe_inner_L_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt/leg_L_ball_jnt/toe_middle_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt/leg_L_ball_jnt/toe_middle_L_00_jnt/toe_middle_L_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt/leg_L_ball_jnt/toe_middle_L_00_jnt/toe_middle_L_01_jnt/toe_middle_L_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt/leg_L_ball_jnt/toe_outer_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt/leg_L_ball_jnt/toe_outer_L_00_jnt/toe_outer_L_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_L_upr_jnt/leg_L_knee_jnt/leg_L_ankle_jnt/leg_L_foot_jnt/leg_L_ball_jnt/toe_outer_L_00_jnt/toe_outer_L_01_jnt/toe_outer_L_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt/leg_R_ball_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt/leg_R_ball_jnt/toe_inner_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt/leg_R_ball_jnt/toe_inner_R_00_jnt/toe_inner_R_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt/leg_R_ball_jnt/toe_inner_R_00_jnt/toe_inner_R_01_jnt/toe_inner_R_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt/leg_R_ball_jnt/toe_middle_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt/leg_R_ball_jnt/toe_middle_R_00_jnt/toe_middle_R_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt/leg_R_ball_jnt/toe_middle_R_00_jnt/toe_middle_R_01_jnt/toe_middle_R_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt/leg_R_ball_jnt/toe_outer_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt/leg_R_ball_jnt/toe_outer_R_00_jnt/toe_outer_R_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/leg_R_upr_jnt/leg_R_knee_jnt/leg_R_ankle_jnt/leg_R_foot_jnt/leg_R_ball_jnt/toe_outer_R_00_jnt/toe_outer_R_01_jnt/toe_outer_R_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_middle_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_middle_L_00_jnt/finger_middle_L_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_middle_L_00_jnt/finger_middle_L_01_jnt/finger_middle_L_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_middle_L_00_jnt/finger_middle_L_01_jnt/finger_middle_L_02_jnt/finger_middle_L_03_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_pinky_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_pinky_L_00_jnt/finger_pinky_L_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_pinky_L_00_jnt/finger_pinky_L_01_jnt/finger_pinky_L_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_pinky_L_00_jnt/finger_pinky_L_01_jnt/finger_pinky_L_02_jnt/finger_pinky_L_03_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_pointer_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_pointer_L_00_jnt/finger_pointer_L_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_pointer_L_00_jnt/finger_pointer_L_01_jnt/finger_pointer_L_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_pointer_L_00_jnt/finger_pointer_L_01_jnt/finger_pointer_L_02_jnt/finger_pointer_L_03_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_thumb_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_thumb_L_00_jnt/finger_thumb_L_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/arm_L_shldr_jnt/arm_L_elbow_jnt/arm_L_wrist_jnt/finger_thumb_L_00_jnt/finger_thumb_L_01_jnt/finger_thumb_L_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/wingFront_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/wingFront_L_00_jnt/wingFront_L_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/wingFront_L_00_jnt/wingFront_L_01_jnt/wingFront_L_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/wingFront_L_00_jnt/wingFront_L_01_jnt/wingFront_L_02_jnt/wingFront_L_03_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/wingFront_L_00_jnt/wingLower_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/wingFront_L_00_jnt/wingLower_L_00_jnt/wingLower_L_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/wingFront_L_00_jnt/wingLower_L_00_jnt/wingLower_L_01_jnt/wingLower_L_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/wingFront_L_00_jnt/wingMid_L_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/wingFront_L_00_jnt/wingMid_L_00_jnt/wingMid_L_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_L_00_jnt/wingFront_L_00_jnt/wingMid_L_00_jnt/wingMid_L_01_jnt/wingMid_L_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_middle_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_middle_R_00_jnt/finger_middle_R_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_middle_R_00_jnt/finger_middle_R_01_jnt/finger_middle_R_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_middle_R_00_jnt/finger_middle_R_01_jnt/finger_middle_R_02_jnt/finger_middle_R_03_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_pinky_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_pinky_R_00_jnt/finger_pinky_R_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_pinky_R_00_jnt/finger_pinky_R_01_jnt/finger_pinky_R_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_pinky_R_00_jnt/finger_pinky_R_01_jnt/finger_pinky_R_02_jnt/finger_pinky_R_03_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_pointer_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_pointer_R_00_jnt/finger_pointer_R_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_pointer_R_00_jnt/finger_pointer_R_01_jnt/finger_pointer_R_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_pointer_R_00_jnt/finger_pointer_R_01_jnt/finger_pointer_R_02_jnt/finger_pointer_R_03_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_thumb_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_thumb_R_00_jnt/finger_thumb_R_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/arm_R_shldr_jnt/arm_R_elbow_jnt/arm_R_wrist_jnt/finger_thumb_R_00_jnt/finger_thumb_R_01_jnt/finger_thumb_R_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/wingFront_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/wingFront_R_00_jnt/wingFront_R_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/wingFront_R_00_jnt/wingFront_R_01_jnt/wingFront_R_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/wingFront_R_00_jnt/wingFront_R_01_jnt/wingFront_R_02_jnt/wingFront_R_03_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/wingFront_R_00_jnt/wingLower_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/wingFront_R_00_jnt/wingLower_R_00_jnt/wingLower_R_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/wingFront_R_00_jnt/wingLower_R_00_jnt/wingLower_R_01_jnt/wingLower_R_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/wingFront_R_00_jnt/wingMid_R_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/wingFront_R_00_jnt/wingMid_R_00_jnt/wingMid_R_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/clavical_R_00_jnt/wingFront_R_00_jnt/wingMid_R_00_jnt/wingMid_R_01_jnt/wingMid_R_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/neckBase_M_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/neckBase_M_00_jnt/neckBase_M_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/neckBase_M_00_jnt/neckBase_M_01_jnt/head_M_neck_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/neckBase_M_00_jnt/neckBase_M_01_jnt/head_M_neck_jnt/eye_L_eye_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/neckBase_M_00_jnt/neckBase_M_01_jnt/head_M_neck_jnt/eye_R_eye_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/neckBase_M_00_jnt/neckBase_M_01_jnt/head_M_neck_jnt/head_M_head_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/neckBase_M_00_jnt/neckBase_M_01_jnt/head_M_neck_jnt/jaw_M_jaw_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/neckBase_M_00_jnt/neckBase_M_01_jnt/head_M_neck_jnt/jaw_M_jaw_jnt/jaw_M_botLip_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/neckBase_M_00_jnt/neckBase_M_01_jnt/head_M_neck_jnt/jaw_M_jaw_jnt/jaw_M_chin_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/spine001_M_01_jnt/spine001_M_02_jnt/spine001_M_03_jnt/spine001_M_04_jnt/spine001_M_05_jnt/neckBase_M_00_jnt/neckBase_M_01_jnt/head_M_neck_jnt/jaw_M_topLip_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/tail_M_00_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/tail_M_00_jnt/tail_M_01_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/tail_M_00_jnt/tail_M_01_jnt/tail_M_02_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/tail_M_00_jnt/tail_M_01_jnt/tail_M_02_jnt/tail_M_03_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/tail_M_00_jnt/tail_M_01_jnt/tail_M_02_jnt/tail_M_03_jnt/tail_M_04_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/tail_M_00_jnt/tail_M_01_jnt/tail_M_02_jnt/tail_M_03_jnt/tail_M_04_jnt/tail_M_05_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/tail_M_00_jnt/tail_M_01_jnt/tail_M_02_jnt/tail_M_03_jnt/tail_M_04_jnt/tail_M_05_jnt/tail_M_06_jnt
+    m_Weight: 1
+  - m_Path: dragon_deformLayer_hrc/god_M_godnode_jnt/spine001_M_00_jnt/tail_M_00_jnt/tail_M_01_jnt/tail_M_02_jnt/tail_M_03_jnt/tail_M_04_jnt/tail_M_05_jnt/tail_M_06_jnt/tail_M_07_jnt
+    m_Weight: 1
+  - m_Path: dragon_geo_hrc
+    m_Weight: 1
+  - m_Path: dragon_geo_hrc/dragonBody
+    m_Weight: 1
+  - m_Path: dragon_geo_hrc/eyes
+    m_Weight: 1
+  - m_Path: dragon_geo_hrc/wingSkin
+    m_Weight: 1
