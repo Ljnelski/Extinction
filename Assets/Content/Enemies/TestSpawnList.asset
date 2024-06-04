@@ -16,7 +16,7 @@ MonoBehaviour:
     type: 3}
   _closeRangeTier2: {fileID: 2880460769818529921, guid: 3e57fd50e136d234e873f2df5486f889,
     type: 3}
-  _mediumRangeTier1: {fileID: 7383592310609938371, guid: bd379e6e352f3b8419884aabb6b73c4a,
+  _mediumRangeTier1: {fileID: 2139322598507198438, guid: b74ec10dc68d4234f83219144ff1c375,
     type: 3}
   _mediumRangeTier2: {fileID: 9066377821727146864, guid: 2b0b97ccdb7ad9c45a6ff78126b21f4c,
     type: 3}
@@ -24,9 +24,9 @@ MonoBehaviour:
     type: 3}
   _longRangeTier3: {fileID: 7383592310609938371, guid: e18b9f338402fb94abd78152ee3eb041,
     type: 3}
-  _closeRangeChance: 100
-  _mediumRangeChance: 0
-  _longRangeChance: 0
-  _tier1Chance: 100
-  _tier2Chance: 0
-  _tier3Chance: 0
+  _closeRangeChance: 78.8
+  _mediumRangeChance: 6.1
+  _longRangeChance: 3.3
+  _tier1Chance: 60.8
+  _tier2Chance: 32.5
+  _tier3Chance: 11.8

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37bcc8ebac84a8047b40aa6f51e778cc, type: 3}
   m_Name: SoldierAttackStats
   m_EditorClassIdentifier: 
-  _damageToHealth: 5
-  _damageToBodyPart: 1
+  _damageToHealth: 1
+  _damageToBodyPart: 2

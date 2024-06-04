@@ -29,13 +29,15 @@ public class MoveToPlayer : EnemyState<EnemyController>
 
         // TODO Play Animation
         _controller.NavAgent.SetDestination(_playerPosition.position);
+
+        _controller.animator.SetBool("moving", true);
     }
 
     public override void Run()
     {
         _controller.NavAgent.SetDestination(_playerPosition.position);
 
-      
+
 
         if (_controller.DistanceToPlayer <= _controller.AttackRadius)
         {
@@ -45,7 +47,7 @@ public class MoveToPlayer : EnemyState<EnemyController>
 
     public override void Exit()
     {
-        ;
+        _controller.animator.SetBool("moving", false);
     }
 
 

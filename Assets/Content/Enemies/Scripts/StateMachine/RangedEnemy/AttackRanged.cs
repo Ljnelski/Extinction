@@ -29,6 +29,7 @@ public class AttackRanged : StateWithTarget
 
     public override void Enter()
     {
+        _controller.Animator.SetBool("attacking", true);
     }
 
     public override void Run()
@@ -45,7 +46,7 @@ public class AttackRanged : StateWithTarget
             if (_attackDurationTimer >= _tempAttackDuration)
             {
                 _isAttacking = false;
-                
+
                 // Visual Effect of Attack
                 _controller.projectileSpawner.Spawn(_target);
 
@@ -62,7 +63,8 @@ public class AttackRanged : StateWithTarget
                 }
             }
         }
-        else {
+        else
+        {
             _attackCoolDownTimer += Time.fixedDeltaTime;
             if (_attackCoolDownTimer >= _controller.Stats.AttackSpeed)
             {
@@ -79,10 +81,10 @@ public class AttackRanged : StateWithTarget
         _attackCoolDownTimer = 0f;
 
         _isAttacking = false;
+
+        _controller.Animator.SetBool("attacking", false);
+
     }
 
-    
+
 }
-
-
-

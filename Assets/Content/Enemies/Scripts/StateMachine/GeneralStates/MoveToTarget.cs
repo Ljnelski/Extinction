@@ -28,6 +28,7 @@ public class MoveToTarget : StateWithTarget
         //Debug.Log($"enter {randomId}: {(bool)_target}");
         // TODO Play Animation
         spawnedAt = Time.time;
+        _controller.Animator.SetBool("moving", false);
     }
 
     public override void Run()
@@ -60,6 +61,8 @@ public class MoveToTarget : StateWithTarget
 
     public override void Exit()
     {
+        _controller.Animator.SetBool("moving", false);
+
     }
 
 

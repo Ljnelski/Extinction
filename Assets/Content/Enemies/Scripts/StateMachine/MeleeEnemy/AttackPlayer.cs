@@ -23,6 +23,8 @@ public class AttackPlayer : StateWithTarget
     public override void Enter()
     {
         _controller.HitBox.HurtBoxEntered += AddHitObject;
+
+        _controller.animator.SetBool("attacking", true);
     }
 
     public override void Run()
@@ -79,6 +81,8 @@ public class AttackPlayer : StateWithTarget
         _isAttacking = false;
 
         _controller.HitBox.HurtBoxEntered -= AddHitObject;
+
+        _controller.animator.SetBool("attacking", false);
     }
 
     private void AddHitObject(HitBox.HurtBoxHitData hitData)
@@ -88,6 +92,3 @@ public class AttackPlayer : StateWithTarget
 
 
 }
-
-
-

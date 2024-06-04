@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -112,7 +113,7 @@ public class PlayerController : MonoBehaviour
             gameObject.AddComponent<PlayerIdle>();
             _idle = GetComponent<PlayerIdle>();
         }
-        if(_dead == null)
+        if (_dead == null)
         {
             gameObject.AddComponent<PlayerDead>();
             _dead = gameObject.AddComponent<PlayerDead>();
@@ -177,14 +178,17 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
+
     void Update()
     {
+
         _currentAttack.Run(_input);
         _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;
 
         if (Stats.Health <= 0)
         {
             _animator.SetBool("Death", true);
+
         }
     }
 

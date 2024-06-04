@@ -52,6 +52,8 @@ public class EnemyController : StateMachineController, IDamageAble
     [Header("Debug")]
     [SerializeField] private DebugInWorldUI _debugUI;
 
+    [SerializeField] public Animator animator;
+
     private GameObject _player;
     private Animator _animator;
     [SerializeField] private NavMeshAgent _navAgent;
@@ -100,7 +102,7 @@ public class EnemyController : StateMachineController, IDamageAble
         {
             if (SpeedBuff > 0)
             {
-                return _speed * 5f;
+                return _speed * 2f;
             }
             else if (SpeedBuff < 0)
             {
@@ -163,7 +165,7 @@ public class EnemyController : StateMachineController, IDamageAble
 
     private void OnDisable()
     {
-        EnemyPool.Instance.EnqueueSoldier(_player);
+        //EnemyPool.Instance.EnqueueSoldier(_player);
         _hurtBox.DamageDealt -= TakeDamage;
     }
 
@@ -244,5 +246,12 @@ public class EnemyController : StateMachineController, IDamageAble
         //Debug.Log("current state: " + _currentState);
         //Debug.Log("current position: " + transform.position);
         //Debug.Log("current destination: " + NavAgent.destination);
+    }
+
+
+    public void EnableNavmeshAgency(Transform spawnPoint)
+    {
+        //NavAgent.enabled = false;
+        //NavAgent.Warp(spawnPoint.position);
     }
 }

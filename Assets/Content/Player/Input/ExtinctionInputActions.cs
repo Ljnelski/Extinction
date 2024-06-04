@@ -93,15 +93,37 @@ public partial class @ExtinctionInputActions: IInputActionCollection2, IDisposab
             ],
             ""bindings"": [
                 {
-                    ""name"": """",
-                    ""id"": ""96f8fe4e-eeac-4b9d-bb57-139e0d65ec12"",
-                    ""path"": ""<Mouse>/delta"",
+                    ""name"": ""2D Vector"",
+                    ""id"": ""41105fae-e989-42ca-8b77-bb2949ba1644"",
+                    ""path"": ""2DVector(minValue=-10,maxValue=10)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Turn"",
-                    ""isComposite"": false,
+                    ""isComposite"": true,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Left"",
+                    ""id"": ""5ccf4c07-2c5e-44e7-a0cd-41fc5c0fbce9"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale(factor=100)"",
+                    ""groups"": """",
+                    ""action"": ""Turn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Right"",
+                    ""id"": ""8aec7aff-dcb7-421b-8c8c-79efd106ff15"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale(factor=100)"",
+                    ""groups"": """",
+                    ""action"": ""Turn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",

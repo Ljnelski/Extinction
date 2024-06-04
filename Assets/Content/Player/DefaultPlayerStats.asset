@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _maxStamina: 100
-  _staminaRegenerationRate: 20
+  _staminaRegenerationRate: 25
   _playerStatChanges: {fileID: 11400000, guid: e38256e93d0126b46a501f6b6d1b5b90, type: 2}

@@ -7,5 +7,7 @@ public class EnemyStateInit : MonoBehaviour
     public virtual void SetDefaultState(EnemyController ctrl)
     {
 
+
+
     }
 }

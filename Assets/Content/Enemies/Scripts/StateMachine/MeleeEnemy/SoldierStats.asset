@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8b5be8ec2f2ed44bbe3620d9a97ced9, type: 3}
   m_Name: SoldierStats
   m_EditorClassIdentifier: 
-  _attackSpeed: 1
+  _attackSpeed: 1.4
   _health: 100

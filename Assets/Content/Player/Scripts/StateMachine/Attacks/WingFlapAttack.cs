@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WingFlapAttack : PlayerAttackState
 {
     [SerializeField] private float _attackRadius;
     [SerializeField] private Transform _sphereCastSource;
     [SerializeField] private WingHemisphere _wingAttackDirection;
+    [SerializeField] private LayerMask layermask;
 
     public override void Enter()
     {
@@ -20,7 +22,7 @@ public class WingFlapAttack : PlayerAttackState
 
         _player.Rotate();
 
-        Collider[] hitEnemies = Physics.OverlapSphere(_sphereCastSource.position, _attackRadius);
+        Collider[] hitEnemies = Physics.OverlapSphere(_sphereCastSource.position, _attackRadius, layermask);
 
         Vector2 dirHemisphere = GetHemiSphereDirection();
 
@@ -37,12 +39,27 @@ public class WingFlapAttack : PlayerAttackState
             Vector2 posXZTarget = new Vector2(collider.transform.position.x, collider.transform.position.z);
             Vector2 dirToTarget = posXZPlayer - posXZTarget;
 
+            Vector3 warpDirection = new Vector3(posXZTarget.x + dirToTarget.normalized.x * 2, posXZTarget.y + 5, +dirToTarget.normalized.y * 2);
+
+            StartCoroutine(Stun(collider));
+
+
             // Target is to the right
             if (Vector2.Dot(dirHemisphere, dirToTarget) > 0)
             {
                 //enemies.Add(collider.transform);
                 indicator.DebugIndicateHit(GetHemisphereColor());
             }
+        }
+
+        IEnumerator Stun(Collider collider)
+        {
+            NavMeshAgent agent = collider.GetComponentInParent<NavMeshAgent>();
+            agent.Move(collider.transform.forward * -5);
+            collider.GetComponent<Animator>().SetTrigger("stunned");
+            agent.isStopped = true;
+            yield return new WaitForSeconds(2);
+            agent.isStopped = false;
         }
 
         if (_player.Stats.Health <= 0)
@@ -89,7 +106,7 @@ public class WingFlapAttack : PlayerAttackState
 
     public override void Deactivate()
     {
-        ;
+
     }
 
     private enum WingHemisphere

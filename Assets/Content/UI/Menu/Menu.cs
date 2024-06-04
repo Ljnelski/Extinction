@@ -20,7 +20,7 @@ public class Menu : MonoBehaviour
     {
         if (Application.isEditor)
         {
-            EditorApplication.ExitPlaymode();
+            //EditorApplication.ExitPlaymode();
         }
         else
         {

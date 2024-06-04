@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDead : PlayerState
 {
@@ -8,6 +9,7 @@ public class PlayerDead : PlayerState
     {
         // Lock Movement, Play death animation
         _player.Animator.SetTrigger(_player.DeathTriggerID);
+
     }
 
     public override void Run(PlayerInputRecorder input)
@@ -19,4 +21,6 @@ public class PlayerDead : PlayerState
     {
 
     }
+
+
 }

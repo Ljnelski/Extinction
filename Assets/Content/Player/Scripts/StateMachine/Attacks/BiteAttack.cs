@@ -30,6 +30,9 @@ public class BiteAttack : HitBoxAttack
     {
         base.HitBoxEntered(target);
         target.Damagable.ApplyDamage(Damage);
+
+        _player.Stats.Health += 15;
     }
+
 
 }
