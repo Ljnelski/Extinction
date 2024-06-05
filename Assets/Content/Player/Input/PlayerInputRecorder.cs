@@ -45,8 +45,6 @@ public class PlayerInputRecorder : MonoBehaviour
         _inputActions.Player.BreathAttack.performed += OnBreathAttack;
         _inputActions.Player.BreathAttack.canceled += OnBreathAttack;
 
-        _inputActions.Player.TestInput.performed += OnTestInput;
-
         _inputActions.Player.Roar.performed += OnRoar;
         _inputActions.Player.Roar.canceled += OnRoar;
     }
@@ -78,8 +76,6 @@ public class PlayerInputRecorder : MonoBehaviour
         _inputActions.Player.BreathAttack.performed -= OnBreathAttack;
         _inputActions.Player.BreathAttack.canceled -= OnBreathAttack;
 
-        _inputActions.Player.TestInput.performed -= OnTestInput;
-
         _inputActions.Player.Roar.performed -= OnRoar;
         _inputActions.Player.Roar.canceled -= OnRoar;
     }
@@ -92,19 +88,13 @@ public class PlayerInputRecorder : MonoBehaviour
     private void OnPrimaryAttack(InputAction.CallbackContext context)
     {
         _primaryAttack = context.ReadValue<float>() > 0;
-        if (_inputActions.Player.SecondaryAttack.IsPressed())
-        {
-            _secondaryAttack = true;
-        }
+
     }
 
     private void OnSecondaryAttack(InputAction.CallbackContext context)
     {
         _secondaryAttack = context.ReadValue<float>() > 0;
-        if (_inputActions.Player.PrimaryAttack.IsPressed())
-        {
-            _primaryAttack = true;
-        }
+
     }
 
     private void OnWingAttack(InputAction.CallbackContext context)

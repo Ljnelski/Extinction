@@ -28,7 +28,7 @@ public class MoveToTarget : StateWithTarget
         //Debug.Log($"enter {randomId}: {(bool)_target}");
         // TODO Play Animation
         spawnedAt = Time.time;
-        _controller.Animator.SetBool("moving", false);
+        _controller.Animator.SetBool("moving", true);
     }
 
     public override void Run()

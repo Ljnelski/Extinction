@@ -38,28 +38,19 @@ public class WingFlapAttack : PlayerAttackState
 
             Vector2 posXZTarget = new Vector2(collider.transform.position.x, collider.transform.position.z);
             Vector2 dirToTarget = posXZPlayer - posXZTarget;
-
-            Vector3 warpDirection = new Vector3(posXZTarget.x + dirToTarget.normalized.x * 2, posXZTarget.y + 5, +dirToTarget.normalized.y * 2);
-
-            StartCoroutine(Stun(collider));
-
-
             // Target is to the right
+
             if (Vector2.Dot(dirHemisphere, dirToTarget) > 0)
             {
                 //enemies.Add(collider.transform);
                 indicator.DebugIndicateHit(GetHemisphereColor());
             }
-        }
 
-        IEnumerator Stun(Collider collider)
-        {
-            NavMeshAgent agent = collider.GetComponentInParent<NavMeshAgent>();
-            agent.Move(collider.transform.forward * -5);
-            collider.GetComponent<Animator>().SetTrigger("stunned");
-            agent.isStopped = true;
-            yield return new WaitForSeconds(2);
-            agent.isStopped = false;
+            //Vector3 warpDirection = new Vector3(posXZTarget.x + dirToTarget.normalized.x * 2, posXZTarget.y + 5, +dirToTarget.normalized.y * 2);
+            if (collider.GetComponentInParent<NavMeshAgent>() != null)
+            {
+                StartCoroutine(Stun(collider, collider.GetComponentInParent<NavMeshAgent>()));
+            }
         }
 
         if (_player.Stats.Health <= 0)
@@ -114,4 +105,17 @@ public class WingFlapAttack : PlayerAttackState
         Left,
         Right,
     }
+    
+    IEnumerator Stun(Collider collider, NavMeshAgent agent)
+    {
+        // NavMeshAgent agent = collider.GetComponentInParent<NavMeshAgent>();
+        //collider.GetComponent<Animator>().SetTrigger("stunned");
+        agent.Move(Vector3.Lerp(collider.transform.position, collider.transform.forward * -1, (Time.time / 2)));
+                
+        agent.isStopped = true;
+        
+        yield return new WaitForSeconds(2);
+        if (agent != null) agent.isStopped = false;
+    }
 }
+

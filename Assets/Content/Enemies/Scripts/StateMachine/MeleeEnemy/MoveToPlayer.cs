@@ -26,11 +26,11 @@ public class MoveToPlayer : EnemyState<EnemyController>
         {
             _playerPosition = _controller.Player.transform;
         }
-
+        _controller.animator.SetBool("moving", true);
         // TODO Play Animation
         _controller.NavAgent.SetDestination(_playerPosition.position);
 
-        _controller.animator.SetBool("moving", true);
+        
     }
 
     public override void Run()

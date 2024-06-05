@@ -127,7 +127,7 @@ public class EnemySpawner : MonoBehaviour
         //enemyController.EnableNavmeshAgency(this.transform);
 
 
-        newEnemy.GetComponent<NavMeshAgent>().Warp(spawnOffset);
+        //newEnemy.GetComponent<NavMeshAgent>().Warp(spawnOffset);
         //Debug.Log(batch[i].name);
 
 

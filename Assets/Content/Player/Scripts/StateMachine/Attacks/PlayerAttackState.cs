@@ -14,11 +14,11 @@ public abstract class PlayerAttackState : PlayerState
     public AttackPhase Phase => _attackPhase;
     public float Damage => _stats.Damage;
     public float DamageBroken => _stats.DamageBroken;
-    public float StaminaCost => _bodyPart.IsBroken ? _stats.StaminaCostBroken : _stats.StaminaCost;        
+    public float StaminaCost => _bodyPart.IsBroken ? _stats.StaminaCostBroken : _stats.StaminaCost;
     public float StaminaCostBroken => _stats.StaminaCostBroken;
     public float AttackDuration => _stats.AttackDuration;
-    
-    
+
+
     public void Init(PlayerController player, BodyPart bodyPart)
     {
         base.Init(player);
@@ -33,14 +33,14 @@ public abstract class PlayerAttackState : PlayerState
     public override void Enter()
     {
         Stats.Stamina = Stats.Stamina - StaminaCost;
-        QueuePhaseAdvance();       
+        QueuePhaseAdvance();
     }
 
     public abstract void Activate();
 
     public override void Run(PlayerInputRecorder input)
     {
-        if(_advanceAttackPhase)
+        if (_advanceAttackPhase)
         {
             AdvanceAttackPhase();
         }

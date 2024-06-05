@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class BiteAttack : HitBoxAttack
 {
+    
+    [SerializeField] HitBox hitbox;
+    
     public override void Enter()
     {
         base.Enter();
+        _hitBox = hitbox;
+
         Animator.SetTrigger(_player.BiteTriggerID);
         _player.MovementLocked = true;
     }
@@ -31,7 +36,7 @@ public class BiteAttack : HitBoxAttack
         base.HitBoxEntered(target);
         target.Damagable.ApplyDamage(Damage);
 
-        _player.Stats.Health += 15;
+        _player.Stats.Health += 15f;
     }
 
 

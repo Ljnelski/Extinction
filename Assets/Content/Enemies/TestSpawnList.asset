@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38eab2db37635eb49a48a2fda0a79a3e, type: 3}
   m_Name: TestSpawnList
   m_EditorClassIdentifier: 
-  _closeRangeTier1: {fileID: 2880460769818529921, guid: 3ae58e825c9c27a4bb8a32ea02546ae1,
+  _closeRangeTier1: {fileID: 2880460769818529921, guid: 19ca5c37af6f224438b126181d6d5b05,
     type: 3}
   _closeRangeTier2: {fileID: 2880460769818529921, guid: 3e57fd50e136d234e873f2df5486f889,
     type: 3}
@@ -24,9 +24,9 @@ MonoBehaviour:
     type: 3}
   _longRangeTier3: {fileID: 7383592310609938371, guid: e18b9f338402fb94abd78152ee3eb041,
     type: 3}
-  _closeRangeChance: 78.8
-  _mediumRangeChance: 6.1
-  _longRangeChance: 3.3
-  _tier1Chance: 60.8
-  _tier2Chance: 32.5
-  _tier3Chance: 11.8
+  _closeRangeChance: 72.6
+  _mediumRangeChance: 12.9
+  _longRangeChance: 18.6
+  _tier1Chance: 59.9
+  _tier2Chance: 31.1
+  _tier3Chance: 10.4

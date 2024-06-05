@@ -21,7 +21,7 @@ public class ClawAttack : HitBoxAttack
         {
             Animator.SetTrigger(_player.LeftSwipeTriggerID);
         }
-        else if ( _attackDir == AttackDirection.Right)
+        else if (_attackDir == AttackDirection.Right)
         {
             Animator.SetTrigger(_player.RightSwipeTriggerID);
         }

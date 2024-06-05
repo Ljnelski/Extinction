@@ -7,10 +7,12 @@ public class BreathAttack : HitBoxAttack
 {
     [SerializeField] private float _staminaDrain;
     [SerializeField] private VisualEffect _fire;
-
+    [SerializeField] HitBox hitbox;
     public override void Enter()
     {
         base.Enter();
+        _hitBox = hitbox;
+
         Animator.SetBool(_player.BreathBoolID, true);
         Debug.Log("Breath Attack Started!");
     }

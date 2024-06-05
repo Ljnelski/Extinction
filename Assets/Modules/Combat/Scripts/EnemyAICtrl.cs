@@ -33,7 +33,7 @@ public class EnemyAICtrl : MonoBehaviour
         // Reset Rigidbody velocity every resetVelocityInterval seconds
         if (Time.time - lastResetTime >= resetVelocityInterval)
         {
-            rb.velocity = Vector3.zero;
+            rb.linearVelocity = Vector3.zero;
             lastResetTime = Time.time;
         }
     }

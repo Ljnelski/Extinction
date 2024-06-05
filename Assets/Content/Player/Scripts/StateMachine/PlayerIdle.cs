@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.Windows;
+
 
 public class PlayerIdle : PlayerState
 {
@@ -12,9 +11,9 @@ public class PlayerIdle : PlayerState
 
     public override void Run(PlayerInputRecorder playerInput)
     {
-        _player.Rotate();        
+        _player.Rotate();
 
-        if (playerInput.PrimaryAttack && playerInput.SecondaryAttack)
+        if (playerInput.Roar)
         {
             if (_player.BiteAttack.CanStart())
             {
@@ -60,6 +59,5 @@ public class PlayerIdle : PlayerState
 
     public override void Exit()
     {
-        ;
     }
 }
