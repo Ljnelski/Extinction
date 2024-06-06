@@ -38,11 +38,11 @@ public class DebugTarget : MonoBehaviour, IDamageAble
 
     public void ApplyDamage(float amount)
     {
-        Debug.Log("Damage taken: " + amount);
+        //Debug.Log("Damage taken: " + amount);
     }
 
     public void ApplyEffect()
     {
-        Debug.Log("Applying Effect");
+        //Debug.Log("Applying Effect");
     }
 }

@@ -12,13 +12,22 @@ public class StatusBar : MonoBehaviour
 
     private void OnValidate()
     {
-        if(_rectTransform == null )
+        Valiate();
+    }
+
+    void Valiate()
+    {
+        if (_rectTransform == null)
         {
             _rectTransform = transform as RectTransform;
         }
-
         _rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, _maxWidth);
         _rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _height);
+    }
+
+    private void Awake()
+    {
+        Valiate();
     }
 
     private void SetBarWidth(float width)

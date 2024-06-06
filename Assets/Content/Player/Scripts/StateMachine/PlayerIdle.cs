@@ -46,7 +46,7 @@ public class PlayerIdle : PlayerState
         {
             if (_player.BreathAttack.CanStart())
             {
-                Debug.Log("BreathingAttackInputConditionsMet");
+                //Debug.Log("BreathingAttackInputConditionsMet");
                 _player.SetState(_player.BreathAttack);
             }
         }

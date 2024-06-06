@@ -33481,7 +33481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 2a1aefc11027ad34983322b922782acb, type: 2}
   _attackRadius: 2
-  _attackStats: {fileID: 11400000, guid: 7f440f5e9ebb43a46b557f964e674f50, type: 2}
+  _attackStats: {fileID: 11400000, guid: df66eebe7956324479d1fe35e2f6fbc2, type: 2}
   _colorChanger: {fileID: 0}
   projectileSpawner: {fileID: 0}
   _debugUI: {fileID: 0}

@@ -8,21 +8,32 @@ public class SpawnPoint : MonoBehaviour
     // Has a Mesh for showing the Spawn point/ moving it around for level design can be turn on and off
 
     private GameObject _spawnPointIndicator;
-    
-    private void OnValidate()
+
+    void Validate()
     {
-        if(_spawnPointIndicator == null)
+        if (_spawnPointIndicator == null)
         {
             _spawnPointIndicator = transform.GetChild(0).gameObject;
-        }   
+        }
 
-        if(_showSpawnPointIndicator)
+        if (_showSpawnPointIndicator)
         {
             Show();
-        } else
+        }
+        else
         {
             Hide();
         }
+    }
+
+    private void OnValidate()
+    {
+        Validate();
+    }
+
+    private void Awake()
+    {
+        Validate();
     }
 
     public void Show()

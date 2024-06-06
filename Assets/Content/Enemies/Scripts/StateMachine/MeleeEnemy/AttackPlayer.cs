@@ -40,7 +40,7 @@ public class AttackPlayer : StateWithTarget
         
         else if (_attackCoolDownTimer >= _controller.Stats.AttackSpeed)
         {
-            Debug.Log(_controller.name + " is attacking");
+            //Debug.Log(_controller.name + " is attacking");
             _controller.animator.SetBool("attacking", true);
             _attackCoolDownTimer = 0;
             _controller.HitBox.Activate();

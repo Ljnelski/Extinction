@@ -120,6 +120,7 @@ public class PlayerController : MonoBehaviour
         }
 
         _idle.Init(this);
+        _dead.Init(this);
 
         string errorMsg = "";
 
@@ -287,6 +288,6 @@ public class PlayerController : MonoBehaviour
         bodyParts[bodyPartIndex].ApplyDamage(damage);
         bodyParts[bodyPartIndex].DoBreakDamage(breakDamage);
 
-        Debug.Log("Doing Damage to: " + bodyPartIndex);
+        //Debug.Log("Doing Damage to: " + bodyPartIndex);
     }
 }

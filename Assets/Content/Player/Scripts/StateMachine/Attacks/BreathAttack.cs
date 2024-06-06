@@ -14,12 +14,12 @@ public class BreathAttack : HitBoxAttack
         _hitBox = hitbox;
 
         Animator.SetBool(_player.BreathBoolID, true);
-        Debug.Log("Breath Attack Started!");
+        //Debug.Log("Breath Attack Started!");
     }
     public override void Activate()
     {
         base.Activate();
-        Debug.Log("Breath Attack Activated");
+        //Debug.Log("Breath Attack Activated");
         _fire.SendEvent("StartBreath");
     }
 
@@ -35,7 +35,7 @@ public class BreathAttack : HitBoxAttack
 
             if (!playerInput.BreathAttack || Stats.Stamina < staminaDrain)
             {
-                Debug.Log("breathing Canceled on AttackPhase: " + _attackPhase);
+                //Debug.Log("breathing Canceled on AttackPhase: " + _attackPhase);
                 Animator.SetBool(_player.BreathBoolID, false);
             }
 
@@ -52,12 +52,12 @@ public class BreathAttack : HitBoxAttack
     {
         base.Deactivate();
         _fire.SendEvent("StopBreath");
-        Debug.Log("Breath Attack Deactivated");
+        //Debug.Log("Breath Attack Deactivated");
     }
 
     public override void Exit()
     {
-        Debug.Log("Breath Attack Ended!");
+        //Debug.Log("Breath Attack Ended!");
         base.Exit();
     }
 

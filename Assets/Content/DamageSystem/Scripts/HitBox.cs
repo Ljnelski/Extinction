@@ -38,7 +38,7 @@ public class HitBox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Hitbox hit: " + other.gameObject.name);
+        //Debug.Log("Hitbox hit: " + other.gameObject.name);
 
         IDamageAble damageAble = other.GetComponent<IDamageAble>();
         IBreakAble breakAble = other.GetComponent<IBreakAble>();
