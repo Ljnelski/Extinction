@@ -51,12 +51,13 @@ public class AttackRanged : StateWithTarget
                 _controller.projectileSpawner.Spawn(_target);
 
                 // Actual Attack
-                PlayerReference.Instance.GetPlayerController().AttackedByEnemy(
-                    _controller.AttackStats.DamageToHealth,
-                    _controller.AttackStats.DamageToBodyPart,
-                    _controller.transform.position);
+                if (PlayerReference.Instance.GetPlayerController() != null) {
+                    PlayerReference.Instance.GetPlayerController().AttackedByEnemy(
+                        _controller.AttackStats.DamageToHealth,
+                        _controller.AttackStats.DamageToBodyPart,
+                        _controller.transform.position);
 
-
+                }
                 if (_resetAfterOne)
                 {
                     _controller.SetDefaultState();

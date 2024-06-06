@@ -9,32 +9,32 @@ public class PlayerIdle : PlayerState
 
     }
 
-    public override void Run(PlayerInputRecorder playerInput)
+    public override void Run()
     {
         _player.Rotate();
 
-        if (playerInput.Roar)
+        if (Input.GetKeyDown(KeyCode.W))
         {
             if (_player.BiteAttack.CanStart())
             {
                 _player.SetState(_player.BiteAttack);
             }
         }
-        else if (playerInput.PrimaryAttack)
+        else if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (_player.ClawSwipeLeftAttack.CanStart())
             {
                 _player.SetState(_player.ClawSwipeLeftAttack);
             }
         }
-        else if (playerInput.SecondaryAttack)
+        else if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (_player.ClawSwipeRightAttack.CanStart())
             {
                 _player.SetState(_player.ClawSwipeRightAttack);
             }
         }
-        else if (playerInput.WingAttack)
+        else if (Input.GetKeyDown(KeyCode.S))
         {
             if (_player.WingFlapleftAttack.CanStart() && _player.WingFlapRightAttack.CanStart())
             {
@@ -42,7 +42,7 @@ public class PlayerIdle : PlayerState
                 _player.SetState(_player.WingFlapRightAttack);
             }
         }
-        else if (playerInput.BreathAttack)
+        else if (Input.GetKey(KeyCode.Space))
         {
             if (_player.BreathAttack.CanStart())
             {

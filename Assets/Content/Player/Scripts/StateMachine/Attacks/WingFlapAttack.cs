@@ -16,9 +16,9 @@ public class WingFlapAttack : PlayerAttackState
         Animator.SetTrigger(_player.WingFlapTriggerID);
     }
 
-    public override void Run(PlayerInputRecorder playerInput)
+    public override void Run( )
     {
-        base.Run(playerInput);
+        base.Run();
 
         _player.Rotate();
 
@@ -34,7 +34,7 @@ public class WingFlapAttack : PlayerAttackState
 
             if (indicator == null) continue;
 
-            indicator.DebugIndicateHit(Color.red);
+           // indicator.DebugIndicateHit(Color.red);
 
             Vector2 posXZTarget = new Vector2(collider.transform.position.x, collider.transform.position.z);
             Vector2 dirToTarget = posXZPlayer - posXZTarget;
@@ -43,7 +43,7 @@ public class WingFlapAttack : PlayerAttackState
             if (Vector2.Dot(dirHemisphere, dirToTarget) > 0)
             {
                 //enemies.Add(collider.transform);
-                indicator.DebugIndicateHit(GetHemisphereColor());
+                //indicator.DebugIndicateHit(GetHemisphereColor());
             }
 
             //Vector3 warpDirection = new Vector3(posXZTarget.x + dirToTarget.normalized.x * 2, posXZTarget.y + 5, +dirToTarget.normalized.y * 2);

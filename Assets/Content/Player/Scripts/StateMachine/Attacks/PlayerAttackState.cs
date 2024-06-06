@@ -38,7 +38,7 @@ public abstract class PlayerAttackState : PlayerState
 
     public abstract void Activate();
 
-    public override void Run(PlayerInputRecorder input)
+    public override void Run()
     {
         if (_advanceAttackPhase)
         {

@@ -23,9 +23,9 @@ public class BreathAttack : HitBoxAttack
         _fire.SendEvent("StartBreath");
     }
 
-    public override void Run(PlayerInputRecorder playerInput)
+    public override void Run()
     {
-        base.Run(playerInput);
+        base.Run();
 
         _player.Rotate();
 
@@ -33,7 +33,7 @@ public class BreathAttack : HitBoxAttack
         {
             float staminaDrain = (_staminaDrain) * Time.deltaTime;
 
-            if (!playerInput.BreathAttack || Stats.Stamina < staminaDrain)
+            if (!_player.BreathAttack || Stats.Stamina < staminaDrain)
             {
                 //Debug.Log("breathing Canceled on AttackPhase: " + _attackPhase);
                 Animator.SetBool(_player.BreathBoolID, false);

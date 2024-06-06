@@ -17,7 +17,7 @@ public abstract class PlayerState : MonoBehaviour
 
     public abstract void Enter();
 
-    public abstract void Run(PlayerInputRecorder input);
+    public abstract void Run();
 
     public abstract void Exit();
    

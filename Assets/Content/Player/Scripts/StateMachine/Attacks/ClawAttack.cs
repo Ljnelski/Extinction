@@ -26,9 +26,9 @@ public class ClawAttack : HitBoxAttack
             Animator.SetTrigger(_player.RightSwipeTriggerID);
         }
     }
-    public override void Run(PlayerInputRecorder playerInput)
+    public override void Run()
     {
-        base.Run(playerInput);
+        base.Run();
 
         if (_player.Stats.Health <= 0)
         {
