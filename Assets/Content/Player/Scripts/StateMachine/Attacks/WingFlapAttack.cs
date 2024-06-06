@@ -34,7 +34,7 @@ public class WingFlapAttack : PlayerAttackState
 
             if (indicator == null) continue;
 
-            indicator.DebugIndicateHit(Color.red);
+           // indicator.DebugIndicateHit(Color.red);
 
             Vector2 posXZTarget = new Vector2(collider.transform.position.x, collider.transform.position.z);
             Vector2 dirToTarget = posXZPlayer - posXZTarget;
