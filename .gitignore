@@ -73,4 +73,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 #Model Storage
-/Raw_Models/*
+/Workshop/*
+*.7z

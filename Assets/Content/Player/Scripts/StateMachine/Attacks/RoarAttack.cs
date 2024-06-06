@@ -21,9 +21,9 @@ public class RoarAttack : PlayerAttackState
         Debug.Log("RoarAttack");
     }
 
-    public override void Run(PlayerInputRecorder playerInput)
+    public override void Run()
     {
-        base.Run(playerInput);
+        base.Run();
 
         if (_player.Stats.Health <= 0)
         {

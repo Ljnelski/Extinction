@@ -15,9 +15,9 @@ public class BiteAttack : HitBoxAttack
         Animator.SetTrigger(_player.BiteTriggerID);
         _player.MovementLocked = true;
     }
-    public override void Run(PlayerInputRecorder playerInput)
+    public override void Run()
     {
-        base.Run(playerInput);
+        base.Run();
 
         if (_player.Stats.Health <= 0)
         {

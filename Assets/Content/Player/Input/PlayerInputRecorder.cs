@@ -32,7 +32,7 @@ public class PlayerInputRecorder : MonoBehaviour
 
         _inputActions.Player.Turn.performed += OnTurn;
         _inputActions.Player.Turn.canceled += OnTurn;
-
+        
         _inputActions.Player.PrimaryAttack.performed += OnPrimaryAttack;
         _inputActions.Player.PrimaryAttack.canceled += OnPrimaryAttack;
 

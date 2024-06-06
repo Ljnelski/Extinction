@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Debug = UnityEngine.Debug;
 
 public class PlayerController : MonoBehaviour
 {
@@ -182,7 +184,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        _currentAttack.Run(_input);
+        _currentAttack.Run();
         _stats.Stamina += _stats.StaminaRegenerationRate * Time.deltaTime;
 
         if (Stats.Health <= 0)
@@ -196,8 +198,13 @@ public class PlayerController : MonoBehaviour
     {
         if (!MovementLocked)
         {
+            String keyCode = null;
+            Vector2 newLookDirection = Vector2.zero;
+            
             // Calculate the angle change
-            float angle = _input.LookDirection.x * _cameraRotationSpeed;
+            if (Input.GetKey(KeyCode.A)) newLookDirection = Vector2.left;
+            else if (Input.GetKey(KeyCode.D)) newLookDirection = Vector2.right;
+            float angle = newLookDirection.x * _cameraRotationSpeed;
 
             // Clamp angle change within limit
             _cameraAngle = Mathf.Min(Mathf.Max(_cameraAngle + angle, -_cameraRotationLimit), _cameraRotationLimit);

@@ -12,7 +12,7 @@ public class PlayerDead : PlayerState
 
     }
 
-    public override void Run(PlayerInputRecorder input)
+    public override void Run( )
     {
 
     }
